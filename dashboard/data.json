@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-12T22:11:44Z",
+  "timestamp": "2026-01-12T23:11:04Z",
   "date": "2026-01-12",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -10,9 +10,9 @@
   },
   "costs": {
     "openAi30d": 6.9627,
-    "otherServices30d": 50.00,
-    "totalMonthly": 56.9627,
-    "projectedTillApril": 202.7872,
+    "otherServices30d": 50.20,
+    "totalMonthly": 57.1627,
+    "projectedTillApril": 203.4992,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
@@ -21,7 +21,7 @@
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 0,
+    "storageAccounts": 1,
     "postgresServers": 1,
     "containerApps": 0
   },
@@ -114,6 +114,10 @@
     "count": 1
   },
   {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 1
+  },
+  {
     "type": "Microsoft.OperationsManagement/solutions",
     "count": 1
   },
@@ -123,6 +127,10 @@
   },
   {
     "type": "Microsoft.Network/networkWatchers",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.KeyVault/vaults",
     "count": 1
   },
   {
