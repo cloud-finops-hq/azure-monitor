@@ -1,0 +1,26 @@
+{
+  "daily_costs": [],
+  "token_usage": [],
+  "daily_snapshots": [
+    {
+      "date": "2026-01-09",
+      "totalCost": 122.9863,
+      "tokens": 17745718
+    },
+    {
+      "date": "2026-01-10",
+      "totalCost": 122.9992,
+      "tokens": 17743241
+    },
+    {
+      "date": "2026-01-11",
+      "totalCost": 123.0139,
+      "tokens": 17734095
+    },
+    {
+      "date": "2026-01-12",
+      "totalCost": 123.0586,
+      "tokens": 17735391
+    }
+  ]
+}

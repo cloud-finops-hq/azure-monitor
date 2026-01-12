@@ -1,0 +1,60 @@
+name: Collect Azure Cost Data
+
+on:
+  schedule:
+    # Run every hour at minute 5
+    - cron: '5 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  collect-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Azure CLI
+        run: |
+          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+          az --version
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Verify Azure login
+        run: |
+          az account show
+          az account list --output table
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq bc
+
+      - name: Collect Azure data
+        run: |
+          cd dashboard
+          chmod +x collect-data.sh
+          ./collect-data.sh
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add dashboard/data.json dashboard/history.json
+
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "Update Azure cost data - $(date -u +"%Y-%m-%d %H:%M UTC")"
+            git push
+          else
+            echo "No changes to commit"
+          fi

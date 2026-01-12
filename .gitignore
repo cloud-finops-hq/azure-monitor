@@ -1,0 +1,16 @@
+# Data files are now tracked for GitHub Pages deployment
+# (They contain only cost metrics, no credentials)
+
+# Logs
+dashboard/collect.log
+*.log
+
+# Reports (may contain sensitive data)
+reports/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
