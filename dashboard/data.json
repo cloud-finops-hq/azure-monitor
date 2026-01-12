@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-12T21:11:42Z",
+  "timestamp": "2026-01-12T22:11:44Z",
   "date": "2026-01-12",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,39 +9,23 @@
     "daysRemaining": 107
   },
   "costs": {
-    "openAi30d": 6.7399,
-    "otherServices30d": .20,
-    "totalMonthly": 6.9399,
-    "projectedTillApril": 24.7060,
+    "openAi30d": 6.9627,
+    "otherServices30d": 50.00,
+    "totalMonthly": 56.9627,
+    "projectedTillApril": 202.7872,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 16849963,
-    "openAiAccounts": 4,
+    "totalTokens30d": 17406811,
+    "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 1,
-    "postgresServers": 0,
+    "storageAccounts": 0,
+    "postgresServers": 1,
     "containerApps": 0
   },
   "openAiUsage": [
-  {
-    "account": "qlaunch-openai-westeurope-e230",
-    "resourceGroup": "qlaunch-rg",
-    "primaryModel": "gpt-4o",
-    "promptTokens30d": 0,
-    "completionTokens30d": 0,
-    "promptTokens7d": 0,
-    "promptTokens1d": 0,
-    "estimatedCost30d": 0,
-    "deployments": [
-      {
-        "model": "gpt-4o",
-        "name": "gpt-4o"
-      }
-    ]
-  },
   {
     "account": "brandtruth-dalle",
     "resourceGroup": "azurellm",
@@ -62,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 16849963,
+    "promptTokens30d": 17406811,
     "completionTokens30d": 0,
-    "promptTokens7d": 331487,
-    "promptTokens1d": 301997,
-    "estimatedCost30d": 6.7399,
+    "promptTokens7d": 888335,
+    "promptTokens1d": 858845,
+    "estimatedCost30d": 6.9627,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -105,22 +89,6 @@
         "name": "gpt-5"
       }
     ]
-  },
-  {
-    "account": "qlaunch-openai-swedencentral-e230",
-    "resourceGroup": "qlaunch-rg",
-    "primaryModel": "dall-e-3",
-    "promptTokens30d": 0,
-    "completionTokens30d": 0,
-    "promptTokens7d": 0,
-    "promptTokens1d": 0,
-    "estimatedCost30d": 0,
-    "deployments": [
-      {
-        "model": "dall-e-3",
-        "name": "dall-e-3"
-      }
-    ]
   }
 ],
   "aiServices": [],
@@ -130,11 +98,11 @@
     "count": 7
   },
   {
-    "type": "Microsoft.CognitiveServices/accounts",
-    "count": 4
+    "type": "Microsoft.Insights/actiongroups",
+    "count": 2
   },
   {
-    "type": "Microsoft.Insights/actiongroups",
+    "type": "Microsoft.CognitiveServices/accounts",
     "count": 2
   },
   {
@@ -143,10 +111,6 @@
   },
   {
     "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
     "count": 1
   },
   {
@@ -162,7 +126,15 @@
     "count": 1
   },
   {
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
+    "count": 1
+  },
+  {
     "type": "Microsoft.ContainerRegistry/registries",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.Cache/Redis",
     "count": 1
   }
 ],
@@ -199,8 +171,8 @@
   },
   {
     "date": "2026-01-12",
-    "tokens": 301997,
-    "cost": 3.01
+    "tokens": 858845,
+    "cost": 8.58
   }
 ],
   "alerts": {
