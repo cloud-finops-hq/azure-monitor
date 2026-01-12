@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-12T07:48:10Z",
+  "timestamp": "2026-01-12T08:15:56Z",
   "date": "2026-01-12",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -19,7 +19,7 @@
   "summary": {
     "totalTokens30d": 17732461,
     "openAiAccounts": 5,
-    "aiServicesAccounts": 3,
+    "aiServicesAccounts": 1,
     "saasSubscriptions": 0,
     "storageAccounts": 3,
     "postgresServers": 1,
@@ -148,26 +148,16 @@
     "endpoint": "https://satis-mggd0m1a-eastus2.cognitiveservices.azure.com/",
     "name": "satis-mggd0m1a-eastus2",
     "resourceGroup": "azurellm"
-  },
-  {
-    "endpoint": "https://qnews-resource.cognitiveservices.azure.com/",
-    "name": "qnews-resource",
-    "resourceGroup": "rg-qnews"
-  },
-  {
-    "endpoint": "https://skyller-dev-resource.cognitiveservices.azure.com/",
-    "name": "skyller-dev-resource",
-    "resourceGroup": "rg-skyller-7047"
   }
 ],
   "resourcesByType": [
   {
-    "type": "Microsoft.CognitiveServices/accounts",
-    "count": 8
-  },
-  {
     "type": "Microsoft.Insights/activityLogAlerts",
     "count": 7
+  },
+  {
+    "type": "Microsoft.CognitiveServices/accounts",
+    "count": 6
   },
   {
     "type": "Microsoft.Storage/storageAccounts",
@@ -198,10 +188,6 @@
     "count": 2
   },
   {
-    "type": "Microsoft.CognitiveServices/accounts/projects",
-    "count": 2
-  },
-  {
     "type": "Microsoft.App/managedEnvironments/managedCertificates",
     "count": 2
   },
@@ -219,6 +205,10 @@
   },
   {
     "type": "Microsoft.OperationsManagement/solutions",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.Network/networkWatchers",
     "count": 1
   }
 ],
