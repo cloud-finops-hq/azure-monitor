@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-12T08:15:56Z",
+  "timestamp": "2026-01-12T09:17:35Z",
   "date": "2026-01-12",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,21 +9,21 @@
     "daysRemaining": 107
   },
   "costs": {
-    "openAi30d": 12.4574,
-    "otherServices30d": 110.60,
-    "totalMonthly": 123.0574,
-    "projectedTillApril": 438.0843,
+    "openAi30d": 6.6264,
+    "otherServices30d": .20,
+    "totalMonthly": 6.8264,
+    "projectedTillApril": 24.3019,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 17732461,
-    "openAiAccounts": 5,
-    "aiServicesAccounts": 1,
+    "totalTokens30d": 16566074,
+    "openAiAccounts": 4,
+    "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 3,
-    "postgresServers": 1,
-    "containerApps": 3
+    "storageAccounts": 1,
+    "postgresServers": 0,
+    "containerApps": 0
   },
   "openAiUsage": [
   {
@@ -55,26 +55,6 @@
       {
         "model": "dall-e-3",
         "name": "dall-e-3"
-      }
-    ]
-  },
-  {
-    "account": "careerfied-openai",
-    "resourceGroup": "careerfied-prod",
-    "primaryModel": "gpt-4o",
-    "promptTokens30d": 1166387,
-    "completionTokens30d": 0,
-    "promptTokens7d": 1092784,
-    "promptTokens1d": 4036,
-    "estimatedCost30d": 5.831,
-    "deployments": [
-      {
-        "model": "gpt-4o",
-        "name": "gpt-4o"
-      },
-      {
-        "model": "text-embedding-3-small",
-        "name": "text-embedding-3-small"
       }
     ]
   },
@@ -143,13 +123,7 @@
     ]
   }
 ],
-  "aiServices": [
-  {
-    "endpoint": "https://satis-mggd0m1a-eastus2.cognitiveservices.azure.com/",
-    "name": "satis-mggd0m1a-eastus2",
-    "resourceGroup": "azurellm"
-  }
-],
+  "aiServices": [],
   "resourcesByType": [
   {
     "type": "Microsoft.Insights/activityLogAlerts",
@@ -157,50 +131,22 @@
   },
   {
     "type": "Microsoft.CognitiveServices/accounts",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.Insights/scheduledqueryrules",
-    "count": 3
+    "count": 4
   },
   {
     "type": "Microsoft.Insights/actiongroups",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.App/containerApps",
-    "count": 3
-  },
-  {
-    "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
     "count": 2
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.App/managedEnvironments/managedCertificates",
-    "count": 2
-  },
-  {
-    "type": "microsoft.operationalinsights/workspaces",
-    "count": 1
   },
   {
     "type": "microsoft.insights/actiongroups",
     "count": 1
   },
   {
-    "type": "Microsoft.Portal/dashboards",
+    "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.Storage/storageAccounts",
     "count": 1
   },
   {
@@ -208,40 +154,48 @@
     "count": 1
   },
   {
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "count": 1
+  },
+  {
     "type": "Microsoft.Network/networkWatchers",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries",
     "count": 1
   }
 ],
   "dailyMetrics": [
   {
     "date": "2026-01-06",
-    "tokens": 416468,
-    "cost": 4.16
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-01-07",
-    "tokens": 271811,
-    "cost": 2.71
+    "tokens": 29482,
+    "cost": 0.29
   },
   {
     "date": "2026-01-08",
-    "tokens": 159085,
-    "cost": 1.59
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-01-09",
-    "tokens": 32719,
-    "cost": 0.32
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-01-10",
-    "tokens": 6051,
-    "cost": 0.06
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-01-11",
-    "tokens": 10601,
-    "cost": 0.10
+    "tokens": 8,
+    "cost": 0
   },
   {
     "date": "2026-01-12",
@@ -251,7 +205,7 @@
 ],
   "alerts": {
     "hasSaasSubscriptions": false,
-    "hasAiServices": true
+    "hasAiServices": false
   },
   "pricing": {
     "note": "Estimated based on Azure OpenAI public pricing",
