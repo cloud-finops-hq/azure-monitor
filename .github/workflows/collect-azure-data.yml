@@ -45,6 +45,49 @@ jobs:
           chmod +x collect-data.sh
           ./collect-data.sh
 
+      - name: Check spending and alert
+        env:
+          TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK }}
+          HIGH_SPEND_THRESHOLD: 20
+        run: |
+          cd dashboard
+
+          # Extract today's cost
+          TODAY_COST=$(jq -r '.dailyMetrics[-1].cost // 0' data.json)
+          TODAY_DATE=$(jq -r '.dailyMetrics[-1].date // "unknown"' data.json)
+          TOTAL_30D=$(jq -r '.costs.openAi30d // 0' data.json)
+          DAYS_REMAINING=$(jq -r '.subscription.daysRemaining // 0' data.json)
+
+          echo "Today's cost: \$${TODAY_COST}"
+          echo "30-day total: \$${TOTAL_30D}"
+
+          # Alert if daily spend exceeds threshold
+          if (( $(echo "$TODAY_COST > $HIGH_SPEND_THRESHOLD" | bc -l) )); then
+            curl -s -H "Content-Type: application/json" -d "{\"text\": \"🚨 HIGH SPEND ALERT - \$${TODAY_COST} today (${TODAY_DATE}) exceeds \$${HIGH_SPEND_THRESHOLD} threshold. 30-day total: \$${TOTAL_30D}. Sponsorship: ${DAYS_REMAINING} days left.\"}" "$TEAMS_WEBHOOK"
+            echo "High spend alert sent!"
+          fi
+
+      - name: Daily summary (8am UTC only)
+        if: github.event_name == 'schedule'
+        env:
+          TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK }}
+        run: |
+          HOUR=$(date -u +"%H")
+          if [ "$HOUR" = "08" ]; then
+            cd dashboard
+            TODAY_COST=$(jq -r '.dailyMetrics[-1].cost // 0' data.json)
+            TOTAL_30D=$(jq -r '.costs.openAi30d // 0' data.json)
+            OTHER_COSTS=$(jq -r '.costs.otherServices30d // 0' data.json)
+            TOTAL_MONTHLY=$(jq -r '.costs.totalMonthly // 0' data.json)
+            DAYS_REMAINING=$(jq -r '.subscription.daysRemaining // 0' data.json)
+            TOKENS_30D=$(jq -r '.summary.totalTokens30d // 0' data.json)
+
+            curl -s -H "Content-Type: application/json" -d "{\"text\": \"📊 Daily Azure Summary ($(date -u +%Y-%m-%d))\\n• Today: \$${TODAY_COST}\\n• OpenAI 30d: \$${TOTAL_30D}\\n• Other 30d: \$${OTHER_COSTS}\\n• Total Monthly: \$${TOTAL_MONTHLY}\\n• Tokens 30d: ${TOKENS_30D}\\n• Sponsorship: ${DAYS_REMAINING} days remaining\\n🔗 https://cloud-finops-hq.github.io/azure-monitor/dashboard/\"}" "$TEAMS_WEBHOOK"
+            echo "Daily summary sent!"
+          else
+            echo "Not 8am UTC, skipping daily summary"
+          fi
+
       - name: Commit and push if changed
         run: |
           git config user.name "GitHub Actions Bot"
