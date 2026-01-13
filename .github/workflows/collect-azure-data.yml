@@ -45,6 +45,23 @@ jobs:
           chmod +x collect-data.sh
           ./collect-data.sh
 
+      - name: Setup GCP Auth
+        if: ${{ secrets.GCP_CREDENTIALS != '' }}
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Setup gcloud CLI
+        if: ${{ secrets.GCP_CREDENTIALS != '' }}
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Collect GCP data
+        if: ${{ secrets.GCP_CREDENTIALS != '' }}
+        run: |
+          cd dashboard
+          chmod +x collect-gcp-data.sh
+          ./collect-gcp-data.sh
+
       - name: Check spending and alert
         env:
           TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK }}
@@ -118,11 +135,11 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add dashboard/data.json dashboard/history.json
+          git add dashboard/data.json dashboard/history.json dashboard/gcp-data.json 2>/dev/null || true
 
           # Only commit if there are changes
           if ! git diff --staged --quiet; then
-            git commit -m "Update Azure cost data - $(date -u +"%Y-%m-%d %H:%M UTC")"
+            git commit -m "Update cloud cost data - $(date -u +"%Y-%m-%d %H:%M UTC")"
             git push
           else
             echo "No changes to commit"
