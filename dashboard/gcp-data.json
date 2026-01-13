@@ -1,111 +1,32 @@
 {
-  "timestamp": "2026-01-13T19:40:02Z",
+  "timestamp": "2026-01-13T20:03:21Z",
   "date": "2026-01-13",
-  "account": "satishgonella2024@gmail.com",
+  "account": "cloud-finops-bot@quantumlaunch.iam.gserviceaccount.com",
   "billing": {
-    "accountId": "014EFA-61D6FE-0D68FD",
-    "name": "My Billing Account",
+    "accountId": "",
+    "name": "",
     "credits": {
       "total": 227,
       "used": 2,
       "remaining": 225,
       "currency": "GBP",
       "expiresDate": "2026-03-28",
-      "daysRemaining": 74
+      "daysRemaining": 73
     },
     "note": "Google Cloud credits - check console for latest balance"
   },
   "summary": {
-    "totalProjects": 6,
-    "vertexAiProjects": 4,
-    "cloudRunServices": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 6,
-    "bigqueryDatasets": 0
+    "totalProjects": 0,
+    "vertexAiProjects": null,
+    "cloudRunServices": null,
+    "computeInstances": null,
+    "gkeClusters": null,
+    "storageBuckets": null,
+    "bigqueryDatasets": null
   },
-  "projects": [
-  {
-    "projectId": "quantumlaunch",
-    "name": "QuantumLaunch",
-    "projectNumber": "578084770996",
-    "billingEnabled": false,
-    "enabledApis": 24,
-    "vertexAi": 1,
-    "cloudRun": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 1,
-    "bigqueryDatasets": 0
-  },
-  {
-    "projectId": "quantumlaunch-dev",
-    "name": "QuantumLaunch-dev",
-    "projectNumber": "119302490632",
-    "billingEnabled": true,
-    "enabledApis": 23,
-    "vertexAi": 1,
-    "cloudRun": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 1,
-    "bigqueryDatasets": 0
-  },
-  {
-    "projectId": "careerfied-production",
-    "name": "Careerfied-Production",
-    "projectNumber": "322301169318",
-    "billingEnabled": true,
-    "enabledApis": 24,
-    "vertexAi": 1,
-    "cloudRun": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 1,
-    "bigqueryDatasets": 0
-  },
-  {
-    "projectId": "delegent",
-    "name": "delegent",
-    "projectNumber": "32254293172",
-    "billingEnabled": true,
-    "enabledApis": 22,
-    "vertexAi": 0,
-    "cloudRun": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 1,
-    "bigqueryDatasets": 0
-  },
-  {
-    "projectId": "quintelligence",
-    "name": "quintelligence",
-    "projectNumber": "813685257410",
-    "billingEnabled": true,
-    "enabledApis": 24,
-    "vertexAi": 1,
-    "cloudRun": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 1,
-    "bigqueryDatasets": 0
-  },
-  {
-    "projectId": "deductive-mix-465317-n3",
-    "name": "My First Project",
-    "projectNumber": "633811668594",
-    "billingEnabled": true,
-    "enabledApis": 20,
-    "vertexAi": 0,
-    "cloudRun": 0,
-    "computeInstances": 0,
-    "gkeClusters": 0,
-    "storageBuckets": 1,
-    "bigqueryDatasets": 0
-  }
-],
+  "projects": [],
   "alerts": {
-    "hasVertexAi": true,
+    "hasVertexAi": false,
     "hasCompute": false
   }
 }
