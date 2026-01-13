@@ -67,6 +67,32 @@ jobs:
             echo "High spend alert sent!"
           fi
 
+      - name: Check for Marketplace/SaaS resources
+        env:
+          TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK }}
+        run: |
+          cd dashboard
+
+          HAS_SAAS=$(jq -r '.alerts.hasSaasSubscriptions // false' data.json)
+          HAS_AI_SERVICES=$(jq -r '.alerts.hasAiServices // false' data.json)
+          SAAS_COUNT=$(jq -r '.summary.saasSubscriptions // 0' data.json)
+          AI_SERVICES_COUNT=$(jq -r '.summary.aiServicesAccounts // 0' data.json)
+          AI_SERVICES_LIST=$(jq -r '.aiServices[].account // empty' data.json | tr '\n' ', ' | sed 's/,$//')
+
+          echo "SaaS subscriptions: $SAAS_COUNT"
+          echo "AI Services accounts: $AI_SERVICES_COUNT"
+
+          # Alert if any Marketplace/SaaS resources detected
+          if [ "$HAS_SAAS" = "true" ] || [ "$SAAS_COUNT" -gt 0 ]; then
+            curl -s -H "Content-Type: application/json" -d "{\"text\": \"🛒 MARKETPLACE ALERT - ${SAAS_COUNT} SaaS subscription(s) detected! These are NOT covered by sponsorship and will be billed separately.\"}" "$TEAMS_WEBHOOK"
+            echo "SaaS alert sent!"
+          fi
+
+          if [ "$HAS_AI_SERVICES" = "true" ] || [ "$AI_SERVICES_COUNT" -gt 0 ]; then
+            curl -s -H "Content-Type: application/json" -d "{\"text\": \"🤖 AI SERVICES ALERT - ${AI_SERVICES_COUNT} AI Services account(s) detected: ${AI_SERVICES_LIST}. These may be Anthropic/Claude and NOT covered by sponsorship!\"}" "$TEAMS_WEBHOOK"
+            echo "AI Services alert sent!"
+          fi
+
       - name: Daily summary (8am UTC only)
         if: github.event_name == 'schedule'
         env:
