@@ -101,7 +101,15 @@ cat > "$OUTPUT_FILE" << ENDJSON
   "billing": {
     "accountId": "$BILLING_ACCOUNT",
     "name": "$BILLING_NAME",
-    "note": "For detailed cost breakdown, enable BigQuery billing export"
+    "credits": {
+      "total": 227,
+      "used": 2,
+      "remaining": 225,
+      "currency": "GBP",
+      "expiresDate": "2026-03-28",
+      "daysRemaining": $(( ( $(date -j -f "%Y-%m-%d" "2026-03-28" +%s 2>/dev/null || date -d "2026-03-28" +%s) - $(date +%s) ) / 86400 ))
+    },
+    "note": "Google Cloud credits - check console for latest balance"
   },
   "summary": {
     "totalProjects": $TOTAL_PROJECTS,

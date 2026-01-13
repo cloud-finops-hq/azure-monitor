@@ -1,11 +1,19 @@
 {
-  "timestamp": "2026-01-13T18:42:31Z",
+  "timestamp": "2026-01-13T19:40:02Z",
   "date": "2026-01-13",
   "account": "satishgonella2024@gmail.com",
   "billing": {
     "accountId": "014EFA-61D6FE-0D68FD",
     "name": "My Billing Account",
-    "note": "For detailed cost breakdown, enable BigQuery billing export"
+    "credits": {
+      "total": 227,
+      "used": 2,
+      "remaining": 225,
+      "currency": "GBP",
+      "expiresDate": "2026-03-28",
+      "daysRemaining": 74
+    },
+    "note": "Google Cloud credits - check console for latest balance"
   },
   "summary": {
     "totalProjects": 6,

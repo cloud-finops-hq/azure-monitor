@@ -732,20 +732,33 @@
         <div id="gcp-tab" class="tab-content">
             <div class="sponsorship-banner" style="background: linear-gradient(135deg, rgba(234, 67, 53, 0.1) 0%, rgba(251, 188, 5, 0.1) 100%); border-color: rgba(234, 67, 53, 0.3);">
                 <div class="sponsorship-item">
-                    <div class="sponsorship-label">Account</div>
-                    <div class="sponsorship-value" id="gcp-account" style="color: #fb923c; font-size: 16px;">--</div>
+                    <div class="sponsorship-label">Credits Remaining</div>
+                    <div class="sponsorship-value" id="gcp-credits" style="color: #4ade80;">£--</div>
+                    <div class="sponsorship-note">of £227 total</div>
+                </div>
+                <div class="sponsorship-item">
+                    <div class="sponsorship-label">Days Remaining</div>
+                    <div class="sponsorship-value warning" id="gcp-days-remaining">--</div>
+                    <div class="sponsorship-note">Until March 28, 2026</div>
                 </div>
                 <div class="sponsorship-item">
                     <div class="sponsorship-label">Projects</div>
                     <div class="sponsorship-value" id="gcp-projects" style="color: #fb923c;">--</div>
+                    <div class="sponsorship-note">Active GCP projects</div>
                 </div>
                 <div class="sponsorship-item">
                     <div class="sponsorship-label">Vertex AI</div>
                     <div class="sponsorship-value" id="gcp-vertex" style="color: #fb923c;">--</div>
+                    <div class="sponsorship-note">AI-enabled projects</div>
                 </div>
-                <div class="sponsorship-item">
-                    <div class="sponsorship-label">Storage Buckets</div>
-                    <div class="sponsorship-value" id="gcp-buckets" style="color: #fb923c;">--</div>
+                <div class="countdown-bar">
+                    <div class="countdown-label">
+                        <span>Credits Usage Progress</span>
+                        <span id="gcp-credits-end">Expires: March 28, 2026</span>
+                    </div>
+                    <div class="countdown-track">
+                        <div class="countdown-fill" id="gcp-credits-fill" style="width: 0%; background: linear-gradient(90deg, #ea4335, #fbbc05);"></div>
+                    </div>
                 </div>
             </div>
 
@@ -1221,11 +1234,18 @@
 
         function renderGcpSummary(data) {
             const summary = data.summary || {};
+            const credits = data.billing?.credits || {};
 
-            document.getElementById('gcp-account').textContent = data.account || '--';
+            // Credits info
+            document.getElementById('gcp-credits').textContent = '£' + (credits.remaining || 225);
+            document.getElementById('gcp-days-remaining').textContent = credits.daysRemaining || '--';
+
+            // Credits usage progress (percentage used)
+            const usedPercent = credits.total ? ((credits.used || 0) / credits.total * 100) : 0;
+            document.getElementById('gcp-credits-fill').style.width = usedPercent + '%';
+
             document.getElementById('gcp-projects').textContent = summary.totalProjects || 0;
             document.getElementById('gcp-vertex').textContent = summary.vertexAiProjects || 0;
-            document.getElementById('gcp-buckets').textContent = summary.storageBuckets || 0;
 
             document.getElementById('gcp-total-projects').textContent = summary.totalProjects || 0;
             document.getElementById('gcp-vertex-count').textContent = summary.vertexAiProjects || 0;
