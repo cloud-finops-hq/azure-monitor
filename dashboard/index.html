@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azure Cost Dashboard</title>
+    <title>Cloud Cost Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * {
@@ -407,13 +407,109 @@
             font-size: 11px;
             color: #71717a;
         }
+
+        /* Tab Styles */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 16px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px 12px 0 0;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #a1a1aa;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab:hover {
+            background: rgba(255,255,255,0.1);
+            color: #e4e4e7;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+            border-color: rgba(59, 130, 246, 0.5);
+            color: #e4e4e7;
+        }
+
+        .tab.azure.active {
+            background: linear-gradient(135deg, rgba(0, 120, 212, 0.2) 0%, rgba(0, 180, 240, 0.2) 100%);
+            border-color: rgba(0, 120, 212, 0.5);
+        }
+
+        .tab.gcp.active {
+            background: linear-gradient(135deg, rgba(234, 67, 53, 0.2) 0%, rgba(251, 188, 5, 0.2) 100%);
+            border-color: rgba(234, 67, 53, 0.5);
+        }
+
+        .tab-icon {
+            font-size: 18px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* GCP Specific Styles */
+        .gcp-project-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .gcp-project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .gcp-project-name {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .gcp-project-id {
+            font-size: 12px;
+            color: #71717a;
+        }
+
+        .gcp-resources {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .gcp-resource-badge {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            background: rgba(255,255,255,0.05);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <div>
-                <h1>Azure Cost Dashboard</h1>
+                <h1>Cloud Cost Dashboard</h1>
                 <div class="timestamp" id="timestamp">Loading...</div>
             </div>
             <div class="header-info">
@@ -424,6 +520,21 @@
                 <button class="refresh-btn" id="refresh-btn" onclick="refreshData()">Refresh Now</button>
             </div>
         </header>
+
+        <!-- Cloud Provider Tabs -->
+        <div class="tabs">
+            <div class="tab azure active" onclick="switchTab('azure')">
+                <span class="tab-icon">☁️</span>
+                <span>Azure</span>
+            </div>
+            <div class="tab gcp" onclick="switchTab('gcp')">
+                <span class="tab-icon">🌐</span>
+                <span>Google Cloud</span>
+            </div>
+        </div>
+
+        <!-- Azure Tab Content -->
+        <div id="azure-tab" class="tab-content active">
 
         <!-- Sponsorship Coverage Banner -->
         <div class="sponsorship-banner" id="sponsorship-banner">
@@ -615,14 +726,117 @@
                 </tbody>
             </table>
         </div>
+        </div> <!-- End Azure Tab -->
+
+        <!-- GCP Tab Content -->
+        <div id="gcp-tab" class="tab-content">
+            <div class="sponsorship-banner" style="background: linear-gradient(135deg, rgba(234, 67, 53, 0.1) 0%, rgba(251, 188, 5, 0.1) 100%); border-color: rgba(234, 67, 53, 0.3);">
+                <div class="sponsorship-item">
+                    <div class="sponsorship-label">Account</div>
+                    <div class="sponsorship-value" id="gcp-account" style="color: #fb923c; font-size: 16px;">--</div>
+                </div>
+                <div class="sponsorship-item">
+                    <div class="sponsorship-label">Projects</div>
+                    <div class="sponsorship-value" id="gcp-projects" style="color: #fb923c;">--</div>
+                </div>
+                <div class="sponsorship-item">
+                    <div class="sponsorship-label">Vertex AI</div>
+                    <div class="sponsorship-value" id="gcp-vertex" style="color: #fb923c;">--</div>
+                </div>
+                <div class="sponsorship-item">
+                    <div class="sponsorship-label">Storage Buckets</div>
+                    <div class="sponsorship-value" id="gcp-buckets" style="color: #fb923c;">--</div>
+                </div>
+            </div>
+
+            <div id="gcp-alerts"></div>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Total Projects</span>
+                        <div class="card-icon" style="background: rgba(234, 67, 53, 0.2); color: #ea4335;">📁</div>
+                    </div>
+                    <div class="card-value" id="gcp-total-projects">--</div>
+                    <div class="card-change neutral">Across your GCP account</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Vertex AI Projects</span>
+                        <div class="card-icon" style="background: rgba(66, 133, 244, 0.2); color: #4285f4;">🤖</div>
+                    </div>
+                    <div class="card-value" id="gcp-vertex-count">--</div>
+                    <div class="card-change neutral">With AI Platform enabled</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Compute Instances</span>
+                        <div class="card-icon" style="background: rgba(251, 188, 5, 0.2); color: #fbbc05;">💻</div>
+                    </div>
+                    <div class="card-value" id="gcp-compute-count">--</div>
+                    <div class="card-change neutral">Running VMs</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Cloud Run Services</span>
+                        <div class="card-icon" style="background: rgba(52, 168, 83, 0.2); color: #34a853;">🚀</div>
+                    </div>
+                    <div class="card-value" id="gcp-cloudrun-count">--</div>
+                    <div class="card-change neutral">Serverless containers</div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3 class="chart-title">GCP Projects</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Project ID</th>
+                            <th>Billing</th>
+                            <th>APIs</th>
+                            <th>Resources</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gcp-projects-table">
+                        <tr><td colspan="5" class="loading">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="chart-container">
+                <h3 class="chart-title">GCP Resource Overview</h3>
+                <div class="chart-wrapper">
+                    <canvas id="gcpChart"></canvas>
+                </div>
+            </div>
+        </div> <!-- End GCP Tab -->
+
     </div>
 
     <script>
         let costChart = null;
         let accountChart = null;
+        let gcpChart = null;
         let refreshInterval = null;
         let nextRefreshTime = null;
         const REFRESH_INTERVAL = 60 * 60 * 1000; // 1 hour in milliseconds
+
+        // Tab switching
+        function switchTab(tab) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+            document.querySelector(`.tab.${tab}`).classList.add('active');
+            document.getElementById(`${tab}-tab`).classList.add('active');
+
+            if (tab === 'gcp') {
+                loadGcpData();
+            }
+        }
 
         function formatNumber(num) {
             if (num >= 1000000) return (num / 1000000).toFixed(2) + 'M';
@@ -984,6 +1198,132 @@
                     </tr>
                 `;
             }).join('');
+        }
+
+        // GCP Functions
+        async function loadGcpData() {
+            try {
+                const response = await fetch('gcp-data.json?t=' + Date.now());
+                const data = await response.json();
+
+                renderGcpSummary(data);
+                renderGcpProjects(data);
+                renderGcpChart(data);
+            } catch (error) {
+                console.error('Error loading GCP data:', error);
+                document.getElementById('gcp-projects-table').innerHTML = `
+                    <tr><td colspan="5" style="text-align: center; color: #f87171;">
+                        Error loading GCP data. Run <code>./collect-gcp-data.sh</code> first.
+                    </td></tr>
+                `;
+            }
+        }
+
+        function renderGcpSummary(data) {
+            const summary = data.summary || {};
+
+            document.getElementById('gcp-account').textContent = data.account || '--';
+            document.getElementById('gcp-projects').textContent = summary.totalProjects || 0;
+            document.getElementById('gcp-vertex').textContent = summary.vertexAiProjects || 0;
+            document.getElementById('gcp-buckets').textContent = summary.storageBuckets || 0;
+
+            document.getElementById('gcp-total-projects').textContent = summary.totalProjects || 0;
+            document.getElementById('gcp-vertex-count').textContent = summary.vertexAiProjects || 0;
+            document.getElementById('gcp-compute-count').textContent = summary.computeInstances || 0;
+            document.getElementById('gcp-cloudrun-count').textContent = summary.cloudRunServices || 0;
+
+            // Alerts
+            let alertsHtml = '';
+            if (data.alerts?.hasVertexAi) {
+                alertsHtml += `
+                    <div class="alert-banner warning">
+                        <span class="icon">🤖</span>
+                        <div>
+                            <strong>Vertex AI Enabled</strong>
+                            <p>${summary.vertexAiProjects} project(s) have Vertex AI enabled. Monitor for AI usage costs.</p>
+                        </div>
+                    </div>
+                `;
+            }
+            document.getElementById('gcp-alerts').innerHTML = alertsHtml;
+        }
+
+        function renderGcpProjects(data) {
+            const projects = data.projects || [];
+
+            document.getElementById('gcp-projects-table').innerHTML = projects.map(p => {
+                const resources = [];
+                if (p.vertexAi > 0) resources.push('<span class="badge badge-purple">Vertex AI</span>');
+                if (p.storageBuckets > 0) resources.push(`<span class="badge badge-blue">${p.storageBuckets} Buckets</span>`);
+                if (p.computeInstances > 0) resources.push(`<span class="badge badge-yellow">${p.computeInstances} VMs</span>`);
+                if (p.cloudRun > 0) resources.push(`<span class="badge badge-green">${p.cloudRun} Cloud Run</span>`);
+                if (p.gkeClusters > 0) resources.push(`<span class="badge badge-red">${p.gkeClusters} GKE</span>`);
+
+                return `
+                    <tr>
+                        <td><strong>${p.name}</strong></td>
+                        <td><code style="font-size: 12px; color: #71717a;">${p.projectId}</code></td>
+                        <td><span class="badge ${p.billingEnabled ? 'badge-green' : 'badge-yellow'}">${p.billingEnabled ? 'Enabled' : 'Disabled'}</span></td>
+                        <td>${p.enabledApis} APIs</td>
+                        <td>${resources.join(' ') || '<span class="neutral">None</span>'}</td>
+                    </tr>
+                `;
+            }).join('') || '<tr><td colspan="5" style="text-align: center;">No projects found</td></tr>';
+        }
+
+        function renderGcpChart(data) {
+            const ctx = document.getElementById('gcpChart').getContext('2d');
+            const summary = data.summary || {};
+
+            if (gcpChart) gcpChart.destroy();
+
+            gcpChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Projects', 'Vertex AI', 'Storage', 'Compute', 'Cloud Run', 'GKE', 'BigQuery'],
+                    datasets: [{
+                        label: 'Resource Count',
+                        data: [
+                            summary.totalProjects || 0,
+                            summary.vertexAiProjects || 0,
+                            summary.storageBuckets || 0,
+                            summary.computeInstances || 0,
+                            summary.cloudRunServices || 0,
+                            summary.gkeClusters || 0,
+                            summary.bigqueryDatasets || 0
+                        ],
+                        backgroundColor: [
+                            'rgba(234, 67, 53, 0.6)',
+                            'rgba(66, 133, 244, 0.6)',
+                            'rgba(251, 188, 5, 0.6)',
+                            'rgba(52, 168, 83, 0.6)',
+                            'rgba(139, 92, 246, 0.6)',
+                            'rgba(236, 72, 153, 0.6)',
+                            'rgba(20, 184, 166, 0.6)'
+                        ],
+                        borderWidth: 0,
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255,255,255,0.1)' },
+                            ticks: { color: '#71717a' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#71717a' }
+                        }
+                    }
+                }
+            });
         }
 
         async function loadData() {

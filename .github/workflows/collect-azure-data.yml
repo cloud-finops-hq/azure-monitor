@@ -1,4 +1,4 @@
-name: Collect Azure Cost Data
+name: Collect Cloud Cost Data
 
 on:
   schedule:
