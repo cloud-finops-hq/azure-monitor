@@ -46,17 +46,18 @@ jobs:
           ./collect-data.sh
 
       - name: Setup GCP Auth
-        if: ${{ secrets.GCP_CREDENTIALS != '' }}
+        id: gcp-auth
         uses: google-github-actions/auth@v2
+        continue-on-error: true
         with:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: Setup gcloud CLI
-        if: ${{ secrets.GCP_CREDENTIALS != '' }}
+        if: steps.gcp-auth.outcome == 'success'
         uses: google-github-actions/setup-gcloud@v2
 
       - name: Collect GCP data
-        if: ${{ secrets.GCP_CREDENTIALS != '' }}
+        if: steps.gcp-auth.outcome == 'success'
         run: |
           cd dashboard
           chmod +x collect-gcp-data.sh
