@@ -767,38 +767,72 @@
             <div class="grid">
                 <div class="card">
                     <div class="card-header">
+                        <span class="card-title">Today's Cost</span>
+                        <div class="card-icon" style="background: rgba(234, 67, 53, 0.2); color: #ea4335;">💰</div>
+                    </div>
+                    <div class="card-value" id="gcp-cost-today">£--</div>
+                    <div class="card-change neutral">Current day spend</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Last 7 Days</span>
+                        <div class="card-icon" style="background: rgba(66, 133, 244, 0.2); color: #4285f4;">📊</div>
+                    </div>
+                    <div class="card-value" id="gcp-cost-7d">£--</div>
+                    <div class="card-change neutral">Weekly spend</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Last 30 Days</span>
+                        <div class="card-icon" style="background: rgba(251, 188, 5, 0.2); color: #fbbc05;">📈</div>
+                    </div>
+                    <div class="card-value" id="gcp-cost-30d">£--</div>
+                    <div class="card-change neutral">Monthly spend</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
                         <span class="card-title">Total Projects</span>
-                        <div class="card-icon" style="background: rgba(234, 67, 53, 0.2); color: #ea4335;">📁</div>
+                        <div class="card-icon" style="background: rgba(52, 168, 83, 0.2); color: #34a853;">📁</div>
                     </div>
                     <div class="card-value" id="gcp-total-projects">--</div>
-                    <div class="card-change neutral">Across your GCP account</div>
+                    <div class="card-change neutral">Active projects</div>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
-                        <span class="card-title">Vertex AI Projects</span>
-                        <div class="card-icon" style="background: rgba(66, 133, 244, 0.2); color: #4285f4;">🤖</div>
+                        <span class="card-title">Vertex AI</span>
+                        <div class="card-icon" style="background: rgba(139, 92, 246, 0.2); color: #a78bfa;">🤖</div>
                     </div>
                     <div class="card-value" id="gcp-vertex-count">--</div>
-                    <div class="card-change neutral">With AI Platform enabled</div>
+                    <div class="card-change neutral">AI-enabled projects</div>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
-                        <span class="card-title">Compute Instances</span>
-                        <div class="card-icon" style="background: rgba(251, 188, 5, 0.2); color: #fbbc05;">💻</div>
+                        <span class="card-title">Storage Buckets</span>
+                        <div class="card-icon" style="background: rgba(20, 184, 166, 0.2); color: #14b8a6;">🪣</div>
                     </div>
-                    <div class="card-value" id="gcp-compute-count">--</div>
-                    <div class="card-change neutral">Running VMs</div>
+                    <div class="card-value" id="gcp-buckets-count">--</div>
+                    <div class="card-change neutral">Cloud Storage</div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="chart-container">
+                    <h3 class="chart-title">Daily GCP Cost (Last 7 Days)</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="gcpCostChart"></canvas>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <span class="card-title">Cloud Run Services</span>
-                        <div class="card-icon" style="background: rgba(52, 168, 83, 0.2); color: #34a853;">🚀</div>
+                <div class="chart-container">
+                    <h3 class="chart-title">Cost by Service (30 Days)</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="gcpServiceChart"></canvas>
                     </div>
-                    <div class="card-value" id="gcp-cloudrun-count">--</div>
-                    <div class="card-change neutral">Serverless containers</div>
                 </div>
             </div>
 
@@ -834,6 +868,8 @@
         let costChart = null;
         let accountChart = null;
         let gcpChart = null;
+        let gcpCostChart = null;
+        let gcpServiceChart = null;
         let refreshInterval = null;
         let nextRefreshTime = null;
         const REFRESH_INTERVAL = 60 * 60 * 1000; // 1 hour in milliseconds
@@ -1222,6 +1258,8 @@
                 renderGcpSummary(data);
                 renderGcpProjects(data);
                 renderGcpChart(data);
+                renderGcpCostChart(data);
+                renderGcpServiceChart(data);
             } catch (error) {
                 console.error('Error loading GCP data:', error);
                 document.getElementById('gcp-projects-table').innerHTML = `
@@ -1235,6 +1273,7 @@
         function renderGcpSummary(data) {
             const summary = data.summary || {};
             const credits = data.billing?.credits || {};
+            const costs = data.costs || {};
 
             // Credits info
             document.getElementById('gcp-credits').textContent = '£' + (credits.remaining || 225);
@@ -1247,10 +1286,15 @@
             document.getElementById('gcp-projects').textContent = summary.totalProjects || 0;
             document.getElementById('gcp-vertex').textContent = summary.vertexAiProjects || 0;
 
+            // Cost cards
+            document.getElementById('gcp-cost-today').textContent = '£' + (costs.today || 0).toFixed(2);
+            document.getElementById('gcp-cost-7d').textContent = '£' + (costs.last7d || 0).toFixed(2);
+            document.getElementById('gcp-cost-30d').textContent = '£' + (costs.last30d || 0).toFixed(2);
+
+            // Summary cards
             document.getElementById('gcp-total-projects').textContent = summary.totalProjects || 0;
             document.getElementById('gcp-vertex-count').textContent = summary.vertexAiProjects || 0;
-            document.getElementById('gcp-compute-count').textContent = summary.computeInstances || 0;
-            document.getElementById('gcp-cloudrun-count').textContent = summary.cloudRunServices || 0;
+            document.getElementById('gcp-buckets-count').textContent = summary.storageBuckets || 0;
 
             // Alerts
             let alertsHtml = '';
@@ -1266,6 +1310,114 @@
                 `;
             }
             document.getElementById('gcp-alerts').innerHTML = alertsHtml;
+        }
+
+        function renderGcpCostChart(data) {
+            const ctx = document.getElementById('gcpCostChart').getContext('2d');
+            const dailyMetrics = data.costs?.dailyMetrics || [];
+
+            if (gcpCostChart) gcpCostChart.destroy();
+
+            if (dailyMetrics.length === 0) {
+                ctx.font = '14px -apple-system, BlinkMacSystemFont, sans-serif';
+                ctx.fillStyle = '#71717a';
+                ctx.textAlign = 'center';
+                ctx.fillText('Cost data pending (appears ~24h after enabling BigQuery export)', ctx.canvas.width / 2, ctx.canvas.height / 2);
+                return;
+            }
+
+            gcpCostChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: dailyMetrics.map(d => d.date?.slice(5) || ''),
+                    datasets: [{
+                        label: 'Daily Cost (£)',
+                        data: dailyMetrics.map(d => d.cost || 0),
+                        backgroundColor: 'rgba(66, 133, 244, 0.6)',
+                        borderColor: '#4285f4',
+                        borderWidth: 1,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e4e4e7' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return '£' + context.raw.toFixed(2);
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255,255,255,0.1)' },
+                            ticks: {
+                                color: '#71717a',
+                                callback: function(value) {
+                                    return '£' + value;
+                                }
+                            }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#71717a' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderGcpServiceChart(data) {
+            const ctx = document.getElementById('gcpServiceChart').getContext('2d');
+            const byService = data.costs?.byService || [];
+
+            if (gcpServiceChart) gcpServiceChart.destroy();
+
+            if (byService.length === 0) {
+                ctx.font = '14px -apple-system, BlinkMacSystemFont, sans-serif';
+                ctx.fillStyle = '#71717a';
+                ctx.textAlign = 'center';
+                ctx.fillText('Service breakdown pending (appears ~24h after enabling BigQuery export)', ctx.canvas.width / 2, ctx.canvas.height / 2);
+                return;
+            }
+
+            const colors = ['#ea4335', '#4285f4', '#fbbc05', '#34a853', '#a78bfa', '#ec4899', '#22d3ee', '#f97316', '#22c55e', '#64748b'];
+
+            gcpServiceChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: byService.map(s => s.service),
+                    datasets: [{
+                        data: byService.map(s => s.cost),
+                        backgroundColor: colors.slice(0, byService.length),
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { color: '#e4e4e7', padding: 8, font: { size: 11 } }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.label + ': £' + context.raw.toFixed(2);
+                                }
+                            }
+                        }
+                    }
+                }
+            });
         }
 
         function renderGcpProjects(data) {

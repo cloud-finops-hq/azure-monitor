@@ -15,6 +15,15 @@
     },
     "note": "Google Cloud credits - check console for latest balance"
   },
+  "costs": {
+    "today": 0,
+    "last7d": 0,
+    "last30d": 2,
+    "currency": "GBP",
+    "dailyMetrics": [],
+    "byService": [],
+    "note": "Costs from BigQuery billing export - data appears ~24h after enabling"
+  },
   "summary": {
     "totalProjects": 0,
     "vertexAiProjects": null,
