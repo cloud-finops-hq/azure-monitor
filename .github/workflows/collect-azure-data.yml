@@ -48,7 +48,7 @@ jobs:
       - name: Check spending and alert
         env:
           TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK }}
-          HIGH_SPEND_THRESHOLD: 20
+          HIGH_SPEND_THRESHOLD: 15
         run: |
           cd dashboard
 
