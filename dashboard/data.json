@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-13T07:14:39Z",
+  "timestamp": "2026-01-13T07:47:57Z",
   "date": "2026-01-13",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 106
   },
   "costs": {
-    "openAi30d": 7.2544,
+    "openAi30d": 7.2891,
     "otherServices30d": 50.20,
-    "totalMonthly": 57.4544,
-    "projectedTillApril": 202.8140,
+    "totalMonthly": 57.4891,
+    "projectedTillApril": 202.9365,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 18136230,
+    "totalTokens30d": 18222971,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -26,171 +26,171 @@
     "containerApps": 0
   },
   "openAiUsage": [
-  {
-    "account": "brandtruth-dalle",
-    "resourceGroup": "azurellm",
-    "primaryModel": "dall-e-3",
-    "promptTokens30d": 0,
-    "completionTokens30d": 0,
-    "promptTokens7d": 0,
-    "promptTokens1d": 0,
-    "estimatedCost30d": 0,
-    "deployments": [
-      {
-        "model": "dall-e-3",
-        "name": "dall-e-3"
-      }
-    ]
-  },
-  {
-    "account": "myazurellm",
-    "resourceGroup": "azurellm",
-    "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 18136230,
-    "completionTokens30d": 0,
-    "promptTokens7d": 1617754,
-    "promptTokens1d": 1588264,
-    "estimatedCost30d": 7.2544,
-    "deployments": [
-      {
-        "model": "gpt-4.1-mini",
-        "name": "gpt-35-turbo"
-      },
-      {
-        "model": "gpt-4.1",
-        "name": "gpt-4"
-      },
-      {
-        "model": "text-embedding-ada-002",
-        "name": "text-embedding-ada-002"
-      },
-      {
-        "model": "o4-mini",
-        "name": "o4-mini"
-      },
-      {
-        "model": "gpt-4.1",
-        "name": "gpt-4.1"
-      },
-      {
-        "model": "gpt-4.1-mini",
-        "name": "gpt-4.1-mini"
-      },
-      {
-        "model": "gpt-4.1-nano",
-        "name": "gpt-4.1-nano"
-      },
-      {
-        "model": "text-embedding-3-small",
-        "name": "text-embedding-3-small"
-      },
-      {
-        "model": "gpt-5",
-        "name": "gpt-5"
-      }
-    ]
-  }
-],
+    {
+      "account": "brandtruth-dalle",
+      "resourceGroup": "azurellm",
+      "primaryModel": "dall-e-3",
+      "promptTokens30d": 0,
+      "completionTokens30d": 0,
+      "promptTokens7d": 0,
+      "promptTokens1d": 0,
+      "estimatedCost30d": 0,
+      "deployments": [
+        {
+          "model": "dall-e-3",
+          "name": "dall-e-3"
+        }
+      ]
+    },
+    {
+      "account": "myazurellm",
+      "resourceGroup": "azurellm",
+      "primaryModel": "gpt-4.1-mini",
+      "promptTokens30d": 18222971,
+      "completionTokens30d": 0,
+      "promptTokens7d": 1704495,
+      "promptTokens1d": 1675005,
+      "estimatedCost30d": 7.2891,
+      "deployments": [
+        {
+          "model": "gpt-4.1-mini",
+          "name": "gpt-35-turbo"
+        },
+        {
+          "model": "gpt-4.1",
+          "name": "gpt-4"
+        },
+        {
+          "model": "text-embedding-ada-002",
+          "name": "text-embedding-ada-002"
+        },
+        {
+          "model": "o4-mini",
+          "name": "o4-mini"
+        },
+        {
+          "model": "gpt-4.1",
+          "name": "gpt-4.1"
+        },
+        {
+          "model": "gpt-4.1-mini",
+          "name": "gpt-4.1-mini"
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "name": "gpt-4.1-nano"
+        },
+        {
+          "model": "text-embedding-3-small",
+          "name": "text-embedding-3-small"
+        },
+        {
+          "model": "gpt-5",
+          "name": "gpt-5"
+        }
+      ]
+    }
+  ],
   "aiServices": [],
   "resourcesByType": [
-  {
-    "type": "Microsoft.Insights/activityLogAlerts",
-    "count": 7
-  },
-  {
-    "type": "Microsoft.Insights/actiongroups",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.CognitiveServices/accounts",
-    "count": 2
-  },
-  {
-    "type": "microsoft.insights/actiongroups",
-    "count": 1
-  },
-  {
-    "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Web/sites",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Web/serverFarms",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.OperationsManagement/solutions",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Network/networkWatchers",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.KeyVault/vaults",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Cache/Redis",
-    "count": 1
-  }
-],
+    {
+      "type": "Microsoft.Insights/activityLogAlerts",
+      "count": 7
+    },
+    {
+      "type": "Microsoft.Insights/actiongroups",
+      "count": 2
+    },
+    {
+      "type": "Microsoft.CognitiveServices/accounts",
+      "count": 2
+    },
+    {
+      "type": "microsoft.insights/actiongroups",
+      "count": 1
+    },
+    {
+      "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.Web/sites",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.Web/serverFarms",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.OperationsManagement/solutions",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.Network/networkWatchers",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.DBforPostgreSQL/flexibleServers",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.ContainerRegistry/registries",
+      "count": 1
+    },
+    {
+      "type": "Microsoft.Cache/Redis",
+      "count": 1
+    }
+  ],
   "dailyMetrics": [
-  {
-    "date": "2026-01-07",
-    "tokens": 29482,
-    "cost": 0.29
-  },
-  {
-    "date": "2026-01-08",
-    "tokens": 0,
-    "cost": 0
-  },
-  {
-    "date": "2026-01-09",
-    "tokens": 0,
-    "cost": 0
-  },
-  {
-    "date": "2026-01-10",
-    "tokens": 0,
-    "cost": 0
-  },
-  {
-    "date": "2026-01-11",
-    "tokens": 8,
-    "cost": 0
-  },
-  {
-    "date": "2026-01-12",
-    "tokens": 1096894,
-    "cost": 10.96
-  },
-  {
-    "date": "2026-01-13",
-    "tokens": 478637,
-    "cost": 4.78
-  }
-],
+    {
+      "date": "2026-01-07",
+      "tokens": 29482,
+      "cost": 0.29
+    },
+    {
+      "date": "2026-01-08",
+      "tokens": 0,
+      "cost": 0
+    },
+    {
+      "date": "2026-01-09",
+      "tokens": 0,
+      "cost": 0
+    },
+    {
+      "date": "2026-01-10",
+      "tokens": 0,
+      "cost": 0
+    },
+    {
+      "date": "2026-01-11",
+      "tokens": 8,
+      "cost": 0
+    },
+    {
+      "date": "2026-01-12",
+      "tokens": 1096894,
+      "cost": 10.96
+    },
+    {
+      "date": "2026-01-13",
+      "tokens": 565378,
+      "cost": 5.65
+    }
+  ],
   "alerts": {
     "hasSaasSubscriptions": false,
     "hasAiServices": false
@@ -198,10 +198,72 @@
   "pricing": {
     "note": "Estimated based on Azure OpenAI public pricing",
     "models": {
-      "gpt-4": {"input": 0.03, "output": 0.06},
-      "gpt-4o": {"input": 0.005, "output": 0.015},
-      "gpt-4.1": {"input": 0.002, "output": 0.008},
-      "gpt-5": {"input": 0.01, "output": 0.03}
+      "gpt-4": {
+        "input": 0.03,
+        "output": 0.06
+      },
+      "gpt-4o": {
+        "input": 0.005,
+        "output": 0.015
+      },
+      "gpt-4.1": {
+        "input": 0.002,
+        "output": 0.008
+      },
+      "gpt-5": {
+        "input": 0.01,
+        "output": 0.03
+      }
     }
+  },
+  "invoices": [
+    {
+      "id": "G134475527",
+      "date": "2026-01-09T06:45:05.7999458Z",
+      "periodStart": "2025-12-01T00:00:00.0000000Z",
+      "periodEnd": "2025-12-31T23:59:59.9999999Z",
+      "status": "Paid",
+      "type": "AzureMarketplace",
+      "dueDate": "2026-01-09T06:45:09.1906493Z",
+      "currency": "GBP",
+      "amountDue": 0.0,
+      "subtotal": 916.08,
+      "tax": 183.22,
+      "total": 1099.3
+    },
+    {
+      "id": "G128680165",
+      "date": "2025-12-09T03:10:59.1313948Z",
+      "periodStart": "2025-11-01T00:00:00.0000000Z",
+      "periodEnd": "2025-11-30T23:59:59.9999999Z",
+      "status": "Paid",
+      "type": "AzureMarketplace",
+      "dueDate": "2025-12-09T03:11:01.6627514Z",
+      "currency": "GBP",
+      "amountDue": 0.0,
+      "subtotal": 164.17,
+      "tax": 32.83,
+      "total": 197.0
+    },
+    {
+      "id": "G128541186",
+      "date": "2025-12-09T02:38:17.6461489Z",
+      "periodStart": "2025-11-24T00:00:00.0000000Z",
+      "periodEnd": "2025-11-30T23:59:59.9999999Z",
+      "status": "Paid",
+      "type": "AzureMarketplace",
+      "dueDate": "2025-12-09T02:38:19.5680359Z",
+      "currency": "GBP",
+      "amountDue": 0.0,
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.0
+    }
+  ],
+  "invoiceSummary": {
+    "totalInvoiced": 1296.3,
+    "totalDue": 0,
+    "count": 3,
+    "note": "All invoices are AzureMarketplace (Anthropic/Claude) - NOT covered by sponsorship"
   }
 }
