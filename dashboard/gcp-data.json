@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-13T20:14:05Z",
+  "timestamp": "2026-01-13T20:58:15Z",
   "date": "2026-01-13",
   "account": "cloud-finops-bot@quantumlaunch.iam.gserviceaccount.com",
   "billing": {
@@ -14,15 +14,6 @@
       "daysRemaining": 73
     },
     "note": "Google Cloud credits - check console for latest balance"
-  },
-  "costs": {
-    "today": 0,
-    "last7d": 0,
-    "last30d": 2,
-    "currency": "GBP",
-    "dailyMetrics": [],
-    "byService": [],
-    "note": "Costs from BigQuery billing export - data appears ~24h after enabling"
   },
   "summary": {
     "totalProjects": 0,
