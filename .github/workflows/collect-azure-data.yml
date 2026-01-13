@@ -58,3 +58,45 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Notify Teams on failure
+        if: failure()
+        run: |
+          curl -H "Content-Type: application/json" -d '{
+            "type": "message",
+            "attachments": [
+              {
+                "contentType": "application/vnd.microsoft.card.adaptive",
+                "content": {
+                  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                  "type": "AdaptiveCard",
+                  "version": "1.4",
+                  "body": [
+                    {
+                      "type": "TextBlock",
+                      "text": "⚠️ Azure Monitor Workflow Failed",
+                      "weight": "Bolder",
+                      "size": "Large",
+                      "color": "Attention"
+                    },
+                    {
+                      "type": "FactSet",
+                      "facts": [
+                        {"title": "Repository", "value": "${{ github.repository }}"},
+                        {"title": "Workflow", "value": "${{ github.workflow }}"},
+                        {"title": "Run", "value": "#${{ github.run_number }}"},
+                        {"title": "Trigger", "value": "${{ github.event_name }}"}
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": "Action.OpenUrl",
+                      "title": "View Run",
+                      "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                    }
+                  ]
+                }
+              }
+            ]
+          }' "${{ secrets.TEAMS_WEBHOOK }}"
