@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-01-19T23:11:47Z",
-  "date": "2026-01-19",
+  "timestamp": "2026-01-20T00:41:43Z",
+  "date": "2026-01-20",
   "account": "cloud-finops-bot@quantumlaunch.iam.gserviceaccount.com",
   "billing": {
     "accountId": "",
@@ -11,7 +11,7 @@
       "remaining": 225,
       "currency": "GBP",
       "expiresDate": "2026-03-28",
-      "daysRemaining": 67
+      "daysRemaining": 66
     },
     "note": "Google Cloud credits - check console for latest balance"
   },
