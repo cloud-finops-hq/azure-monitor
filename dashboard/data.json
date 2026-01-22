@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-22T14:19:23Z",
+  "timestamp": "2026-01-22T15:15:20Z",
   "date": "2026-01-22",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": 97
   },
   "costs": {
-    "openAi30d": 21.4911,
-    "otherServices30d": 50.20,
-    "totalMonthly": 71.6911,
-    "projectedTillApril": 231.5622,
+    "openAi30d": 21.4912,
+    "otherServices30d": 100.40,
+    "totalMonthly": 121.8912,
+    "projectedTillApril": 393.7085,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 53727773,
+    "totalTokens30d": 53728213,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 1,
-    "postgresServers": 1,
+    "storageAccounts": 2,
+    "postgresServers": 2,
     "containerApps": 0
   },
   "openAiUsage": [
@@ -46,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 53727773,
+    "promptTokens30d": 53728213,
     "completionTokens30d": 0,
-    "promptTokens7d": 33249222,
-    "promptTokens1d": 275767,
-    "estimatedCost30d": 21.4911,
+    "promptTokens7d": 33218486,
+    "promptTokens1d": 260111,
+    "estimatedCost30d": 21.4912,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -98,6 +98,14 @@
     "count": 7
   },
   {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "count": 2
+  },
+  {
     "type": "Microsoft.Insights/actiongroups",
     "count": 2
   },
@@ -114,6 +122,10 @@
     "count": 1
   },
   {
+    "type": "Microsoft.Web/staticSites",
+    "count": 1
+  },
+  {
     "type": "Microsoft.Web/sites",
     "count": 1
   },
@@ -122,15 +134,11 @@
     "count": 1
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 1
-  },
-  {
     "type": "Microsoft.OperationsManagement/solutions",
     "count": 1
   },
   {
-    "type": "Microsoft.OperationalInsights/workspaces",
+    "type": "Microsoft.Network/publicIPAddresses",
     "count": 1
   },
   {
@@ -143,14 +151,6 @@
   },
   {
     "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Cache/Redis",
     "count": 1
   }
 ],
@@ -187,8 +187,8 @@
   },
   {
     "date": "2026-01-22",
-    "tokens": 173938,
-    "cost": 1.73
+    "tokens": 174378,
+    "cost": 1.74
   }
 ],
   "alerts": {
