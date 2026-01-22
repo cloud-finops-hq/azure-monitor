@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-22T15:15:20Z",
+  "timestamp": "2026-01-22T16:15:55Z",
   "date": "2026-01-22",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 97
   },
   "costs": {
-    "openAi30d": 21.4912,
+    "openAi30d": 21.4849,
     "otherServices30d": 100.40,
-    "totalMonthly": 121.8912,
-    "projectedTillApril": 393.7085,
+    "totalMonthly": 121.8849,
+    "projectedTillApril": 393.6882,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 53728213,
+    "totalTokens30d": 53712413,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -46,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 53728213,
+    "promptTokens30d": 53712413,
     "completionTokens30d": 0,
-    "promptTokens7d": 33218486,
-    "promptTokens1d": 260111,
-    "estimatedCost30d": 21.4912,
+    "promptTokens7d": 33208871,
+    "promptTokens1d": 239023,
+    "estimatedCost30d": 21.4849,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -98,7 +98,19 @@
     "count": 7
   },
   {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "count": 4
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "count": 3
+  },
+  {
     "type": "Microsoft.Storage/storageAccounts",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.OperationsManagement/solutions",
     "count": 2
   },
   {
@@ -106,7 +118,27 @@
     "count": 2
   },
   {
+    "type": "Microsoft.Network/publicIPAddresses",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.KeyVault/vaults",
+    "count": 2
+  },
+  {
     "type": "Microsoft.Insights/actiongroups",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSets",
     "count": 2
   },
   {
@@ -119,38 +151,6 @@
   },
   {
     "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Web/staticSites",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Web/sites",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Web/serverFarms",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.OperationsManagement/solutions",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Network/publicIPAddresses",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Network/networkWatchers",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.KeyVault/vaults",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 1
   }
 ],
@@ -187,7 +187,7 @@
   },
   {
     "date": "2026-01-22",
-    "tokens": 174378,
+    "tokens": 174850,
     "cost": 1.74
   }
 ],
