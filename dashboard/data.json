@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-23T13:23:47Z",
+  "timestamp": "2026-01-23T14:13:17Z",
   "date": "2026-01-23",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": 96
   },
   "costs": {
-    "openAi30d": 22.2686,
-    "otherServices30d": 100.40,
-    "totalMonthly": 122.6686,
-    "projectedTillApril": 392.5395,
+    "openAi30d": 22.3163,
+    "otherServices30d": 100.60,
+    "totalMonthly": 122.9163,
+    "projectedTillApril": 393.3321,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 55671610,
+    "totalTokens30d": 55790963,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 2,
+    "storageAccounts": 3,
     "postgresServers": 2,
     "containerApps": 0
   },
@@ -46,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 55671610,
+    "promptTokens30d": 55790963,
     "completionTokens30d": 0,
-    "promptTokens7d": 33735889,
-    "promptTokens1d": 1984650,
-    "estimatedCost30d": 22.2686,
+    "promptTokens7d": 33854165,
+    "promptTokens1d": 2103611,
+    "estimatedCost30d": 22.3163,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -102,12 +102,12 @@
     "count": 4
   },
   {
-    "type": "Microsoft.Network/networkSecurityGroups",
+    "type": "Microsoft.Storage/storageAccounts",
     "count": 3
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 2
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "count": 3
   },
   {
     "type": "Microsoft.OperationsManagement/solutions",
@@ -162,8 +162,8 @@
   },
   {
     "date": "2026-01-18",
-    "tokens": 12768793,
-    "cost": 127.68
+    "tokens": 12819451,
+    "cost": 128.19
   },
   {
     "date": "2026-01-19",
@@ -187,8 +187,8 @@
   },
   {
     "date": "2026-01-23",
-    "tokens": 1617177,
-    "cost": 16.17
+    "tokens": 1736530,
+    "cost": 17.36
   }
 ],
   "alerts": {
