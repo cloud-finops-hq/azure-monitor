@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-26T14:15:40Z",
+  "timestamp": "2026-01-26T15:14:59Z",
   "date": "2026-01-26",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 93
   },
   "costs": {
-    "openAi30d": 22.1510,
+    "openAi30d": 22.1452,
     "otherServices30d": 140.60,
-    "totalMonthly": 162.7510,
-    "projectedTillApril": 504.5281,
+    "totalMonthly": 162.7452,
+    "projectedTillApril": 504.5101,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 55377594,
+    "totalTokens30d": 55363047,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -46,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 55377594,
+    "promptTokens30d": 55363047,
     "completionTokens30d": 0,
-    "promptTokens7d": 10934095,
-    "promptTokens1d": 12427,
-    "estimatedCost30d": 22.1510,
+    "promptTokens7d": 10191260,
+    "promptTokens1d": 12641,
+    "estimatedCost30d": 22.1452,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -99,14 +99,14 @@
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 4
-  },
-  {
-    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 4
+    "count": 6
   },
   {
     "type": "Microsoft.ContainerRegistry/registries",
+    "count": 6
+  },
+  {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
     "count": 4
   },
   {
@@ -187,8 +187,8 @@
   },
   {
     "date": "2026-01-26",
-    "tokens": 7627,
-    "cost": 0.07
+    "tokens": 8313,
+    "cost": 0.08
   }
 ],
   "alerts": {
