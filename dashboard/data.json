@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-28T22:13:24Z",
+  "timestamp": "2026-01-28T23:13:21Z",
   "date": "2026-01-28",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 91
   },
   "costs": {
-    "openAi30d": 21.9303,
+    "openAi30d": 21.9824,
     "otherServices30d": 140.60,
-    "totalMonthly": 162.5303,
-    "projectedTillApril": 492.4668,
+    "totalMonthly": 162.5824,
+    "projectedTillApril": 492.6246,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 54825931,
+    "totalTokens30d": 54956211,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -46,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 54825931,
+    "promptTokens30d": 54956211,
     "completionTokens30d": 0,
-    "promptTokens7d": 7172081,
-    "promptTokens1d": 848404,
-    "estimatedCost30d": 21.9303,
+    "promptTokens7d": 7300098,
+    "promptTokens1d": 924460,
+    "estimatedCost30d": 21.9824,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -187,8 +187,8 @@
   },
   {
     "date": "2026-01-28",
-    "tokens": 764969,
-    "cost": 7.64
+    "tokens": 879766,
+    "cost": 8.79
   }
 ],
   "alerts": {
