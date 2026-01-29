@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-29T12:22:31Z",
+  "timestamp": "2026-01-29T13:32:06Z",
   "date": "2026-01-29",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -48,8 +48,8 @@
     "primaryModel": "gpt-4.1-mini",
     "promptTokens30d": 54960425,
     "completionTokens30d": 0,
-    "promptTokens7d": 7126235,
-    "promptTokens1d": 564358,
+    "promptTokens7d": 7125683,
+    "promptTokens1d": 563814,
     "estimatedCost30d": 21.9841,
     "deployments": [
       {
