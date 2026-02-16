@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T00:49:59Z",
+  "timestamp": "2026-02-16T01:42:20Z",
   "date": "2026-02-16",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 72
   },
   "costs": {
-    "openAi30d": 23.0064,
+    "openAi30d": 22.6079,
     "otherServices30d": 140.60,
-    "totalMonthly": 163.6064,
-    "projectedTillApril": 392.6553,
+    "totalMonthly": 163.2079,
+    "projectedTillApril": 391.6989,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 57516026,
+    "totalTokens30d": 56519808,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -46,11 +46,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 57516026,
+    "promptTokens30d": 56519808,
     "completionTokens30d": 0,
-    "promptTokens7d": 11637066,
-    "promptTokens1d": 3566181,
-    "estimatedCost30d": 23.0064,
+    "promptTokens7d": 11708618,
+    "promptTokens1d": 3636346,
+    "estimatedCost30d": 22.6079,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -118,6 +118,10 @@
     "count": 3
   },
   {
+    "type": "Microsoft.Compute/disks",
+    "count": 3
+  },
+  {
     "type": "Microsoft.OperationsManagement/solutions",
     "count": 2
   },
@@ -139,10 +143,6 @@
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.Compute/disks",
     "count": 2
   },
   {
@@ -187,8 +187,8 @@
   },
   {
     "date": "2026-02-16",
-    "tokens": 14108,
-    "cost": 0.14
+    "tokens": 85950,
+    "cost": 0.85
   }
 ],
   "alerts": {
