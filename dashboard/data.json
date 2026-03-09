@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-09T07:30:29Z",
+  "timestamp": "2026-03-09T08:24:12Z",
   "date": "2026-03-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,16 +9,16 @@
     "daysRemaining": 51
   },
   "costs": {
-    "openAi30d": 30.2451,
+    "openAi30d": 0,
     "otherServices30d": 90.40,
-    "totalMonthly": 120.6451,
-    "projectedTillApril": 205.0966,
+    "totalMonthly": 90.40,
+    "projectedTillApril": 153.68,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 75612771,
-    "openAiAccounts": 2,
+    "totalTokens30d": 0,
+    "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 2,
@@ -28,60 +28,17 @@
   "openAiUsage": [
   {
     "account": "brandtruth-dalle",
-    "resourceGroup": "",
-    "primaryModel": "gpt-4",
+    "resourceGroup": "azurellm",
+    "primaryModel": "dall-e-3",
     "promptTokens30d": 0,
     "completionTokens30d": 0,
     "promptTokens7d": 0,
     "promptTokens1d": 0,
     "estimatedCost30d": 0,
-    "deployments": []
-  },
-  {
-    "account": "myazurellm",
-    "resourceGroup": "azurellm",
-    "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 75612771,
-    "completionTokens30d": 0,
-    "promptTokens7d": 18374670,
-    "promptTokens1d": 1899130,
-    "estimatedCost30d": 30.2451,
     "deployments": [
       {
-        "model": "gpt-4.1-mini",
-        "name": "gpt-35-turbo"
-      },
-      {
-        "model": "gpt-4.1",
-        "name": "gpt-4"
-      },
-      {
-        "model": "text-embedding-ada-002",
-        "name": "text-embedding-ada-002"
-      },
-      {
-        "model": "o4-mini",
-        "name": "o4-mini"
-      },
-      {
-        "model": "gpt-4.1",
-        "name": "gpt-4.1"
-      },
-      {
-        "model": "gpt-4.1-mini",
-        "name": "gpt-4.1-mini"
-      },
-      {
-        "model": "gpt-4.1-nano",
-        "name": "gpt-4.1-nano"
-      },
-      {
-        "model": "text-embedding-3-small",
-        "name": "text-embedding-3-small"
-      },
-      {
-        "model": "gpt-5",
-        "name": "gpt-5"
+        "model": "dall-e-3",
+        "name": "dall-e-3"
       }
     ]
   }
@@ -167,13 +124,13 @@
   },
   {
     "date": "2026-03-06",
-    "tokens": 6591581,
-    "cost": 65.91
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-03-07",
-    "tokens": 798045,
-    "cost": 7.98
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-03-08",
@@ -182,8 +139,8 @@
   },
   {
     "date": "2026-03-09",
-    "tokens": 0,
-    "cost": 0
+    "tokens": 182367,
+    "cost": 1.82
   }
 ],
   "alerts": {
