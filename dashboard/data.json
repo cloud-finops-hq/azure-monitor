@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-09T06:33:52Z",
+  "timestamp": "2026-03-09T07:30:29Z",
   "date": "2026-03-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 51
   },
   "costs": {
-    "openAi30d": 30.2444,
+    "openAi30d": 30.2451,
     "otherServices30d": 90.40,
-    "totalMonthly": 120.6444,
-    "projectedTillApril": 205.0954,
+    "totalMonthly": 120.6451,
+    "projectedTillApril": 205.0966,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 75611153,
+    "totalTokens30d": 75612771,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -28,29 +28,24 @@
   "openAiUsage": [
   {
     "account": "brandtruth-dalle",
-    "resourceGroup": "azurellm",
-    "primaryModel": "dall-e-3",
+    "resourceGroup": "",
+    "primaryModel": "gpt-4",
     "promptTokens30d": 0,
     "completionTokens30d": 0,
     "promptTokens7d": 0,
     "promptTokens1d": 0,
     "estimatedCost30d": 0,
-    "deployments": [
-      {
-        "model": "dall-e-3",
-        "name": "dall-e-3"
-      }
-    ]
+    "deployments": []
   },
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 75611153,
+    "promptTokens30d": 75612771,
     "completionTokens30d": 0,
-    "promptTokens7d": 18374604,
-    "promptTokens1d": 1899143,
-    "estimatedCost30d": 30.2444,
+    "promptTokens7d": 18374670,
+    "promptTokens1d": 1899130,
+    "estimatedCost30d": 30.2451,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -187,8 +182,8 @@
   },
   {
     "date": "2026-03-09",
-    "tokens": 14137,
-    "cost": 0.14
+    "tokens": 0,
+    "cost": 0
   }
 ],
   "alerts": {
