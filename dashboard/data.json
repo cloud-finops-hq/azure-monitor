@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-09T17:24:50Z",
+  "timestamp": "2026-03-09T18:26:54Z",
   "date": "2026-03-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,48 +9,32 @@
     "daysRemaining": 51
   },
   "costs": {
-    "openAi30d": 30.6691,
-    "otherServices30d": 40.00,
-    "totalMonthly": 70.6691,
-    "projectedTillApril": 120.1374,
+    "openAi30d": 30.7441,
+    "otherServices30d": 0,
+    "totalMonthly": 30.7441,
+    "projectedTillApril": 52.2649,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 76672773,
-    "openAiAccounts": 2,
+    "totalTokens30d": 76860320,
+    "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 0,
     "postgresServers": 0,
-    "containerApps": 2
+    "containerApps": 0
   },
   "openAiUsage": [
-  {
-    "account": "brandtruth-dalle",
-    "resourceGroup": "azurellm",
-    "primaryModel": "dall-e-3",
-    "promptTokens30d": 0,
-    "completionTokens30d": 0,
-    "promptTokens7d": 0,
-    "promptTokens1d": 0,
-    "estimatedCost30d": 0,
-    "deployments": [
-      {
-        "model": "dall-e-3",
-        "name": "dall-e-3"
-      }
-    ]
-  },
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 76672773,
+    "promptTokens30d": 76860320,
     "completionTokens30d": 0,
-    "promptTokens7d": 19418474,
-    "promptTokens1d": 1803012,
-    "estimatedCost30d": 30.6691,
+    "promptTokens7d": 19604328,
+    "promptTokens1d": 1988761,
+    "estimatedCost30d": 30.7441,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -95,38 +79,10 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Insights/activityLogAlerts",
-    "count": 8
+    "count": 3
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 5
-  },
-  {
-    "type": "Microsoft.Insights/actiongroups",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.CognitiveServices/accounts",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.App/containerApps",
-    "count": 2
-  },
-  {
-    "type": "microsoft.insights/actiongroups",
-    "count": 1
-  },
-  {
-    "type": "microsoft.alertsmanagement/smartDetectorAlertRules",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.OperationsManagement/solutions",
     "count": 1
   },
   {
@@ -134,7 +90,11 @@
     "count": 1
   },
   {
-    "type": "Microsoft.App/managedEnvironments",
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.CognitiveServices/accounts",
     "count": 1
   }
 ],
@@ -156,7 +116,7 @@
   },
   {
     "date": "2026-03-06",
-    "tokens": 6591651,
+    "tokens": 6591659,
     "cost": 65.91
   },
   {
@@ -171,8 +131,8 @@
   },
   {
     "date": "2026-03-09",
-    "tokens": 1080821,
-    "cost": 10.80
+    "tokens": 1268912,
+    "cost": 12.68
   }
 ],
   "alerts": {
