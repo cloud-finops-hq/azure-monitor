@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-09T10:25:28Z",
+  "timestamp": "2026-03-09T12:24:46Z",
   "date": "2026-03-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,16 +9,16 @@
     "daysRemaining": 51
   },
   "costs": {
-    "openAi30d": 30.4576,
+    "openAi30d": 0,
     "otherServices30d": 90.40,
-    "totalMonthly": 120.8576,
-    "projectedTillApril": 205.4579,
+    "totalMonthly": 90.40,
+    "projectedTillApril": 153.68,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 76144050,
-    "openAiAccounts": 2,
+    "totalTokens30d": 0,
+    "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 2,
@@ -39,54 +39,6 @@
       {
         "model": "dall-e-3",
         "name": "dall-e-3"
-      }
-    ]
-  },
-  {
-    "account": "myazurellm",
-    "resourceGroup": "azurellm",
-    "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 76144050,
-    "completionTokens30d": 0,
-    "promptTokens7d": 18901170,
-    "promptTokens1d": 2044668,
-    "estimatedCost30d": 30.4576,
-    "deployments": [
-      {
-        "model": "gpt-4.1-mini",
-        "name": "gpt-35-turbo"
-      },
-      {
-        "model": "gpt-4.1",
-        "name": "gpt-4"
-      },
-      {
-        "model": "text-embedding-ada-002",
-        "name": "text-embedding-ada-002"
-      },
-      {
-        "model": "o4-mini",
-        "name": "o4-mini"
-      },
-      {
-        "model": "gpt-4.1",
-        "name": "gpt-4.1"
-      },
-      {
-        "model": "gpt-4.1-mini",
-        "name": "gpt-4.1-mini"
-      },
-      {
-        "model": "gpt-4.1-nano",
-        "name": "gpt-4.1-nano"
-      },
-      {
-        "model": "text-embedding-3-small",
-        "name": "text-embedding-3-small"
-      },
-      {
-        "model": "gpt-5",
-        "name": "gpt-5"
       }
     ]
   }
@@ -157,22 +109,22 @@
   "dailyMetrics": [
   {
     "date": "2026-03-03",
-    "tokens": 0,
-    "cost": 0
+    "tokens": 2520415,
+    "cost": 25.20
   },
   {
     "date": "2026-03-04",
-    "tokens": 834258,
+    "tokens": 834266,
     "cost": 8.34
   },
   {
     "date": "2026-03-05",
-    "tokens": 3504363,
-    "cost": 35.04
+    "tokens": 0,
+    "cost": 0
   },
   {
     "date": "2026-03-06",
-    "tokens": 6591581,
+    "tokens": 6591589,
     "cost": 65.91
   },
   {
@@ -182,13 +134,13 @@
   },
   {
     "date": "2026-03-08",
-    "tokens": 0,
-    "cost": 0
+    "tokens": 2252529,
+    "cost": 22.52
   },
   {
     "date": "2026-03-09",
-    "tokens": 0,
-    "cost": 0
+    "tokens": 587917,
+    "cost": 5.87
   }
 ],
   "alerts": {
