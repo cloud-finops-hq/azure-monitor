@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-14T22:11:55Z",
+  "timestamp": "2026-03-14T23:13:21Z",
   "date": "2026-03-14",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": 46
   },
   "costs": {
-    "openAi30d": 30.5811,
-    "otherServices30d": 0,
-    "totalMonthly": 30.5811,
-    "projectedTillApril": 46.7890,
+    "openAi30d": 30.5712,
+    "otherServices30d": .20,
+    "totalMonthly": 30.7712,
+    "projectedTillApril": 47.0799,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 76452848,
+    "totalTokens30d": 76428179,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 0,
+    "storageAccounts": 1,
     "postgresServers": 0,
     "containerApps": 0
   },
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 76452848,
+    "promptTokens30d": 76428179,
     "completionTokens30d": 0,
-    "promptTokens7d": 11263600,
-    "promptTokens1d": 759768,
-    "estimatedCost30d": 30.5811,
+    "promptTokens7d": 11265225,
+    "promptTokens1d": 704364,
+    "estimatedCost30d": 30.5712,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -78,15 +78,51 @@
   "aiServices": [],
   "resourcesByType": [
   {
+    "type": "Microsoft.Compute/disks",
+    "count": 5
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSets",
+    "count": 4
+  },
+  {
     "type": "Microsoft.Insights/activityLogAlerts",
     "count": 3
+  },
+  {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 1
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
     "count": 1
   },
   {
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.Network/publicIPAddresses",
+    "count": 1
+  },
+  {
     "type": "Microsoft.Network/networkWatchers",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.Network/loadBalancers",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "count": 1
+  },
+  {
+    "type": "Microsoft.ContainerService/managedClusters",
     "count": 1
   },
   {
@@ -131,8 +167,8 @@
   },
   {
     "date": "2026-03-14",
-    "tokens": 608895,
-    "cost": 6.08
+    "tokens": 612816,
+    "cost": 6.12
   }
 ],
   "alerts": {
