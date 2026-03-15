@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-15T00:55:53Z",
+  "timestamp": "2026-03-15T01:43:00Z",
   "date": "2026-03-15",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": 45
   },
   "costs": {
-    "openAi30d": 30.5708,
-    "otherServices30d": .20,
-    "totalMonthly": 30.7708,
-    "projectedTillApril": 46.1562,
+    "openAi30d": 30.5569,
+    "otherServices30d": .40,
+    "totalMonthly": 30.9569,
+    "projectedTillApril": 46.4353,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 76427013,
+    "totalTokens30d": 76392363,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 1,
+    "storageAccounts": 2,
     "postgresServers": 0,
     "containerApps": 0
   },
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "gpt-4.1-mini",
-    "promptTokens30d": 76427013,
+    "promptTokens30d": 76392363,
     "completionTokens30d": 0,
-    "promptTokens7d": 10887706,
-    "promptTokens1d": 717394,
-    "estimatedCost30d": 30.5708,
+    "promptTokens7d": 10887679,
+    "promptTokens1d": 717813,
+    "estimatedCost30d": 30.5569,
     "deployments": [
       {
         "model": "gpt-4.1-mini",
@@ -78,6 +78,10 @@
   "aiServices": [],
   "resourcesByType": [
   {
+    "type": "Microsoft.AlertsManagement/prometheusRuleGroups",
+    "count": 6
+  },
+  {
     "type": "Microsoft.Compute/disks",
     "count": 5
   },
@@ -91,7 +95,15 @@
   },
   {
     "type": "Microsoft.Storage/storageAccounts",
-    "count": 1
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Insights/dataCollectionRules",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Insights/dataCollectionEndpoints",
+    "count": 2
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
@@ -118,19 +130,11 @@
     "count": 1
   },
   {
+    "type": "Microsoft.Monitor/accounts",
+    "count": 1
+  },
+  {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.ContainerService/managedClusters",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.CognitiveServices/accounts",
     "count": 1
   }
 ],
@@ -167,8 +171,8 @@
   },
   {
     "date": "2026-03-15",
-    "tokens": 2061,
-    "cost": 0.02
+    "tokens": 3675,
+    "cost": 0.03
   }
 ],
   "alerts": {
