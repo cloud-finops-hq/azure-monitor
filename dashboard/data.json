@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-23T00:52:49Z",
+  "timestamp": "2026-03-23T01:43:37Z",
   "date": "2026-03-23",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 37
   },
   "costs": {
-    "openAi30d": 287.227,
+    "openAi30d": 286.809,
     "otherServices30d": .40,
-    "totalMonthly": 287.627,
-    "projectedTillApril": 353.781,
+    "totalMonthly": 287.209,
+    "projectedTillApril": 353.267,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 95742471,
+    "totalTokens30d": 95603210,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 95742471,
+    "promptTokens30d": 95603210,
     "completionTokens30d": 0,
-    "promptTokens7d": 29062925,
-    "promptTokens1d": 7183989,
-    "estimatedCost30d": 287.227,
+    "promptTokens7d": 29063957,
+    "promptTokens1d": 7183915,
+    "estimatedCost30d": 286.809,
     "deployments": [
       {
         "model": "o4-mini",
@@ -167,8 +167,8 @@
   },
   {
     "date": "2026-03-23",
-    "tokens": 4384,
-    "cost": 0.04
+    "tokens": 8586,
+    "cost": 0.08
   }
 ],
   "alerts": {
