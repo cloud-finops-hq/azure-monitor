@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-02T09:30:33Z",
+  "timestamp": "2026-04-02T10:28:07Z",
   "date": "2026-04-02",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 27
   },
   "costs": {
-    "openAi30d": 400.977,
+    "openAi30d": 401.896,
     "otherServices30d": .40,
-    "totalMonthly": 401.377,
-    "projectedTillApril": 361.239,
+    "totalMonthly": 402.296,
+    "projectedTillApril": 362.066,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 133659007,
+    "totalTokens30d": 133965516,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 133659007,
+    "promptTokens30d": 133965516,
     "completionTokens30d": 0,
-    "promptTokens7d": 19781782,
-    "promptTokens1d": 651578,
-    "estimatedCost30d": 400.977,
+    "promptTokens7d": 20365516,
+    "promptTokens1d": 1270449,
+    "estimatedCost30d": 401.896,
     "deployments": [
       {
         "model": "o4-mini",
@@ -75,7 +75,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 6
+    "count": 7
   },
   {
     "type": "Microsoft.AlertsManagement/prometheusRuleGroups",
@@ -91,6 +91,18 @@
   },
   {
     "type": "Microsoft.Storage/storageAccounts",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Network/publicIPAddresses",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
     "count": 2
   },
   {
@@ -110,27 +122,15 @@
     "count": 1
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Network/publicIPAddresses",
-    "count": 1
-  },
-  {
     "type": "Microsoft.Network/networkWatchers",
     "count": 1
   },
   {
-    "type": "Microsoft.Network/networkSecurityGroups",
+    "type": "Microsoft.Network/networkInterfaces",
     "count": 1
   },
   {
     "type": "Microsoft.Network/loadBalancers",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Monitor/accounts",
     "count": 1
   }
 ],
@@ -167,8 +167,8 @@
   },
   {
     "date": "2026-04-02",
-    "tokens": 357967,
-    "cost": 3.57
+    "tokens": 1002222,
+    "cost": 10.02
   }
 ],
   "alerts": {
