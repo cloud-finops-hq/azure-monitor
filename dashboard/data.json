@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-02T22:17:28Z",
+  "timestamp": "2026-04-02T23:17:40Z",
   "date": "2026-04-02",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": 27
   },
   "costs": {
-    "openAi30d": 399.102,
+    "openAi30d": 398.446,
     "otherServices30d": 130.60,
-    "totalMonthly": 529.702,
-    "projectedTillApril": 476.731,
+    "totalMonthly": 529.046,
+    "projectedTillApril": 476.141,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 133034155,
+    "totalTokens30d": 132815666,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 133034155,
+    "promptTokens30d": 132815666,
     "completionTokens30d": 0,
-    "promptTokens7d": 18274664,
-    "promptTokens1d": 1068782,
-    "estimatedCost30d": 399.102,
+    "promptTokens7d": 18274689,
+    "promptTokens1d": 1068781,
+    "estimatedCost30d": 398.446,
     "deployments": [
       {
         "model": "o4-mini",
@@ -83,6 +83,14 @@
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
+    "count": 5
+  },
+  {
+    "type": "Microsoft.Network/publicIPAddresses",
+    "count": 4
+  },
+  {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
     "count": 4
   },
   {
@@ -94,7 +102,11 @@
     "count": 3
   },
   {
-    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 3
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
     "count": 3
   },
   {
@@ -106,15 +118,7 @@
     "count": 2
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.Network/publicIPAddresses",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.Network/networkSecurityGroups",
+    "type": "Microsoft.Network/loadBalancers",
     "count": 2
   },
   {
@@ -126,11 +130,7 @@
     "count": 2
   },
   {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.App/managedEnvironments/managedCertificates",
+    "type": "Microsoft.ContainerService/managedClusters",
     "count": 2
   }
 ],
@@ -167,8 +167,8 @@
   },
   {
     "date": "2026-04-02",
-    "tokens": 1060477,
-    "cost": 10.60
+    "tokens": 1065490,
+    "cost": 10.65
   }
 ],
   "alerts": {
