@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-02T17:24:30Z",
+  "timestamp": "2026-04-02T18:29:25Z",
   "date": "2026-04-02",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": 27
   },
   "costs": {
-    "openAi30d": 400.229,
-    "otherServices30d": .40,
-    "totalMonthly": 400.629,
-    "projectedTillApril": 360.566,
+    "openAi30d": 400.241,
+    "otherServices30d": 50.60,
+    "totalMonthly": 450.841,
+    "projectedTillApril": 405.756,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 133409951,
+    "totalTokens30d": 133413916,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 2,
-    "postgresServers": 0,
+    "storageAccounts": 3,
+    "postgresServers": 1,
     "containerApps": 0
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 133409951,
+    "promptTokens30d": 133413916,
     "completionTokens30d": 0,
-    "promptTokens7d": 18274646,
-    "promptTokens1d": 1290972,
-    "estimatedCost30d": 400.229,
+    "promptTokens7d": 18274662,
+    "promptTokens1d": 1290958,
+    "estimatedCost30d": 400.241,
     "deployments": [
       {
         "model": "o4-mini",
@@ -86,11 +86,19 @@
     "count": 4
   },
   {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 3
+  },
+  {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "count": 3
+  },
+  {
     "type": "Microsoft.Insights/activityLogAlerts",
     "count": 3
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
+    "type": "Microsoft.OperationalInsights/workspaces",
     "count": 2
   },
   {
@@ -106,10 +114,6 @@
     "count": 2
   },
   {
-    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 2
-  },
-  {
     "type": "Microsoft.Insights/dataCollectionRules",
     "count": 2
   },
@@ -118,8 +122,8 @@
     "count": 2
   },
   {
-    "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 1
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 2
   },
   {
     "type": "Microsoft.Network/networkWatchers",
@@ -127,10 +131,6 @@
   },
   {
     "type": "Microsoft.Network/networkInterfaces",
-    "count": 1
-  },
-  {
-    "type": "Microsoft.Network/loadBalancers",
     "count": 1
   }
 ],
@@ -167,8 +167,8 @@
   },
   {
     "date": "2026-04-02",
-    "tokens": 1036365,
-    "cost": 10.36
+    "tokens": 1041758,
+    "cost": 10.41
   }
 ],
   "alerts": {
