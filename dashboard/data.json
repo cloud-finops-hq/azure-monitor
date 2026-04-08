@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-08T18:38:40Z",
+  "timestamp": "2026-04-08T19:36:38Z",
   "date": "2026-04-08",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": 21
   },
   "costs": {
-    "openAi30d": 366.370,
-    "otherServices30d": 50.60,
-    "totalMonthly": 416.970,
-    "projectedTillApril": 291.879,
+    "openAi30d": 366.384,
+    "otherServices30d": 100.60,
+    "totalMonthly": 466.984,
+    "projectedTillApril": 326.888,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 122123607,
+    "totalTokens30d": 122128202,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 3,
-    "postgresServers": 1,
+    "postgresServers": 2,
     "containerApps": 0
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 122123607,
+    "promptTokens30d": 122128202,
     "completionTokens30d": 0,
-    "promptTokens7d": 5999841,
-    "promptTokens1d": 329999,
-    "estimatedCost30d": 366.370,
+    "promptTokens7d": 6001363,
+    "promptTokens1d": 331251,
+    "estimatedCost30d": 366.384,
     "deployments": [
       {
         "model": "o4-mini",
@@ -86,7 +86,15 @@
     "count": 5
   },
   {
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 4
+  },
+  {
     "type": "Microsoft.Network/publicIPAddresses",
+    "count": 4
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
     "count": 4
   },
   {
@@ -98,11 +106,7 @@
     "count": 3
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.Network/networkSecurityGroups",
+    "type": "Microsoft.OperationalInsights/workspaces",
     "count": 3
   },
   {
@@ -110,8 +114,8 @@
     "count": 3
   },
   {
-    "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 2
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 3
   },
   {
     "type": "Microsoft.Network/loadBalancers",
@@ -126,11 +130,7 @@
     "count": 2
   },
   {
-    "type": "Microsoft.ContainerService/managedClusters",
-    "count": 2
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 2
   }
 ],
@@ -167,8 +167,8 @@
   },
   {
     "date": "2026-04-08",
-    "tokens": 289702,
-    "cost": 2.89
+    "tokens": 295771,
+    "cost": 2.95
   }
 ],
   "alerts": {
