@@ -1,40 +1,40 @@
 {
-  "timestamp": "2026-04-21T10:39:07Z",
-  "date": "2026-04-21",
+  "timestamp": "2026-06-17T18:24:16Z",
+  "date": "2026-06-17",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": 8
+    "daysRemaining": -48
   },
   "costs": {
-    "openAi30d": 277.892,
-    "otherServices30d": 150.60,
-    "totalMonthly": 428.492,
-    "projectedTillApril": 111.407,
+    "openAi30d": 2750.600,
+    "otherServices30d": 70.60,
+    "totalMonthly": 2821.200,
+    "projectedTillApril": -4513.920,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 92630932,
+    "totalTokens30d": 916866869,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 3,
-    "postgresServers": 3,
-    "containerApps": 0
+    "postgresServers": 1,
+    "containerApps": 1
   },
   "openAiUsage": [
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 92630932,
+    "promptTokens30d": 916866869,
     "completionTokens30d": 0,
-    "promptTokens7d": 2489375,
-    "promptTokens1d": 336952,
-    "estimatedCost30d": 277.892,
+    "promptTokens7d": 877654032,
+    "promptTokens1d": 200316767,
+    "estimatedCost30d": 2750.600,
     "deployments": [
       {
         "model": "o4-mini",
@@ -67,6 +67,14 @@
       {
         "model": "gpt-5-nano",
         "name": "gpt-5-nano"
+      },
+      {
+        "model": "gpt-5.3-codex",
+        "name": "gpt-5.3-codex"
+      },
+      {
+        "model": "gpt-5.5",
+        "name": "gpt-5.5"
       }
     ]
   }
@@ -75,50 +83,22 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 19
+    "count": 7
   },
   {
     "type": "Microsoft.AlertsManagement/prometheusRuleGroups",
-    "count": 12
+    "count": 6
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 9
+    "count": 5
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
-    "count": 9
+    "count": 5
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
-    "count": 8
-  },
-  {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.Network/networkSecurityGroups",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.Network/loadBalancers",
-    "count": 4
-  },
-  {
-    "type": "Microsoft.Insights/dataCollectionRules",
-    "count": 4
-  },
-  {
-    "type": "Microsoft.Insights/dataCollectionEndpoints",
-    "count": 4
-  },
-  {
-    "type": "Microsoft.ContainerService/managedClusters",
-    "count": 4
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
     "count": 4
   },
   {
@@ -130,45 +110,73 @@
     "count": 3
   },
   {
-    "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+    "type": "Microsoft.Network/virtualNetworks",
     "count": 3
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "count": 3
+  },
+  {
+    "type": "Microsoft.Insights/activityLogAlerts",
+    "count": 3
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 3
+  },
+  {
+    "type": "Microsoft.Network/networkWatchers",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Network/loadBalancers",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Insights/dataCollectionRules",
+    "count": 2
+  },
+  {
+    "type": "Microsoft.Insights/dataCollectionEndpoints",
+    "count": 2
   }
 ],
   "dailyMetrics": [
   {
-    "date": "2026-04-15",
-    "tokens": 714545,
-    "cost": 7.14
+    "date": "2026-06-11",
+    "tokens": 3895253,
+    "cost": 38.95
   },
   {
-    "date": "2026-04-16",
-    "tokens": 342842,
-    "cost": 3.42
+    "date": "2026-06-12",
+    "tokens": 3144316,
+    "cost": 31.44
   },
   {
-    "date": "2026-04-17",
-    "tokens": 337602,
-    "cost": 3.37
+    "date": "2026-06-13",
+    "tokens": 107261007,
+    "cost": 1072.61
   },
   {
-    "date": "2026-04-18",
-    "tokens": 266473,
-    "cost": 2.66
+    "date": "2026-06-14",
+    "tokens": 273378935,
+    "cost": 2733.78
   },
   {
-    "date": "2026-04-19",
-    "tokens": 203228,
-    "cost": 2.03
+    "date": "2026-06-15",
+    "tokens": 216463576,
+    "cost": 2164.63
   },
   {
-    "date": "2026-04-20",
-    "tokens": 275750,
-    "cost": 2.75
+    "date": "2026-06-16",
+    "tokens": 132541887,
+    "cost": 1325.41
   },
   {
-    "date": "2026-04-21",
-    "tokens": 158027,
-    "cost": 1.58
+    "date": "2026-06-17",
+    "tokens": 141441382,
+    "cost": 1414.41
   }
 ],
   "alerts": {
