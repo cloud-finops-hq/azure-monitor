@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-06-24T23:08:24Z",
-  "date": "2026-06-24",
+  "timestamp": "2026-06-25T03:59:11Z",
+  "date": "2026-06-25",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -55
+    "daysRemaining": -56
   },
   "costs": {
-    "openAi30d": 4175.806,
+    "openAi30d": 4181.300,
     "otherServices30d": 70.60,
-    "totalMonthly": 4246.406,
-    "projectedTillApril": -7770.922,
+    "totalMonthly": 4251.900,
+    "projectedTillApril": -7908.534,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 1391935487,
+    "totalTokens30d": 1393766903,
     "openAiAccounts": 1,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 1391935487,
+    "promptTokens30d": 1393766903,
     "completionTokens30d": 0,
-    "promptTokens7d": 468041787,
-    "promptTokens1d": 164481116,
-    "estimatedCost30d": 4175.806,
+    "promptTokens7d": 469497496,
+    "promptTokens1d": 114922316,
+    "estimatedCost30d": 4181.300,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,16 +90,16 @@
     "count": 6
   },
   {
+    "type": "Microsoft.Network/publicIPAddresses",
+    "count": 5
+  },
+  {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
     "count": 5
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
     "count": 5
-  },
-  {
-    "type": "Microsoft.Network/publicIPAddresses",
-    "count": 4
   },
   {
     "type": "Microsoft.Storage/storageAccounts",
@@ -144,11 +144,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-06-18",
-    "tokens": 793180,
-    "cost": 7.93
-  },
-  {
     "date": "2026-06-19",
     "tokens": 355497,
     "cost": 3.55
@@ -175,8 +170,13 @@
   },
   {
     "date": "2026-06-24",
-    "tokens": 164393557,
-    "cost": 1643.93
+    "tokens": 164432630,
+    "cost": 1644.32
+  },
+  {
+    "date": "2026-06-25",
+    "tokens": 1824159,
+    "cost": 18.24
   }
 ],
   "alerts": {
