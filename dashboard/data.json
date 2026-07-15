@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-15T18:11:20Z",
+  "timestamp": "2026-07-15T20:13:44Z",
   "date": "2026-07-15",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -76
   },
   "costs": {
-    "openAi30d": 7624.506,
+    "openAi30d": 7602.813,
     "otherServices30d": 120.80,
-    "totalMonthly": 7745.306,
-    "projectedTillApril": -19595.624,
+    "totalMonthly": 7723.613,
+    "projectedTillApril": -19540.740,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 2541502135,
+    "totalTokens30d": 2533987158,
     "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 2541502135,
+    "promptTokens30d": 2533864620,
     "completionTokens30d": 0,
-    "promptTokens7d": 176374811,
-    "promptTokens1d": 50074802,
-    "estimatedCost30d": 7624.506,
+    "promptTokens7d": 175671412,
+    "promptTokens1d": 49347205,
+    "estimatedCost30d": 7601.593,
     "deployments": [
       {
         "model": "o4-mini",
@@ -81,13 +81,18 @@
   {
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
-    "primaryModel": "gpt-4",
-    "promptTokens30d": 0,
+    "primaryModel": "gpt-5.6-terra",
+    "promptTokens30d": 122538,
     "completionTokens30d": 0,
-    "promptTokens7d": 0,
-    "promptTokens1d": 0,
-    "estimatedCost30d": 0,
-    "deployments": []
+    "promptTokens7d": 122538,
+    "promptTokens1d": 122538,
+    "estimatedCost30d": 1.22,
+    "deployments": [
+      {
+        "model": "gpt-5.6-terra",
+        "name": "gpt-5.6-terra"
+      }
+    ]
   }
 ],
   "aiServices": [],
@@ -186,8 +191,8 @@
   },
   {
     "date": "2026-07-15",
-    "tokens": 48338340,
-    "cost": 483.38
+    "tokens": 48876196,
+    "cost": 488.76
   }
 ],
   "alerts": {
