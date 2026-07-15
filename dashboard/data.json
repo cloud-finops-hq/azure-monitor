@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-15T16:26:09Z",
+  "timestamp": "2026-07-15T18:11:20Z",
   "date": "2026-07-15",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,16 +9,16 @@
     "daysRemaining": -76
   },
   "costs": {
-    "openAi30d": 7654.416,
+    "openAi30d": 7624.506,
     "otherServices30d": 120.80,
-    "totalMonthly": 7775.216,
-    "projectedTillApril": -19671.296,
+    "totalMonthly": 7745.306,
+    "projectedTillApril": -19595.624,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 2551472239,
-    "openAiAccounts": 1,
+    "totalTokens30d": 2541502135,
+    "openAiAccounts": 2,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 4,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 2551472239,
+    "promptTokens30d": 2541502135,
     "completionTokens30d": 0,
-    "promptTokens7d": 176105804,
-    "promptTokens1d": 61779677,
-    "estimatedCost30d": 7654.416,
+    "promptTokens7d": 176374811,
+    "promptTokens1d": 50074802,
+    "estimatedCost30d": 7624.506,
     "deployments": [
       {
         "model": "o4-mini",
@@ -77,6 +77,17 @@
         "name": "gpt-5.5"
       }
     ]
+  },
+  {
+    "account": "kiran-ai-model-gateway",
+    "resourceGroup": "ai-model-gateway-rg",
+    "primaryModel": "gpt-4",
+    "promptTokens30d": 0,
+    "completionTokens30d": 0,
+    "promptTokens7d": 0,
+    "promptTokens1d": 0,
+    "estimatedCost30d": 0,
+    "deployments": []
   }
 ],
   "aiServices": [],
@@ -175,8 +186,8 @@
   },
   {
     "date": "2026-07-15",
-    "tokens": 47371066,
-    "cost": 473.71
+    "tokens": 48338340,
+    "cost": 483.38
   }
 ],
   "alerts": {
