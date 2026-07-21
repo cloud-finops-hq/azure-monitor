@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-21T17:24:43Z",
+  "timestamp": "2026-07-21T19:36:40Z",
   "date": "2026-07-21",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,16 +9,16 @@
     "daysRemaining": -82
   },
   "costs": {
-    "openAi30d": 7288.161,
+    "openAi30d": 7294.689,
     "otherServices30d": 120.80,
-    "totalMonthly": 7408.961,
-    "projectedTillApril": -20226.463,
+    "totalMonthly": 7415.489,
+    "projectedTillApril": -20244.284,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 2286104164,
-    "openAiAccounts": 2,
+    "totalTokens30d": 2287718837,
+    "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 4,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 2224697146,
+    "promptTokens30d": 2226069847,
     "completionTokens30d": 0,
-    "promptTokens7d": 99365198,
-    "promptTokens1d": 5580717,
-    "estimatedCost30d": 6674.091,
+    "promptTokens7d": 94550641,
+    "promptTokens1d": 5578185,
+    "estimatedCost30d": 6678.209,
     "deployments": [
       {
         "model": "o4-mini",
@@ -91,6 +91,26 @@
       {
         "model": "gpt-5.6-terra",
         "name": "gpt-5.6-terra"
+      }
+    ]
+  },
+  {
+    "account": "qlp-jobsearch-aoai",
+    "resourceGroup": "qlp-jobsearch-rg",
+    "primaryModel": "gpt-5.4",
+    "promptTokens30d": 241972,
+    "completionTokens30d": 0,
+    "promptTokens7d": 241972,
+    "promptTokens1d": 241972,
+    "estimatedCost30d": 2.41,
+    "deployments": [
+      {
+        "model": "gpt-5.4",
+        "name": "gpt-5.4"
+      },
+      {
+        "model": "gpt-5.4-mini",
+        "name": "gpt-5.4-mini"
       }
     ]
   }
@@ -150,18 +170,18 @@
     "count": 3
   },
   {
-    "type": "Microsoft.Network/networkWatchers",
-    "count": 2
+    "type": "Microsoft.CognitiveServices/accounts",
+    "count": 3
   },
   {
-    "type": "Microsoft.Insights/dataCollectionRules",
+    "type": "Microsoft.Network/networkWatchers",
     "count": 2
   }
 ],
   "dailyMetrics": [
   {
     "date": "2026-07-15",
-    "tokens": 49134098,
+    "tokens": 49134111,
     "cost": 491.34
   },
   {
@@ -186,13 +206,13 @@
   },
   {
     "date": "2026-07-20",
-    "tokens": 5575745,
+    "tokens": 5575759,
     "cost": 55.75
   },
   {
     "date": "2026-07-21",
-    "tokens": 7802262,
-    "cost": 78.02
+    "tokens": 9436282,
+    "cost": 94.36
   }
 ],
   "alerts": {
