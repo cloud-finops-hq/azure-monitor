@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-07-23T22:07:38Z",
-  "date": "2026-07-23",
+  "timestamp": "2026-07-24T00:04:16Z",
+  "date": "2026-07-24",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -84
+    "daysRemaining": -85
   },
   "costs": {
-    "openAi30d": 6473.334,
+    "openAi30d": 6444.644,
     "otherServices30d": 120.80,
-    "totalMonthly": 6594.134,
-    "projectedTillApril": -18463.575,
+    "totalMonthly": 6565.444,
+    "projectedTillApril": -18580.206,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 2009681960,
+    "totalTokens30d": 2000118709,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 1946211368,
+    "promptTokens30d": 1936648117,
     "completionTokens30d": 0,
-    "promptTokens7d": 43325747,
-    "promptTokens1d": 6271205,
-    "estimatedCost30d": 5838.634,
+    "promptTokens7d": 43231504,
+    "promptTokens1d": 6272115,
+    "estimatedCost30d": 5809.944,
     "deployments": [
       {
         "model": "o4-mini",
@@ -101,7 +101,7 @@
     "promptTokens30d": 2043290,
     "completionTokens30d": 0,
     "promptTokens7d": 2043290,
-    "promptTokens1d": 535509,
+    "promptTokens1d": 461609,
     "estimatedCost30d": 20.43,
     "deployments": [
       {
@@ -180,11 +180,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-07-17",
-    "tokens": 5667381,
-    "cost": 56.67
-  },
-  {
     "date": "2026-07-18",
     "tokens": 20879763,
     "cost": 208.79
@@ -211,8 +206,13 @@
   },
   {
     "date": "2026-07-23",
-    "tokens": 6746561,
-    "cost": 67.46
+    "tokens": 6754005,
+    "cost": 67.54
+  },
+  {
+    "date": "2026-07-24",
+    "tokens": 478,
+    "cost": 0
   }
 ],
   "alerts": {
