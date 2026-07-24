@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-24T06:29:04Z",
+  "timestamp": "2026-07-24T09:23:31Z",
   "date": "2026-07-24",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -85
   },
   "costs": {
-    "openAi30d": 6300.419,
+    "openAi30d": 6298.082,
     "otherServices30d": 120.80,
-    "totalMonthly": 6421.219,
-    "projectedTillApril": -18172.049,
+    "totalMonthly": 6418.882,
+    "projectedTillApril": -18165.436,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 1952043674,
+    "totalTokens30d": 1950485754,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 1888573082,
+    "promptTokens30d": 1886680693,
     "completionTokens30d": 0,
-    "promptTokens7d": 43333040,
-    "promptTokens1d": 6285139,
-    "estimatedCost30d": 5665.719,
+    "promptTokens7d": 43371744,
+    "promptTokens1d": 6323829,
+    "estimatedCost30d": 5660.042,
     "deployments": [
       {
         "model": "o4-mini",
@@ -98,11 +98,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 2043290,
+    "promptTokens30d": 2377759,
     "completionTokens30d": 0,
-    "promptTokens7d": 2043290,
-    "promptTokens1d": 461609,
-    "estimatedCost30d": 20.43,
+    "promptTokens7d": 2377759,
+    "promptTokens1d": 369771,
+    "estimatedCost30d": 23.77,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -211,8 +211,8 @@
   },
   {
     "date": "2026-07-24",
-    "tokens": 2898127,
-    "cost": 28.98
+    "tokens": 3281427,
+    "cost": 32.81
   }
 ],
   "alerts": {
