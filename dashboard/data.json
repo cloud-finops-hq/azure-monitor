@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-28T18:17:16Z",
+  "timestamp": "2026-07-28T20:18:13Z",
   "date": "2026-07-28",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -89
   },
   "costs": {
-    "openAi30d": 4655.463,
+    "openAi30d": 4582.706,
     "otherServices30d": 120.80,
-    "totalMonthly": 4776.263,
-    "projectedTillApril": -14137.738,
+    "totalMonthly": 4703.506,
+    "projectedTillApril": -13922.377,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 1398785306,
+    "totalTokens30d": 1374507545,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 1333197984,
+    "promptTokens30d": 1308908837,
     "completionTokens30d": 0,
-    "promptTokens7d": 48089461,
-    "promptTokens1d": 6379427,
-    "estimatedCost30d": 3999.593,
+    "promptTokens7d": 48133371,
+    "promptTokens1d": 6423326,
+    "estimatedCost30d": 3926.726,
     "deployments": [
       {
         "model": "o4-mini",
@@ -85,7 +85,7 @@
     "promptTokens30d": 61813158,
     "completionTokens30d": 0,
     "promptTokens7d": 406140,
-    "promptTokens1d": 267235,
+    "promptTokens1d": 0,
     "estimatedCost30d": 618.13,
     "deployments": [
       {
@@ -98,11 +98,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 3774164,
+    "promptTokens30d": 3785550,
     "completionTokens30d": 0,
-    "promptTokens7d": 3774151,
-    "promptTokens1d": 553025,
-    "estimatedCost30d": 37.74,
+    "promptTokens7d": 3502900,
+    "promptTokens1d": 508391,
+    "estimatedCost30d": 37.85,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -119,7 +119,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 19
+    "count": 22
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
@@ -211,8 +211,8 @@
   },
   {
     "date": "2026-07-28",
-    "tokens": 6716591,
-    "cost": 67.16
+    "tokens": 6778843,
+    "cost": 67.78
   }
 ],
   "alerts": {
