@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-29T18:09:40Z",
+  "timestamp": "2026-07-29T20:14:18Z",
   "date": "2026-07-29",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -90
   },
   "costs": {
-    "openAi30d": 4211.530,
+    "openAi30d": 4235.494,
     "otherServices30d": 120.80,
-    "totalMonthly": 4332.330,
-    "projectedTillApril": -12996.990,
+    "totalMonthly": 4356.294,
+    "projectedTillApril": -13068.882,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 1236231201,
+    "totalTokens30d": 1239055946,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 1164396738,
+    "promptTokens30d": 1165008295,
     "completionTokens30d": 0,
-    "promptTokens7d": 50256753,
-    "promptTokens1d": 8506786,
-    "estimatedCost30d": 3493.190,
+    "promptTokens7d": 50657341,
+    "promptTokens1d": 9033126,
+    "estimatedCost30d": 3495.024,
     "deployments": [
       {
         "model": "o4-mini",
@@ -82,11 +82,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 67738262,
+    "promptTokens30d": 69951450,
     "completionTokens30d": 0,
-    "promptTokens7d": 6331244,
-    "promptTokens1d": 5925104,
-    "estimatedCost30d": 677.38,
+    "promptTokens7d": 8544432,
+    "promptTokens1d": 8138292,
+    "estimatedCost30d": 699.51,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -100,8 +100,8 @@
     "primaryModel": "gpt-5.4",
     "promptTokens30d": 4096201,
     "completionTokens30d": 0,
-    "promptTokens7d": 3315716,
-    "promptTokens1d": 322037,
+    "promptTokens7d": 2674436,
+    "promptTokens1d": 310651,
     "estimatedCost30d": 40.96,
     "deployments": [
       {
@@ -119,7 +119,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 22
+    "count": 23
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
@@ -211,8 +211,8 @@
   },
   {
     "date": "2026-07-29",
-    "tokens": 13771554,
-    "cost": 137.71
+    "tokens": 17202483,
+    "cost": 172.02
   }
 ],
   "alerts": {
