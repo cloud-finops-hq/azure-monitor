@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-29T05:55:46Z",
+  "timestamp": "2026-07-29T08:46:23Z",
   "date": "2026-07-29",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -90
   },
   "costs": {
-    "openAi30d": 4538.849,
+    "openAi30d": 4493.024,
     "otherServices30d": 120.80,
-    "totalMonthly": 4659.649,
-    "projectedTillApril": -13978.947,
+    "totalMonthly": 4613.824,
+    "projectedTillApril": -13841.472,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 1359888580,
+    "totalTokens30d": 1343887692,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 1294289872,
+    "promptTokens30d": 1277978333,
     "completionTokens30d": 0,
-    "promptTokens7d": 48453567,
-    "promptTokens1d": 6595194,
-    "estimatedCost30d": 3882.869,
+    "promptTokens7d": 48640653,
+    "promptTokens1d": 6711529,
+    "estimatedCost30d": 3833.934,
     "deployments": [
       {
         "model": "o4-mini",
@@ -98,11 +98,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 3785550,
+    "promptTokens30d": 4096201,
     "completionTokens30d": 0,
-    "promptTokens7d": 3310463,
-    "promptTokens1d": 298249,
-    "estimatedCost30d": 37.85,
+    "promptTokens7d": 3507124,
+    "promptTokens1d": 336184,
+    "estimatedCost30d": 40.96,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -119,7 +119,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 19
+    "count": 20
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
@@ -211,8 +211,8 @@
   },
   {
     "date": "2026-07-29",
-    "tokens": 1491756,
-    "cost": 14.91
+    "tokens": 3520940,
+    "cost": 35.20
   }
 ],
   "alerts": {
