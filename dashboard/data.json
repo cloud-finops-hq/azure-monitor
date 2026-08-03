@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-03T17:10:58Z",
+  "timestamp": "2026-08-03T19:42:48Z",
   "date": "2026-08-03",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -95
   },
   "costs": {
-    "openAi30d": 2936.773,
+    "openAi30d": 2832.166,
     "otherServices30d": 120.80,
-    "totalMonthly": 3057.573,
-    "projectedTillApril": -9661.930,
+    "totalMonthly": 2952.966,
+    "projectedTillApril": -9331.372,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 781653552,
+    "totalTokens30d": 746784623,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 697107707,
+    "promptTokens30d": 662238778,
     "completionTokens30d": 0,
-    "promptTokens7d": 51315852,
-    "promptTokens1d": 6432142,
-    "estimatedCost30d": 2091.323,
+    "promptTokens7d": 51532296,
+    "promptTokens1d": 6503935,
+    "estimatedCost30d": 1986.716,
     "deployments": [
       {
         "model": "o4-mini",
@@ -84,7 +84,7 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 79552756,
     "completionTokens30d": 0,
-    "promptTokens7d": 18006833,
+    "promptTokens7d": 17739598,
     "promptTokens1d": 0,
     "estimatedCost30d": 795.52,
     "deployments": [
@@ -100,7 +100,7 @@
     "primaryModel": "gpt-5.4",
     "promptTokens30d": 4993089,
     "completionTokens30d": 0,
-    "promptTokens7d": 1817798,
+    "promptTokens7d": 1727247,
     "promptTokens1d": 52833,
     "estimatedCost30d": 49.93,
     "deployments": [
@@ -119,7 +119,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 22
+    "count": 20
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
@@ -211,8 +211,8 @@
   },
   {
     "date": "2026-08-03",
-    "tokens": 4898013,
-    "cost": 48.98
+    "tokens": 6542293,
+    "cost": 65.42
   }
 ],
   "alerts": {
