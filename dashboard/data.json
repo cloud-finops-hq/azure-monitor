@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T18:47:04Z",
+  "timestamp": "2026-08-09T19:36:58Z",
   "date": "2026-08-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": -101
   },
   "costs": {
-    "openAi30d": 1794.299,
-    "otherServices30d": 120.80,
-    "totalMonthly": 1915.099,
-    "projectedTillApril": -6434.732,
+    "openAi30d": 1800.737,
+    "otherServices30d": 121.00,
+    "totalMonthly": 1921.737,
+    "projectedTillApril": -6457.036,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 394526817,
+    "totalTokens30d": 395235427,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 4,
+    "storageAccounts": 5,
     "postgresServers": 2,
     "containerApps": 1
   },
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 307279790,
+    "promptTokens30d": 307372617,
     "completionTokens30d": 0,
-    "promptTokens7d": 29233592,
-    "promptTokens1d": 528672,
-    "estimatedCost30d": 921.839,
+    "promptTokens7d": 29326363,
+    "promptTokens1d": 621432,
+    "estimatedCost30d": 922.117,
     "deployments": [
       {
         "model": "o4-mini",
@@ -82,11 +82,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 81363314,
+    "promptTokens30d": 81979097,
     "completionTokens30d": 0,
-    "promptTokens7d": 1810558,
-    "promptTokens1d": 1810558,
-    "estimatedCost30d": 813.63,
+    "promptTokens7d": 2426341,
+    "promptTokens1d": 2426341,
+    "estimatedCost30d": 819.79,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -138,6 +138,10 @@
     "count": 6
   },
   {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 5
+  },
+  {
     "type": "Microsoft.Network/virtualNetworks",
     "count": 5
   },
@@ -148,10 +152,6 @@
   {
     "type": "Microsoft.ContainerRegistry/registries",
     "count": 5
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 4
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
@@ -211,8 +211,8 @@
   },
   {
     "date": "2026-08-09",
-    "tokens": 2367389,
-    "cost": 23.67
+    "tokens": 3078837,
+    "cost": 30.78
   }
 ],
   "alerts": {
