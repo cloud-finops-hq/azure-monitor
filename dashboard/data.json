@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-08-13T23:45:38Z",
-  "date": "2026-08-13",
+  "timestamp": "2026-08-14T02:14:47Z",
+  "date": "2026-08-14",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -105
+    "daysRemaining": -106
   },
   "costs": {
-    "openAi30d": 1882.045,
+    "openAi30d": 1879.267,
     "otherServices30d": 121.00,
-    "totalMonthly": 2003.045,
-    "projectedTillApril": -7010.657,
+    "totalMonthly": 2000.267,
+    "projectedTillApril": -7060.942,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 336996792,
+    "totalTokens30d": 336070820,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 212558463,
+    "promptTokens30d": 211632491,
     "completionTokens30d": 0,
-    "promptTokens7d": 5117052,
-    "promptTokens1d": 1468228,
-    "estimatedCost30d": 637.675,
+    "promptTokens7d": 3859151,
+    "promptTokens1d": 1917030,
+    "estimatedCost30d": 634.897,
     "deployments": [
       {
         "model": "o4-mini",
@@ -119,7 +119,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 26
+    "count": 27
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -180,11 +180,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-08-07",
-    "tokens": 1994866,
-    "cost": 19.94
-  },
-  {
     "date": "2026-08-08",
     "tokens": 308316,
     "cost": 3.08
@@ -211,8 +206,13 @@
   },
   {
     "date": "2026-08-13",
-    "tokens": 1830150,
-    "cost": 18.30
+    "tokens": 1991772,
+    "cost": 19.91
+  },
+  {
+    "date": "2026-08-14",
+    "tokens": 137602,
+    "cost": 1.37
   }
 ],
   "alerts": {
