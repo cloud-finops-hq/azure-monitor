@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T18:34:27Z",
+  "timestamp": "2026-08-16T19:23:52Z",
   "date": "2026-08-16",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": -108
   },
   "costs": {
-    "openAi30d": 1281.032,
-    "otherServices30d": 121.20,
-    "totalMonthly": 1402.232,
-    "projectedTillApril": -5048.035,
+    "openAi30d": 1281.033,
+    "otherServices30d": 121.00,
+    "totalMonthly": 1402.033,
+    "projectedTillApril": -5047.318,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 229583596,
+    "totalTokens30d": 229583604,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 6,
+    "storageAccounts": 5,
     "postgresServers": 2,
     "containerApps": 1
   },
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 144970997,
+    "promptTokens30d": 144971005,
     "completionTokens30d": 0,
-    "promptTokens7d": 4260623,
-    "promptTokens1d": 445546,
-    "estimatedCost30d": 434.912,
+    "promptTokens7d": 4105658,
+    "promptTokens1d": 445625,
+    "estimatedCost30d": 434.913,
     "deployments": [
       {
         "model": "o4-mini",
@@ -88,7 +88,7 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 74872099,
     "completionTokens30d": 0,
-    "promptTokens7d": 37134898,
+    "promptTokens7d": 36684784,
     "promptTokens1d": 164423,
     "estimatedCost30d": 748.72,
     "deployments": [
@@ -134,16 +134,16 @@
     "count": 7
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 6
-  },
-  {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
     "count": 6
   },
   {
     "type": "Microsoft.AlertsManagement/prometheusRuleGroups",
     "count": 6
+  },
+  {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 5
   },
   {
     "type": "Microsoft.Network/virtualNetworks",
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-16",
-    "tokens": 649079,
-    "cost": 6.49
+    "tokens": 651844,
+    "cost": 6.51
   }
 ],
   "alerts": {
