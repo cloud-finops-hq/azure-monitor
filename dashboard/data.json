@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T11:29:41Z",
+  "timestamp": "2026-08-17T12:51:20Z",
   "date": "2026-08-17",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": -109
   },
   "costs": {
-    "openAi30d": 1273.824,
-    "otherServices30d": 121.00,
-    "totalMonthly": 1394.824,
-    "projectedTillApril": -5063.211,
+    "openAi30d": 1269.762,
+    "otherServices30d": 121.20,
+    "totalMonthly": 1390.962,
+    "projectedTillApril": -5049.192,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 226952140,
+    "totalTokens30d": 225598007,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 5,
+    "storageAccounts": 6,
     "postgresServers": 2,
     "containerApps": 1
   },
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 142241585,
+    "promptTokens30d": 140887452,
     "completionTokens30d": 0,
-    "promptTokens7d": 3936841,
-    "promptTokens1d": 257329,
-    "estimatedCost30d": 426.724,
+    "promptTokens7d": 3936891,
+    "promptTokens1d": 158531,
+    "estimatedCost30d": 422.662,
     "deployments": [
       {
         "model": "o4-mini",
@@ -126,12 +126,16 @@
     "count": 28
   },
   {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "count": 8
+  },
+  {
     "type": "Microsoft.Network/publicIPAddresses",
     "count": 7
   },
   {
-    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 7
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 6
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
@@ -140,10 +144,6 @@
   {
     "type": "Microsoft.AlertsManagement/prometheusRuleGroups",
     "count": 6
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 5
   },
   {
     "type": "Microsoft.Network/virtualNetworks",
@@ -159,7 +159,7 @@
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 3
+    "count": 4
   },
   {
     "type": "Microsoft.Network/loadBalancers",
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-17",
-    "tokens": 202933,
-    "cost": 2.02
+    "tokens": 207576,
+    "cost": 2.07
   }
 ],
   "alerts": {
