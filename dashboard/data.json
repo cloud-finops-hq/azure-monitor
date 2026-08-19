@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-19T03:01:11Z",
+  "timestamp": "2026-08-19T03:49:58Z",
   "date": "2026-08-19",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -32,8 +32,8 @@
     "primaryModel": "o4-mini",
     "promptTokens30d": 130240761,
     "completionTokens30d": 0,
-    "promptTokens7d": 3523087,
-    "promptTokens1d": 132628,
+    "promptTokens7d": 3523226,
+    "promptTokens1d": 132517,
     "estimatedCost30d": 390.722,
     "deployments": [
       {
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-19",
-    "tokens": 10600,
-    "cost": 0.10
+    "tokens": 30133,
+    "cost": 0.30
   }
 ],
   "alerts": {
