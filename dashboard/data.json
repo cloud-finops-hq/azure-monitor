@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-20T18:44:16Z",
+  "timestamp": "2026-08-20T19:34:17Z",
   "date": "2026-08-20",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": -112
   },
   "costs": {
-    "openAi30d": 1036.153,
-    "otherServices30d": 121.20,
-    "totalMonthly": 1157.353,
-    "projectedTillApril": -4316.926,
+    "openAi30d": 1035.463,
+    "otherServices30d": 121.00,
+    "totalMonthly": 1156.463,
+    "projectedTillApril": -4313.606,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 188123117,
+    "totalTokens30d": 188054333,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 6,
+    "storageAccounts": 5,
     "postgresServers": 2,
     "containerApps": 1
   },
@@ -30,10 +30,10 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 120724494,
+    "promptTokens30d": 120724499,
     "completionTokens30d": 0,
-    "promptTokens7d": 2389873,
-    "promptTokens1d": 132634,
+    "promptTokens7d": 2389857,
+    "promptTokens1d": 132628,
     "estimatedCost30d": 362.173,
     "deployments": [
       {
@@ -102,11 +102,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 10340333,
+    "promptTokens30d": 10271544,
     "completionTokens30d": 0,
     "promptTokens7d": 3958862,
     "promptTokens1d": 160320,
-    "estimatedCost30d": 103.40,
+    "estimatedCost30d": 102.71,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -123,7 +123,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 28
+    "count": 27
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
@@ -131,10 +131,6 @@
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
-    "count": 7
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
     "count": 6
   },
   {
@@ -146,19 +142,23 @@
     "count": 6
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 5
-  },
-  {
-    "type": "Microsoft.Network/networkSecurityGroups",
-    "count": 5
-  },
-  {
-    "type": "Microsoft.ContainerRegistry/registries",
+    "type": "Microsoft.Storage/storageAccounts",
     "count": 5
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
+    "count": 4
+  },
+  {
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 4
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "count": 4
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries",
     "count": 4
   },
   {
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-20",
-    "tokens": 274932,
-    "cost": 2.74
+    "tokens": 277838,
+    "cost": 2.77
   }
 ],
   "alerts": {
