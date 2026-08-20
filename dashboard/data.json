@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-20T19:34:17Z",
+  "timestamp": "2026-08-20T20:32:28Z",
   "date": "2026-08-20",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -112
   },
   "costs": {
-    "openAi30d": 1035.463,
+    "openAi30d": 1035.054,
     "otherServices30d": 121.00,
-    "totalMonthly": 1156.463,
-    "projectedTillApril": -4313.606,
+    "totalMonthly": 1156.054,
+    "projectedTillApril": -4312.081,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 188054333,
+    "totalTokens30d": 188013935,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 120724499,
+    "promptTokens30d": 120724779,
     "completionTokens30d": 0,
-    "promptTokens7d": 2389857,
-    "promptTokens1d": 132628,
-    "estimatedCost30d": 362.173,
+    "promptTokens7d": 2389844,
+    "promptTokens1d": 132902,
+    "estimatedCost30d": 362.174,
     "deployments": [
       {
         "model": "o4-mini",
@@ -89,7 +89,7 @@
     "promptTokens30d": 57058290,
     "completionTokens30d": 0,
     "promptTokens7d": 581633,
-    "promptTokens1d": 39086,
+    "promptTokens1d": 0,
     "estimatedCost30d": 570.58,
     "deployments": [
       {
@@ -102,11 +102,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 10271544,
+    "promptTokens30d": 10230866,
     "completionTokens30d": 0,
     "promptTokens7d": 3958862,
     "promptTokens1d": 160320,
-    "estimatedCost30d": 102.71,
+    "estimatedCost30d": 102.30,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-20",
-    "tokens": 277838,
-    "cost": 2.77
+    "tokens": 281097,
+    "cost": 2.81
   }
 ],
   "alerts": {
