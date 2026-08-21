@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21T14:38:43Z",
+  "timestamp": "2026-08-21T15:36:54Z",
   "date": "2026-08-21",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -113
   },
   "costs": {
-    "openAi30d": 1019.109,
+    "openAi30d": 1017.678,
     "otherServices30d": 121.00,
-    "totalMonthly": 1140.109,
-    "projectedTillApril": -4286.809,
+    "totalMonthly": 1138.678,
+    "projectedTillApril": -4281.429,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 182964176,
+    "totalTokens30d": 182821069,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 115789678,
+    "promptTokens30d": 115789601,
     "completionTokens30d": 0,
-    "promptTokens7d": 1357585,
-    "promptTokens1d": 136219,
-    "estimatedCost30d": 347.369,
+    "promptTokens7d": 1357793,
+    "promptTokens1d": 136139,
+    "estimatedCost30d": 347.368,
     "deployments": [
       {
         "model": "o4-mini",
@@ -102,11 +102,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 10116208,
+    "promptTokens30d": 9973178,
     "completionTokens30d": 0,
     "promptTokens7d": 3983103,
     "promptTokens1d": 227156,
-    "estimatedCost30d": 101.16,
+    "estimatedCost30d": 99.73,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -195,12 +195,12 @@
   },
   {
     "date": "2026-08-17",
-    "tokens": 254252,
+    "tokens": 254279,
     "cost": 2.54
   },
   {
     "date": "2026-08-18",
-    "tokens": 318237,
+    "tokens": 318265,
     "cost": 3.18
   },
   {
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-21",
-    "tokens": 331134,
-    "cost": 3.31
+    "tokens": 334541,
+    "cost": 3.34
   }
 ],
   "alerts": {
