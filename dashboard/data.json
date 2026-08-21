@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21T12:54:46Z",
+  "timestamp": "2026-08-21T13:49:04Z",
   "date": "2026-08-21",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -113
   },
   "costs": {
-    "openAi30d": 1019.148,
+    "openAi30d": 1019.139,
     "otherServices30d": 121.00,
-    "totalMonthly": 1140.148,
-    "projectedTillApril": -4286.956,
+    "totalMonthly": 1140.139,
+    "projectedTillApril": -4286.922,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 182966034,
+    "totalTokens30d": 182967375,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 115786283,
+    "promptTokens30d": 115789741,
     "completionTokens30d": 0,
-    "promptTokens7d": 1354265,
-    "promptTokens1d": 132745,
-    "estimatedCost30d": 347.358,
+    "promptTokens7d": 1357726,
+    "promptTokens1d": 136211,
+    "estimatedCost30d": 347.369,
     "deployments": [
       {
         "model": "o4-mini",
@@ -102,11 +102,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 10121461,
+    "promptTokens30d": 10119344,
     "completionTokens30d": 0,
     "promptTokens7d": 3983103,
     "promptTokens1d": 227156,
-    "estimatedCost30d": 101.21,
+    "estimatedCost30d": 101.19,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -131,7 +131,7 @@
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
-    "count": 6
+    "count": 7
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
@@ -146,11 +146,11 @@
     "count": 5
   },
   {
-    "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 4
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 5
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
+    "type": "Microsoft.OperationalInsights/workspaces",
     "count": 4
   },
   {
@@ -158,12 +158,12 @@
     "count": 4
   },
   {
-    "type": "Microsoft.ContainerRegistry/registries",
+    "type": "Microsoft.Network/loadBalancers",
     "count": 4
   },
   {
-    "type": "Microsoft.Network/loadBalancers",
-    "count": 3
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 4
   },
   {
     "type": "Microsoft.Insights/activityLogAlerts",
@@ -178,8 +178,8 @@
     "count": 3
   },
   {
-    "type": "Microsoft.Network/networkWatchers",
-    "count": 2
+    "type": "Microsoft.App/managedEnvironments",
+    "count": 3
   }
 ],
   "dailyMetrics": [
@@ -195,12 +195,12 @@
   },
   {
     "date": "2026-08-17",
-    "tokens": 254239,
+    "tokens": 254252,
     "cost": 2.54
   },
   {
     "date": "2026-08-18",
-    "tokens": 318223,
+    "tokens": 318237,
     "cost": 3.18
   },
   {
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-21",
-    "tokens": 321656,
-    "cost": 3.21
+    "tokens": 328261,
+    "cost": 3.28
   }
 ],
   "alerts": {
