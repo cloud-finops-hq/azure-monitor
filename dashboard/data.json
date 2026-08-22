@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T09:30:24Z",
+  "timestamp": "2026-08-22T10:27:28Z",
   "date": "2026-08-22",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,31 +9,31 @@
     "daysRemaining": -114
   },
   "costs": {
-    "openAi30d": 994.548,
-    "otherServices30d": 171.20,
-    "totalMonthly": 1165.748,
-    "projectedTillApril": -4429.842,
+    "openAi30d": 994.198,
+    "otherServices30d": 211.20,
+    "totalMonthly": 1205.398,
+    "projectedTillApril": -4580.512,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 177544935,
+    "totalTokens30d": 177509619,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 6,
     "postgresServers": 3,
-    "containerApps": 1
+    "containerApps": 3
   },
   "openAiUsage": [
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 111556060,
+    "promptTokens30d": 111556046,
     "completionTokens30d": 0,
-    "promptTokens7d": 1286634,
-    "promptTokens1d": 135501,
+    "promptTokens7d": 1276690,
+    "promptTokens1d": 135575,
     "estimatedCost30d": 334.668,
     "deployments": [
       {
@@ -102,11 +102,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 8930585,
+    "promptTokens30d": 8895283,
     "completionTokens30d": 0,
-    "promptTokens7d": 4014409,
+    "promptTokens7d": 4014359,
     "promptTokens1d": 197901,
-    "estimatedCost30d": 89.30,
+    "estimatedCost30d": 88.95,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -130,11 +130,11 @@
     "count": 8
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 6
+    "type": "Microsoft.Network/publicIPAddresses",
+    "count": 7
   },
   {
-    "type": "Microsoft.Network/publicIPAddresses",
+    "type": "Microsoft.Storage/storageAccounts",
     "count": 6
   },
   {
@@ -163,7 +163,7 @@
   },
   {
     "type": "Microsoft.Network/loadBalancers",
-    "count": 3
+    "count": 4
   },
   {
     "type": "Microsoft.Insights/activityLogAlerts",
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-22",
-    "tokens": 279913,
-    "cost": 2.79
+    "tokens": 283260,
+    "cost": 2.83
   }
 ],
   "alerts": {
