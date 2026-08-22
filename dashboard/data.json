@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T12:46:09Z",
+  "timestamp": "2026-08-22T13:34:14Z",
   "date": "2026-08-22",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,32 +9,32 @@
     "daysRemaining": -114
   },
   "costs": {
-    "openAi30d": 989.998,
-    "otherServices30d": 211.20,
-    "totalMonthly": 1201.198,
-    "projectedTillApril": -4564.552,
+    "openAi30d": 989.979,
+    "otherServices30d": 231.20,
+    "totalMonthly": 1221.179,
+    "projectedTillApril": -4640.480,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 176109677,
+    "totalTokens30d": 176103469,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 6,
     "postgresServers": 3,
-    "containerApps": 3
+    "containerApps": 4
   },
   "openAiUsage": [
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 110156104,
+    "promptTokens30d": 110149896,
     "completionTokens30d": 0,
-    "promptTokens7d": 1273691,
-    "promptTokens1d": 135583,
-    "estimatedCost30d": 330.468,
+    "promptTokens7d": 1273777,
+    "promptTokens1d": 132053,
+    "estimatedCost30d": 330.449,
     "deployments": [
       {
         "model": "o4-mini",
@@ -166,6 +166,10 @@
     "count": 4
   },
   {
+    "type": "Microsoft.App/containerApps",
+    "count": 4
+  },
+  {
     "type": "Microsoft.Insights/activityLogAlerts",
     "count": 3
   },
@@ -175,10 +179,6 @@
   },
   {
     "type": "Microsoft.ContainerService/managedClusters",
-    "count": 3
-  },
-  {
-    "type": "Microsoft.CognitiveServices/accounts",
     "count": 3
   }
 ],
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-22",
-    "tokens": 291213,
-    "cost": 2.91
+    "tokens": 293988,
+    "cost": 2.93
   }
 ],
   "alerts": {
