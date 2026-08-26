@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-26T12:59:24Z",
+  "timestamp": "2026-08-26T13:57:07Z",
   "date": "2026-08-26",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -118
   },
   "costs": {
-    "openAi30d": 962.300,
+    "openAi30d": 962.050,
     "otherServices30d": 231.20,
-    "totalMonthly": 1193.500,
-    "projectedTillApril": -4690.455,
+    "totalMonthly": 1193.250,
+    "projectedTillApril": -4689.472,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 153297812,
+    "totalTokens30d": 153272686,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,10 +30,10 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 81523510,
+    "promptTokens30d": 81523656,
     "completionTokens30d": 0,
-    "promptTokens7d": 1222733,
-    "promptTokens1d": 132609,
+    "promptTokens7d": 1222595,
+    "promptTokens1d": 132696,
     "estimatedCost30d": 244.570,
     "deployments": [
       {
@@ -88,7 +88,7 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 63434343,
     "completionTokens30d": 0,
-    "promptTokens7d": 6932168,
+    "promptTokens7d": 6554044,
     "promptTokens1d": 6514958,
     "estimatedCost30d": 634.34,
     "deployments": [
@@ -102,11 +102,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 8339959,
+    "promptTokens30d": 8314687,
     "completionTokens30d": 0,
     "promptTokens7d": 1118939,
     "promptTokens1d": 220533,
-    "estimatedCost30d": 83.39,
+    "estimatedCost30d": 83.14,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -215,8 +215,8 @@
   },
   {
     "date": "2026-08-26",
-    "tokens": 6222482,
-    "cost": 62.22
+    "tokens": 6225770,
+    "cost": 62.25
   }
 ],
   "alerts": {
