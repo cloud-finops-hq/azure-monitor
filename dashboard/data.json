@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-04T22:53:44Z",
-  "date": "2026-09-04",
+  "timestamp": "2026-09-05T00:44:53Z",
+  "date": "2026-09-05",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -127
+    "daysRemaining": -128
   },
   "costs": {
-    "openAi30d": 3847.071,
+    "openAi30d": 3842.151,
     "otherServices30d": 231.20,
-    "totalMonthly": 4078.271,
-    "projectedTillApril": -17251.086,
+    "totalMonthly": 4073.351,
+    "projectedTillApril": -17352.475,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 397205355,
+    "totalTokens30d": 395565531,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 17853701,
+    "promptTokens30d": 16213877,
     "completionTokens30d": 0,
-    "promptTokens7d": 2078941,
-    "promptTokens1d": 132145,
-    "estimatedCost30d": 53.561,
+    "promptTokens7d": 2078939,
+    "promptTokens1d": 132143,
+    "estimatedCost30d": 48.641,
     "deployments": [
       {
         "model": "o4-mini",
@@ -105,7 +105,7 @@
     "promptTokens30d": 7836533,
     "completionTokens30d": 0,
     "promptTokens7d": 797003,
-    "promptTokens1d": 391783,
+    "promptTokens1d": 70139,
     "estimatedCost30d": 78.36,
     "deployments": [
       {
@@ -184,11 +184,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-08-29",
-    "tokens": 150967144,
-    "cost": 1509.67
-  },
-  {
     "date": "2026-08-30",
     "tokens": 473348,
     "cost": 4.73
@@ -215,8 +210,13 @@
   },
   {
     "date": "2026-09-04",
-    "tokens": 243144,
-    "cost": 2.43
+    "tokens": 246698,
+    "cost": 2.46
+  },
+  {
+    "date": "2026-09-05",
+    "tokens": 2756,
+    "cost": 0.02
   }
 ],
   "alerts": {
