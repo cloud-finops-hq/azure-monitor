@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-08T23:56:48Z",
-  "date": "2026-09-08",
+  "timestamp": "2026-09-09T03:55:52Z",
+  "date": "2026-09-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -131
+    "daysRemaining": -132
   },
   "costs": {
-    "openAi30d": 3461.070,
+    "openAi30d": 3438.239,
     "otherServices30d": 231.20,
-    "totalMonthly": 3692.270,
-    "projectedTillApril": -16098.297,
+    "totalMonthly": 3669.439,
+    "projectedTillApril": -16145.531,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 352487578,
+    "totalTokens30d": 350203681,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 9113352,
+    "promptTokens30d": 9113132,
     "completionTokens30d": 0,
-    "promptTokens7d": 1237557,
-    "promptTokens1d": 132274,
-    "estimatedCost30d": 27.340,
+    "promptTokens7d": 1237631,
+    "promptTokens1d": 132255,
+    "estimatedCost30d": 27.339,
     "deployments": [
       {
         "model": "o4-mini",
@@ -86,11 +86,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 335467879,
+    "promptTokens30d": 333184202,
     "completionTokens30d": 0,
     "promptTokens7d": 21826326,
     "promptTokens1d": 0,
-    "estimatedCost30d": 3354.67,
+    "estimatedCost30d": 3331.84,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -184,11 +184,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-09-02",
-    "tokens": 20817758,
-    "cost": 208.17
-  },
-  {
     "date": "2026-09-03",
     "tokens": 1555965,
     "cost": 15.55
@@ -217,6 +212,11 @@
     "date": "2026-09-08",
     "tokens": 319820,
     "cost": 3.19
+  },
+  {
+    "date": "2026-09-09",
+    "tokens": 30536,
+    "cost": 0.30
   }
 ],
   "alerts": {
