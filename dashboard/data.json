@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-12T10:22:19Z",
+  "timestamp": "2026-09-12T13:55:38Z",
   "date": "2026-09-12",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -135
   },
   "costs": {
-    "openAi30d": 3657.756,
+    "openAi30d": 4028.358,
     "otherServices30d": 231.20,
-    "totalMonthly": 3888.956,
-    "projectedTillApril": -17500.302,
+    "totalMonthly": 4259.558,
+    "projectedTillApril": -19168.011,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 398554474,
+    "totalTokens30d": 436455458,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 46825562,
+    "promptTokens30d": 48026333,
     "completionTokens30d": 0,
-    "promptTokens7d": 40409315,
-    "promptTokens1d": 133990,
-    "estimatedCost30d": 140.476,
+    "promptTokens7d": 41618391,
+    "promptTokens1d": 1343116,
+    "estimatedCost30d": 144.078,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 343623700,
+    "promptTokens30d": 380323913,
     "completionTokens30d": 0,
-    "promptTokens7d": 10439498,
-    "promptTokens1d": 8190182,
-    "estimatedCost30d": 3436.23,
+    "promptTokens7d": 47139711,
+    "promptTokens1d": 44410676,
+    "estimatedCost30d": 3803.23,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -208,7 +208,7 @@
   },
   {
     "date": "2026-09-09",
-    "tokens": 6788592,
+    "tokens": 6788734,
     "cost": 67.88
   },
   {
@@ -223,8 +223,8 @@
   },
   {
     "date": "2026-09-12",
-    "tokens": 7998576,
-    "cost": 79.98
+    "tokens": 46179569,
+    "cost": 461.79
   }
 ],
   "alerts": {
