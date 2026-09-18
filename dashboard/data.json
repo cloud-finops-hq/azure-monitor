@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-17T22:49:07Z",
-  "date": "2026-09-17",
+  "timestamp": "2026-09-18T01:07:40Z",
+  "date": "2026-09-18",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -140
+    "daysRemaining": -141
   },
   "costs": {
-    "openAi30d": 4742.596,
+    "openAi30d": 4746.046,
     "otherServices30d": 231.20,
-    "totalMonthly": 4973.796,
-    "projectedTillApril": -23177.889,
+    "totalMonthly": 4977.246,
+    "projectedTillApril": -23393.056,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 517580320,
+    "totalTokens30d": 517925894,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,10 +30,10 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 61885646,
+    "promptTokens30d": 61885477,
     "completionTokens30d": 0,
-    "promptTokens7d": 17547350,
-    "promptTokens1d": 132479,
+    "promptTokens7d": 17547295,
+    "promptTokens1d": 132359,
     "estimatedCost30d": 185.656,
     "deployments": [
       {
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 449742112,
+    "promptTokens30d": 450087855,
     "completionTokens30d": 0,
-    "promptTokens7d": 115448688,
-    "promptTokens1d": 16321154,
-    "estimatedCost30d": 4497.42,
+    "promptTokens7d": 115794431,
+    "promptTokens1d": 16666897,
+    "estimatedCost30d": 4500.87,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -192,11 +192,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-09-11",
-    "tokens": 1813321,
-    "cost": 18.13
-  },
-  {
     "date": "2026-09-12",
     "tokens": 60905987,
     "cost": 609.05
@@ -223,8 +218,13 @@
   },
   {
     "date": "2026-09-17",
-    "tokens": 16663834,
-    "cost": 166.63
+    "tokens": 16667828,
+    "cost": 166.67
+  },
+  {
+    "date": "2026-09-18",
+    "tokens": 349807,
+    "cost": 3.49
   }
 ],
   "alerts": {
