@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-23T05:40:24Z",
+  "timestamp": "2026-09-23T11:07:02Z",
   "date": "2026-09-23",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -146
   },
   "costs": {
-    "openAi30d": 6972.322,
+    "openAi30d": 7028.036,
     "otherServices30d": 471.60,
-    "totalMonthly": 7443.922,
-    "projectedTillApril": -36177.460,
+    "totalMonthly": 7499.636,
+    "projectedTillApril": -36448.230,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 1241297287,
+    "totalTokens30d": 1259612190,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 777234236,
+    "promptTokens30d": 795438808,
     "completionTokens30d": 0,
-    "promptTokens7d": 716767094,
-    "promptTokens1d": 186599968,
-    "estimatedCost30d": 2331.702,
+    "promptTokens7d": 734979215,
+    "promptTokens1d": 152120967,
+    "estimatedCost30d": 2386.316,
     "deployments": [
       {
         "model": "o4-mini",
@@ -92,8 +92,8 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 458365974,
     "completionTokens30d": 0,
-    "promptTokens7d": 65917559,
-    "promptTokens1d": 3073817,
+    "promptTokens7d": 63752163,
+    "promptTokens1d": 1708644,
     "estimatedCost30d": 4583.65,
     "deployments": [
       {
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 5697077,
+    "promptTokens30d": 5807408,
     "completionTokens30d": 0,
-    "promptTokens7d": 1146783,
-    "promptTokens1d": 179615,
-    "estimatedCost30d": 56.97,
+    "promptTokens7d": 1126223,
+    "promptTokens1d": 184843,
+    "estimatedCost30d": 58.07,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -223,8 +223,8 @@
   },
   {
     "date": "2026-09-23",
-    "tokens": 36444,
-    "cost": 0.36
+    "tokens": 18484713,
+    "cost": 184.84
   }
 ],
   "alerts": {
