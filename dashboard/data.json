@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-28T06:29:33Z",
+  "timestamp": "2026-09-28T15:08:20Z",
   "date": "2026-09-28",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": -151
   },
   "costs": {
-    "openAi30d": 9977.115,
-    "otherServices30d": 471.60,
-    "totalMonthly": 10448.715,
-    "projectedTillApril": -52557.036,
+    "openAi30d": 10180.785,
+    "otherServices30d": 571.80,
+    "totalMonthly": 10752.585,
+    "projectedTillApril": -54085.502,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 2453062979,
+    "totalTokens30d": 2672588615,
     "openAiAccounts": 3,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 8,
-    "postgresServers": 7,
+    "storageAccounts": 9,
+    "postgresServers": 9,
     "containerApps": 6
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 2079071726,
+    "promptTokens30d": 2363585094,
     "completionTokens30d": 0,
-    "promptTokens7d": 1773323729,
-    "promptTokens1d": 755667832,
-    "estimatedCost30d": 6237.215,
+    "promptTokens7d": 1975836562,
+    "promptTokens1d": 970578875,
+    "estimatedCost30d": 7090.755,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 367899356,
+    "promptTokens30d": 303077063,
     "completionTokens30d": 0,
     "promptTokens7d": 56233164,
-    "promptTokens1d": 2903722,
-    "estimatedCost30d": 3678.99,
+    "promptTokens1d": 0,
+    "estimatedCost30d": 3030.77,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 6091897,
+    "promptTokens30d": 5926458,
     "completionTokens30d": 0,
-    "promptTokens7d": 2021895,
-    "promptTokens1d": 430361,
-    "estimatedCost30d": 60.91,
+    "promptTokens7d": 2060218,
+    "promptTokens1d": 127460,
+    "estimatedCost30d": 59.26,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -135,31 +135,47 @@
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 15
+    "count": 18
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
-    "count": 9
+    "count": 10
   },
   {
     "type": "Microsoft.Storage/storageAccounts",
-    "count": 8
+    "count": 9
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 7
+    "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+    "count": 9
   },
   {
-    "type": "Microsoft.KeyVault/vaults",
-    "count": 7
+    "type": "Microsoft.Network/privateDnsZones",
+    "count": 9
   },
   {
     "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 7
+    "count": 9
+  },
+  {
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 8
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "count": 8
+  },
+  {
+    "type": "Microsoft.KeyVault/vaults",
+    "count": 8
   },
   {
     "type": "Microsoft.ContainerRegistry/registries",
-    "count": 7
+    "count": 8
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSets",
+    "count": 8
   },
   {
     "type": "Microsoft.OperationalInsights/workspaces",
@@ -171,22 +187,6 @@
   },
   {
     "type": "Microsoft.Insights/metricalerts",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.Compute/virtualMachineScaleSets",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.App/managedEnvironments/managedCertificates",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.App/containerApps",
-    "count": 6
-  },
-  {
-    "type": "Microsoft.AlertsManagement/prometheusRuleGroups",
     "count": 6
   }
 ],
@@ -223,8 +223,8 @@
   },
   {
     "date": "2026-09-28",
-    "tokens": 267682295,
-    "cost": 2676.82
+    "tokens": 555163568,
+    "cost": 5551.63
   }
 ],
   "alerts": {
