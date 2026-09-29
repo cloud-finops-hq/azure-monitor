@@ -1,24 +1,24 @@
 {
-  "timestamp": "2026-09-28T21:42:07Z",
-  "date": "2026-09-28",
+  "timestamp": "2026-09-29T01:37:26Z",
+  "date": "2026-09-29",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -151
+    "daysRemaining": -152
   },
   "costs": {
-    "openAi30d": 11212.011,
+    "openAi30d": 11829.425,
     "otherServices30d": 571.80,
-    "totalMonthly": 11783.811,
-    "projectedTillApril": -59272.569,
+    "totalMonthly": 12401.225,
+    "projectedTillApril": -62750.198,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 3179297999,
-    "openAiAccounts": 3,
+    "totalTokens30d": 3420931420,
+    "openAiAccounts": 4,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 9,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 2940137102,
+    "promptTokens30d": 3197125308,
     "completionTokens30d": 0,
-    "promptTokens7d": 2419791551,
-    "promptTokens1d": 1245115906,
-    "estimatedCost30d": 8820.411,
+    "promptTokens7d": 2608243898,
+    "promptTokens1d": 1296889816,
+    "estimatedCost30d": 9591.375,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 233234439,
+    "promptTokens30d": 217879654,
     "completionTokens30d": 0,
     "promptTokens7d": 56233164,
     "promptTokens1d": 0,
-    "estimatedCost30d": 2332.34,
+    "estimatedCost30d": 2178.79,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -123,6 +123,22 @@
       {
         "model": "gpt-5.4-mini",
         "name": "gpt-5.4-mini"
+      }
+    ]
+  },
+  {
+    "account": "visionmagic-stg-creative-eval",
+    "resourceGroup": "rg-visionmagic-staging-uksouth",
+    "primaryModel": "gpt-image-2",
+    "promptTokens30d": 0,
+    "completionTokens30d": 0,
+    "promptTokens7d": 0,
+    "promptTokens1d": 0,
+    "estimatedCost30d": 0,
+    "deployments": [
+      {
+        "model": "gpt-image-2",
+        "name": "gpt-image-2"
       }
     ]
   }
@@ -192,11 +208,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-09-22",
-    "tokens": 192411675,
-    "cost": 1924.11
-  },
-  {
     "date": "2026-09-23",
     "tokens": 155094979,
     "cost": 1550.94
@@ -223,8 +234,13 @@
   },
   {
     "date": "2026-09-28",
-    "tokens": 1130489883,
-    "cost": 11304.89
+    "tokens": 1314383601,
+    "cost": 13143.83
+  },
+  {
+    "date": "2026-09-29",
+    "tokens": 70642494,
+    "cost": 706.42
   }
 ],
   "alerts": {
