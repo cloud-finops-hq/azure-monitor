@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-29T20:33:36Z",
-  "date": "2026-09-29",
+  "timestamp": "2026-09-30T00:10:30Z",
+  "date": "2026-09-30",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -152
+    "daysRemaining": -153
   },
   "costs": {
-    "openAi30d": 12170.693,
+    "openAi30d": 12609.565,
     "otherServices30d": 571.80,
-    "totalMonthly": 12742.493,
-    "projectedTillApril": -64477.014,
+    "totalMonthly": 13181.365,
+    "projectedTillApril": -67224.961,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 3516916787,
+    "totalTokens30d": 3663160837,
     "openAiAccounts": 4,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 3285494461,
+    "promptTokens30d": 3431718588,
     "completionTokens30d": 0,
-    "promptTokens7d": 2510365481,
-    "promptTokens1d": 450196124,
-    "estimatedCost30d": 9856.483,
+    "promptTokens7d": 2656589608,
+    "promptTokens1d": 285839139,
+    "estimatedCost30d": 10295.155,
     "deployments": [
       {
         "model": "o4-mini",
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 6066543,
+    "promptTokens30d": 6086466,
     "completionTokens30d": 0,
-    "promptTokens7d": 2138563,
-    "promptTokens1d": 257960,
-    "estimatedCost30d": 60.66,
+    "promptTokens7d": 2158486,
+    "promptTokens1d": 277883,
+    "estimatedCost30d": 60.86,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -151,7 +151,7 @@
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 21
+    "count": 22
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -170,6 +170,10 @@
     "count": 9
   },
   {
+    "type": "Microsoft.KeyVault/vaults",
+    "count": 9
+  },
+  {
     "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 9
   },
@@ -179,10 +183,6 @@
   },
   {
     "type": "Microsoft.Network/networkSecurityGroups",
-    "count": 8
-  },
-  {
-    "type": "Microsoft.KeyVault/vaults",
     "count": 8
   },
   {
@@ -207,11 +207,6 @@
   }
 ],
   "dailyMetrics": [
-  {
-    "date": "2026-09-23",
-    "tokens": 155094979,
-    "cost": 1550.94
-  },
   {
     "date": "2026-09-24",
     "tokens": 69911413,
@@ -239,8 +234,13 @@
   },
   {
     "date": "2026-09-29",
-    "tokens": 169428226,
-    "cost": 1694.28
+    "tokens": 312603539,
+    "cost": 3126.03
+  },
+  {
+    "date": "2026-09-30",
+    "tokens": 1239517,
+    "cost": 12.39
   }
 ],
   "alerts": {
