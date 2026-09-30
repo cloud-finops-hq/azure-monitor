@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-30T00:10:30Z",
+  "timestamp": "2026-09-30T06:26:41Z",
   "date": "2026-09-30",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -153
   },
   "costs": {
-    "openAi30d": 12609.565,
+    "openAi30d": 12767.181,
     "otherServices30d": 571.80,
-    "totalMonthly": 13181.365,
-    "projectedTillApril": -67224.961,
+    "totalMonthly": 13338.981,
+    "projectedTillApril": -68028.803,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 3663160837,
+    "totalTokens30d": 3715690732,
     "openAiAccounts": 4,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 3431718588,
+    "promptTokens30d": 3484243963,
     "completionTokens30d": 0,
-    "promptTokens7d": 2656589608,
-    "promptTokens1d": 285839139,
-    "estimatedCost30d": 10295.155,
+    "promptTokens7d": 2709082312,
+    "promptTokens1d": 285489068,
+    "estimatedCost30d": 10452.731,
     "deployments": [
       {
         "model": "o4-mini",
@@ -130,11 +130,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 4043,
+    "promptTokens30d": 8563,
     "completionTokens30d": 0,
-    "promptTokens7d": 4043,
-    "promptTokens1d": 4043,
-    "estimatedCost30d": 0.04,
+    "promptTokens7d": 8563,
+    "promptTokens1d": 8563,
+    "estimatedCost30d": 0.08,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -239,8 +239,8 @@
   },
   {
     "date": "2026-09-30",
-    "tokens": 1239517,
-    "cost": 12.39
+    "tokens": 58955993,
+    "cost": 589.55
   }
 ],
   "alerts": {
