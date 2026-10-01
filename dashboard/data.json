@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-01T16:10:15Z",
+  "timestamp": "2026-10-01T21:40:45Z",
   "date": "2026-10-01",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": -154
   },
   "costs": {
-    "openAi30d": 15051.400,
-    "otherServices30d": 642.00,
-    "totalMonthly": 15693.400,
-    "projectedTillApril": -80507.142,
+    "openAi30d": 15160.360,
+    "otherServices30d": 692.00,
+    "totalMonthly": 15852.360,
+    "projectedTillApril": -81322.606,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4456516446,
+    "totalTokens30d": 4530457339,
     "openAiAccounts": 4,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 10,
-    "postgresServers": 10,
+    "postgresServers": 11,
     "containerApps": 7
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4216250223,
+    "promptTokens30d": 4306313521,
     "completionTokens30d": 0,
-    "promptTokens7d": 3230571220,
-    "promptTokens1d": 220192103,
-    "estimatedCost30d": 12648.750,
+    "promptTokens7d": 3316640635,
+    "promptTokens1d": 171610095,
+    "estimatedCost30d": 12918.940,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 233588380,
+    "promptTokens30d": 217465975,
     "completionTokens30d": 0,
-    "promptTokens7d": 66706936,
-    "promptTokens1d": 4254385,
-    "estimatedCost30d": 2335.88,
+    "promptTokens7d": 67693009,
+    "promptTokens1d": 2841080,
+    "estimatedCost30d": 2174.65,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -151,7 +151,7 @@
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 24
+    "count": 25
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -159,6 +159,10 @@
   },
   {
     "type": "Microsoft.KeyVault/vaults",
+    "count": 11
+  },
+  {
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 11
   },
   {
@@ -171,10 +175,6 @@
   },
   {
     "type": "Microsoft.Network/privateDnsZones",
-    "count": 10
-  },
-  {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 10
   },
   {
@@ -239,8 +239,8 @@
   },
   {
     "date": "2026-10-01",
-    "tokens": 84126173,
-    "cost": 841.26
+    "tokens": 173615698,
+    "cost": 1736.15
   }
 ],
   "alerts": {
