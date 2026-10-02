@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-10-01T21:40:45Z",
-  "date": "2026-10-01",
+  "timestamp": "2026-10-02T01:25:59Z",
+  "date": "2026-10-02",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -154
+    "daysRemaining": -155
   },
   "costs": {
-    "openAi30d": 15160.360,
+    "openAi30d": 15537.092,
     "otherServices30d": 692.00,
-    "totalMonthly": 15852.360,
-    "projectedTillApril": -81322.606,
+    "totalMonthly": 16229.092,
+    "projectedTillApril": -83742.114,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4530457339,
+    "totalTokens30d": 4656034724,
     "openAiAccounts": 4,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4306313521,
+    "promptTokens30d": 4431890906,
     "completionTokens30d": 0,
-    "promptTokens7d": 3316640635,
-    "promptTokens1d": 171610095,
-    "estimatedCost30d": 12918.940,
+    "promptTokens7d": 3423430510,
+    "promptTokens1d": 296116534,
+    "estimatedCost30d": 13295.672,
     "deployments": [
       {
         "model": "o4-mini",
@@ -151,7 +151,7 @@
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 25
+    "count": 24
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -208,11 +208,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-09-25",
-    "tokens": 119911173,
-    "cost": 1199.11
-  },
-  {
     "date": "2026-09-26",
     "tokens": 226162720,
     "cost": 2261.62
@@ -239,8 +234,13 @@
   },
   {
     "date": "2026-10-01",
-    "tokens": 173615698,
-    "cost": 1736.15
+    "tokens": 234387807,
+    "cost": 2343.87
+  },
+  {
+    "date": "2026-10-02",
+    "tokens": 69680381,
+    "cost": 696.80
   }
 ],
   "alerts": {
