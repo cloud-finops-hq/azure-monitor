@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02T08:10:47Z",
+  "timestamp": "2026-10-02T15:34:05Z",
   "date": "2026-10-02",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": -155
   },
   "costs": {
-    "openAi30d": 16974.530,
-    "otherServices30d": 642.00,
-    "totalMonthly": 17616.530,
-    "projectedTillApril": -90901.294,
+    "openAi30d": 17220.976,
+    "otherServices30d": 742.00,
+    "totalMonthly": 17962.976,
+    "projectedTillApril": -92688.956,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 5136428951,
+    "totalTokens30d": 5244563716,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 10,
-    "postgresServers": 10,
+    "postgresServers": 12,
     "containerApps": 7
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4912820149,
+    "promptTokens30d": 5032092157,
     "completionTokens30d": 0,
-    "promptTokens7d": 3874817811,
-    "promptTokens1d": 777045673,
-    "estimatedCost30d": 14738.460,
+    "promptTokens7d": 3951174931,
+    "promptTokens1d": 822192201,
+    "estimatedCost30d": 15096.276,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 216674363,
+    "promptTokens30d": 205537120,
     "completionTokens30d": 0,
-    "promptTokens7d": 66640302,
-    "promptTokens1d": 1445673,
-    "estimatedCost30d": 2166.74,
+    "promptTokens7d": 69511700,
+    "promptTokens1d": 4361497,
+    "estimatedCost30d": 2055.37,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -174,7 +174,15 @@
     "count": 12
   },
   {
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
+    "count": 12
+  },
+  {
     "type": "Microsoft.KeyVault/vaults",
+    "count": 11
+  },
+  {
+    "type": "Microsoft.App/jobs",
     "count": 11
   },
   {
@@ -190,10 +198,6 @@
     "count": 10
   },
   {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 10
-  },
-  {
     "type": "Microsoft.Network/virtualNetworks",
     "count": 9
   },
@@ -203,10 +207,6 @@
   },
   {
     "type": "Microsoft.ContainerRegistry/registries",
-    "count": 9
-  },
-  {
-    "type": "Microsoft.App/jobs",
     "count": 9
   },
   {
@@ -255,8 +255,8 @@
   },
   {
     "date": "2026-10-02",
-    "tokens": 546537845,
-    "cost": 5465.37
+    "tokens": 670626187,
+    "cost": 6706.26
   }
 ],
   "alerts": {
