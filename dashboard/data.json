@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02T01:25:59Z",
+  "timestamp": "2026-10-02T08:10:47Z",
   "date": "2026-10-02",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": -155
   },
   "costs": {
-    "openAi30d": 15537.092,
-    "otherServices30d": 692.00,
-    "totalMonthly": 16229.092,
-    "projectedTillApril": -83742.114,
+    "openAi30d": 16974.530,
+    "otherServices30d": 642.00,
+    "totalMonthly": 17616.530,
+    "projectedTillApril": -90901.294,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4656034724,
-    "openAiAccounts": 4,
+    "totalTokens30d": 5136428951,
+    "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 10,
-    "postgresServers": 11,
+    "postgresServers": 10,
     "containerApps": 7
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4431890906,
+    "promptTokens30d": 4912820149,
     "completionTokens30d": 0,
-    "promptTokens7d": 3423430510,
-    "promptTokens1d": 296116534,
-    "estimatedCost30d": 13295.672,
+    "promptTokens7d": 3874817811,
+    "promptTokens1d": 777045673,
+    "estimatedCost30d": 14738.460,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 217465975,
+    "promptTokens30d": 216674363,
     "completionTokens30d": 0,
-    "promptTokens7d": 67693009,
-    "promptTokens1d": 2841080,
-    "estimatedCost30d": 2174.65,
+    "promptTokens7d": 66640302,
+    "promptTokens1d": 1445673,
+    "estimatedCost30d": 2166.74,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 6669280,
+    "promptTokens30d": 6889160,
     "completionTokens30d": 0,
-    "promptTokens7d": 2331540,
-    "promptTokens1d": 243327,
-    "estimatedCost30d": 66.69,
+    "promptTokens7d": 2328182,
+    "promptTokens1d": 219880,
+    "estimatedCost30d": 68.89,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -123,6 +123,22 @@
       {
         "model": "gpt-5.4-mini",
         "name": "gpt-5.4-mini"
+      }
+    ]
+  },
+  {
+    "account": "reckon-prod-ai",
+    "resourceGroup": "rg-reckon-ai-uksouth",
+    "primaryModel": "gpt-6-astra",
+    "promptTokens30d": 36716,
+    "completionTokens30d": 0,
+    "promptTokens7d": 36716,
+    "promptTokens1d": 36716,
+    "estimatedCost30d": 0.36,
+    "deployments": [
+      {
+        "model": "gpt-6-astra",
+        "name": "gpt-6-astra"
       }
     ]
   },
@@ -151,7 +167,7 @@
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 24
+    "count": 28
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -159,10 +175,6 @@
   },
   {
     "type": "Microsoft.KeyVault/vaults",
-    "count": 11
-  },
-  {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 11
   },
   {
@@ -175,6 +187,10 @@
   },
   {
     "type": "Microsoft.Network/privateDnsZones",
+    "count": 10
+  },
+  {
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 10
   },
   {
@@ -239,8 +255,8 @@
   },
   {
     "date": "2026-10-02",
-    "tokens": 69680381,
-    "cost": 696.80
+    "tokens": 546537845,
+    "cost": 5465.37
   }
 ],
   "alerts": {
