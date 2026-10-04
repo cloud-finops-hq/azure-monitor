@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-04T16:46:38Z",
+  "timestamp": "2026-10-04T19:57:30Z",
   "date": "2026-10-04",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -157
   },
   "costs": {
-    "openAi30d": 21511.940,
+    "openAi30d": 21708.045,
     "otherServices30d": 942.40,
-    "totalMonthly": 22454.340,
-    "projectedTillApril": -117436.198,
+    "totalMonthly": 22650.445,
+    "projectedTillApril": -118461.827,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 5894826303,
+    "totalTokens30d": 5936254624,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5348043635,
+    "promptTokens30d": 5379211883,
     "completionTokens30d": 0,
-    "promptTokens7d": 3891571809,
-    "promptTokens1d": 163326481,
-    "estimatedCost30d": 16044.130,
+    "promptTokens7d": 3804182064,
+    "promptTokens1d": 177761125,
+    "estimatedCost30d": 16137.635,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 539976752,
+    "promptTokens30d": 550236825,
     "completionTokens30d": 0,
-    "promptTokens7d": 361054000,
-    "promptTokens1d": 77540007,
-    "estimatedCost30d": 5399.76,
+    "promptTokens7d": 371314073,
+    "promptTokens1d": 46181061,
+    "estimatedCost30d": 5502.36,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -163,7 +163,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 35
+    "count": 36
   },
   {
     "type": "Microsoft.Compute/disks",
@@ -178,11 +178,11 @@
     "count": 14
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 12
+    "type": "Microsoft.KeyVault/vaults",
+    "count": 13
   },
   {
-    "type": "Microsoft.KeyVault/vaults",
+    "type": "Microsoft.Storage/storageAccounts",
     "count": 12
   },
   {
@@ -255,8 +255,8 @@
   },
   {
     "date": "2026-10-04",
-    "tokens": 153636430,
-    "cost": 1536.36
+    "tokens": 196223963,
+    "cost": 1962.23
   }
 ],
   "alerts": {
