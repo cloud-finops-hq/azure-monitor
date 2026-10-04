@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-04T19:57:30Z",
+  "timestamp": "2026-10-04T22:54:09Z",
   "date": "2026-10-04",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -157
   },
   "costs": {
-    "openAi30d": 21708.045,
+    "openAi30d": 21810.718,
     "otherServices30d": 942.40,
-    "totalMonthly": 22650.445,
-    "projectedTillApril": -118461.827,
+    "totalMonthly": 22753.118,
+    "projectedTillApril": -118998.807,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 5936254624,
+    "totalTokens30d": 5967251700,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5379211883,
+    "promptTokens30d": 5408826050,
     "completionTokens30d": 0,
-    "promptTokens7d": 3804182064,
-    "promptTokens1d": 177761125,
-    "estimatedCost30d": 16137.635,
+    "promptTokens7d": 3648944950,
+    "promptTokens1d": 186922615,
+    "estimatedCost30d": 16226.478,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 550236825,
+    "promptTokens30d": 551619734,
     "completionTokens30d": 0,
-    "promptTokens7d": 371314073,
-    "promptTokens1d": 46181061,
-    "estimatedCost30d": 5502.36,
+    "promptTokens7d": 372696982,
+    "promptTokens1d": 47563970,
+    "estimatedCost30d": 5516.19,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -133,7 +133,7 @@
     "promptTokens30d": 50157,
     "completionTokens30d": 0,
     "promptTokens7d": 50157,
-    "promptTokens1d": 13441,
+    "promptTokens1d": 0,
     "estimatedCost30d": 0.50,
     "deployments": [
       {
@@ -163,7 +163,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 36
+    "count": 37
   },
   {
     "type": "Microsoft.Compute/disks",
@@ -182,6 +182,10 @@
     "count": 13
   },
   {
+    "type": "Microsoft.App/jobs",
+    "count": 13
+  },
+  {
     "type": "Microsoft.Storage/storageAccounts",
     "count": 12
   },
@@ -195,10 +199,6 @@
   },
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
-    "count": 11
-  },
-  {
-    "type": "Microsoft.App/jobs",
     "count": 11
   },
   {
@@ -255,8 +255,8 @@
   },
   {
     "date": "2026-10-04",
-    "tokens": 196223963,
-    "cost": 1962.23
+    "tokens": 227179155,
+    "cost": 2271.79
   }
 ],
   "alerts": {
