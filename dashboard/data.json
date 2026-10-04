@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-04T12:01:54Z",
+  "timestamp": "2026-10-04T16:46:38Z",
   "date": "2026-10-04",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": -157
   },
   "costs": {
-    "openAi30d": 21267.534,
-    "otherServices30d": 892.40,
-    "totalMonthly": 22159.934,
-    "projectedTillApril": -115896.454,
+    "openAi30d": 21511.940,
+    "otherServices30d": 942.40,
+    "totalMonthly": 22454.340,
+    "projectedTillApril": -117436.198,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 5827121217,
+    "totalTokens30d": 5894826303,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 12,
-    "postgresServers": 15,
+    "postgresServers": 16,
     "containerApps": 7
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5286238282,
+    "promptTokens30d": 5348043635,
     "completionTokens30d": 0,
-    "promptTokens7d": 3921673132,
-    "promptTokens1d": 164165533,
-    "estimatedCost30d": 15858.714,
+    "promptTokens7d": 3891571809,
+    "promptTokens1d": 163326481,
+    "estimatedCost30d": 16044.130,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 534077019,
+    "promptTokens30d": 539976752,
     "completionTokens30d": 0,
-    "promptTokens7d": 358057989,
-    "promptTokens1d": 127257468,
-    "estimatedCost30d": 5340.77,
+    "promptTokens7d": 361054000,
+    "promptTokens1d": 77540007,
+    "estimatedCost30d": 5399.76,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -171,7 +171,7 @@
   },
   {
     "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 15
+    "count": 16
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -214,11 +214,11 @@
     "count": 9
   },
   {
-    "type": "Microsoft.Insights/metricalerts",
+    "type": "Microsoft.Network/loadBalancers",
     "count": 9
   },
   {
-    "type": "Microsoft.App/managedEnvironments/managedCertificates",
+    "type": "Microsoft.Insights/metricalerts",
     "count": 9
   }
 ],
@@ -255,8 +255,8 @@
   },
   {
     "date": "2026-10-04",
-    "tokens": 86295276,
-    "cost": 862.95
+    "tokens": 153636430,
+    "cost": 1536.36
   }
 ],
   "alerts": {
