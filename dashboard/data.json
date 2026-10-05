@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-05T08:40:58Z",
+  "timestamp": "2026-10-05T18:09:15Z",
   "date": "2026-10-05",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,32 +9,32 @@
     "daysRemaining": -158
   },
   "costs": {
-    "openAi30d": 21827.467,
-    "otherServices30d": 942.40,
-    "totalMonthly": 22769.867,
-    "projectedTillApril": -119769.500,
+    "openAi30d": 22287.945,
+    "otherServices30d": 611.80,
+    "totalMonthly": 22899.745,
+    "projectedTillApril": -120452.658,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 5973072898,
+    "totalTokens30d": 6037397246,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 12,
-    "postgresServers": 16,
-    "containerApps": 7
+    "storageAccounts": 9,
+    "postgresServers": 11,
+    "containerApps": 3
   },
   "openAiUsage": [
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5414749153,
+    "promptTokens30d": 5440858342,
     "completionTokens30d": 0,
-    "promptTokens7d": 3337374882,
-    "promptTokens1d": 177182101,
-    "estimatedCost30d": 16244.247,
+    "promptTokens7d": 2809561992,
+    "promptTokens1d": 84058748,
+    "estimatedCost30d": 16322.575,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 551619734,
+    "promptTokens30d": 589834893,
     "completionTokens30d": 0,
-    "promptTokens7d": 372696982,
-    "promptTokens1d": 45754178,
-    "estimatedCost30d": 5516.19,
+    "promptTokens7d": 410912141,
+    "promptTokens1d": 49858141,
+    "estimatedCost30d": 5898.34,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -162,39 +162,23 @@
   "aiServices": [],
   "resourcesByType": [
   {
-    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 37
-  },
-  {
     "type": "Microsoft.Compute/disks",
     "count": 35
   },
   {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 16
-  },
-  {
-    "type": "Microsoft.App/jobs",
-    "count": 15
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "count": 32
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
-    "count": 14
-  },
-  {
-    "type": "Microsoft.KeyVault/vaults",
-    "count": 13
-  },
-  {
-    "type": "Microsoft.Storage/storageAccounts",
     "count": 12
   },
   {
-    "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-    "count": 11
+    "type": "Microsoft.KeyVault/vaults",
+    "count": 12
   },
   {
-    "type": "Microsoft.Network/privateDnsZones",
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
     "count": 11
   },
   {
@@ -202,24 +186,40 @@
     "count": 11
   },
   {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 10
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 9
   },
   {
-    "type": "Microsoft.ContainerRegistry/registries",
-    "count": 10
+    "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+    "count": 9
+  },
+  {
+    "type": "Microsoft.Network/privateDnsZones",
+    "count": 9
   },
   {
     "type": "Microsoft.Network/networkSecurityGroups",
     "count": 9
   },
   {
-    "type": "Microsoft.Network/loadBalancers",
-    "count": 9
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 8
   },
   {
-    "type": "Microsoft.Insights/metricalerts",
-    "count": 9
+    "type": "Microsoft.ContainerRegistry/registries",
+    "count": 8
+  },
+  {
+    "type": "Microsoft.Network/loadBalancers",
+    "count": 7
+  },
+  {
+    "type": "Microsoft.App/managedEnvironments/managedCertificates",
+    "count": 7
+  },
+  {
+    "type": "Microsoft.App/jobs",
+    "count": 7
   }
 ],
   "dailyMetrics": [
@@ -235,17 +235,17 @@
   },
   {
     "date": "2026-10-01",
-    "tokens": 234387807,
+    "tokens": 234387867,
     "cost": 2343.87
   },
   {
     "date": "2026-10-02",
-    "tokens": 851756257,
-    "cost": 8517.56
+    "tokens": 852501754,
+    "cost": 8525.01
   },
   {
     "date": "2026-10-03",
-    "tokens": 320064393,
+    "tokens": 320064451,
     "cost": 3200.64
   },
   {
@@ -255,8 +255,8 @@
   },
   {
     "date": "2026-10-05",
-    "tokens": 1590157,
-    "cost": 15.90
+    "tokens": 66158596,
+    "cost": 661.58
   }
 ],
   "alerts": {
