@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-10-05T18:09:15Z",
-  "date": "2026-10-05",
+  "timestamp": "2026-10-06T00:41:27Z",
+  "date": "2026-10-06",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -158
+    "daysRemaining": -159
   },
   "costs": {
-    "openAi30d": 22287.945,
-    "otherServices30d": 611.80,
-    "totalMonthly": 22899.745,
-    "projectedTillApril": -120452.658,
+    "openAi30d": 22312.583,
+    "otherServices30d": 361.80,
+    "totalMonthly": 22674.383,
+    "projectedTillApril": -120174.229,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 6037397246,
+    "totalTokens30d": 6045610091,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 9,
-    "postgresServers": 11,
+    "postgresServers": 6,
     "containerApps": 3
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5440858342,
+    "promptTokens30d": 5449071187,
     "completionTokens30d": 0,
-    "promptTokens7d": 2809561992,
-    "promptTokens1d": 84058748,
-    "estimatedCost30d": 16322.575,
+    "promptTokens7d": 2257923886,
+    "promptTokens1d": 35667949,
+    "estimatedCost30d": 16347.213,
     "deployments": [
       {
         "model": "o4-mini",
@@ -93,7 +93,7 @@
     "promptTokens30d": 589834893,
     "completionTokens30d": 0,
     "promptTokens7d": 410912141,
-    "promptTokens1d": 49858141,
+    "promptTokens1d": 38215159,
     "estimatedCost30d": 5898.34,
     "deployments": [
       {
@@ -178,10 +178,6 @@
     "count": 12
   },
   {
-    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
-    "count": 11
-  },
-  {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
     "count": 11
   },
@@ -206,6 +202,10 @@
     "count": 8
   },
   {
+    "type": "Microsoft.Insights/metricalerts",
+    "count": 8
+  },
+  {
     "type": "Microsoft.ContainerRegistry/registries",
     "count": 8
   },
@@ -218,16 +218,11 @@
     "count": 7
   },
   {
-    "type": "Microsoft.App/jobs",
-    "count": 7
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "count": 6
   }
 ],
   "dailyMetrics": [
-  {
-    "date": "2026-09-29",
-    "tokens": 312603539,
-    "cost": 3126.03
-  },
   {
     "date": "2026-09-30",
     "tokens": 712197413,
@@ -235,7 +230,7 @@
   },
   {
     "date": "2026-10-01",
-    "tokens": 234387867,
+    "tokens": 234387880,
     "cost": 2343.87
   },
   {
@@ -245,7 +240,7 @@
   },
   {
     "date": "2026-10-03",
-    "tokens": 320064451,
+    "tokens": 320064465,
     "cost": 3200.64
   },
   {
@@ -255,8 +250,13 @@
   },
   {
     "date": "2026-10-05",
-    "tokens": 66158596,
-    "cost": 661.58
+    "tokens": 73998816,
+    "cost": 739.98
+  },
+  {
+    "date": "2026-10-06",
+    "tokens": 2547,
+    "cost": 0.02
   }
 ],
   "alerts": {
