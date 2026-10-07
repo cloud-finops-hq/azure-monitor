@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T12:57:45Z",
+  "timestamp": "2026-10-07T19:16:52Z",
   "date": "2026-10-07",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -160
   },
   "costs": {
-    "openAi30d": 22810.748,
+    "openAi30d": 23212.490,
     "otherServices30d": 361.80,
-    "totalMonthly": 23172.548,
-    "projectedTillApril": -123509.680,
+    "totalMonthly": 23574.290,
+    "projectedTillApril": -125650.965,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 6126805881,
+    "totalTokens30d": 6168767331,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5493899472,
+    "promptTokens30d": 5496453420,
     "completionTokens30d": 0,
-    "promptTokens7d": 1586300136,
-    "promptTokens1d": 45369793,
-    "estimatedCost30d": 16481.698,
+    "promptTokens7d": 1430774501,
+    "promptTokens1d": 22093313,
+    "estimatedCost30d": 16489.360,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 626414620,
+    "promptTokens30d": 665822122,
     "completionTokens30d": 0,
-    "promptTokens7d": 436535536,
-    "promptTokens1d": 36579727,
-    "estimatedCost30d": 6264.14,
+    "promptTokens7d": 475309522,
+    "promptTokens1d": 51207648,
+    "estimatedCost30d": 6658.22,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -186,6 +186,10 @@
     "count": 11
   },
   {
+    "type": "Microsoft.Insights/metricalerts",
+    "count": 10
+  },
+  {
     "type": "Microsoft.Storage/storageAccounts",
     "count": 9
   },
@@ -203,10 +207,6 @@
   },
   {
     "type": "Microsoft.Network/virtualNetworks",
-    "count": 8
-  },
-  {
-    "type": "Microsoft.Insights/metricalerts",
     "count": 8
   },
   {
@@ -259,8 +259,8 @@
   },
   {
     "date": "2026-10-07",
-    "tokens": 28947990,
-    "cost": 289.47
+    "tokens": 70134356,
+    "cost": 701.34
   }
 ],
   "alerts": {
