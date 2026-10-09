@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T15:06:36Z",
+  "timestamp": "2026-10-09T20:40:59Z",
   "date": "2026-10-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -162
   },
   "costs": {
-    "openAi30d": 24188.408,
+    "openAi30d": 24188.112,
     "otherServices30d": 361.80,
-    "totalMonthly": 24550.208,
-    "projectedTillApril": -132571.123,
+    "totalMonthly": 24549.912,
+    "projectedTillApril": -132569.524,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 6269185215,
+    "totalTokens30d": 6269026732,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5500489517,
+    "promptTokens30d": 5500304322,
     "completionTokens30d": 0,
-    "promptTokens7d": 477501526,
-    "promptTokens1d": 1925940,
-    "estimatedCost30d": 16501.468,
+    "promptTokens7d": 401917333,
+    "promptTokens1d": 2488108,
+    "estimatedCost30d": 16500.912,
     "deployments": [
       {
         "model": "o4-mini",
@@ -92,8 +92,8 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 762561904,
     "completionTokens30d": 0,
-    "promptTokens7d": 563657492,
-    "promptTokens1d": 61383460,
+    "promptTokens7d": 552639105,
+    "promptTokens1d": 33471277,
     "estimatedCost30d": 7625.61,
     "deployments": [
       {
@@ -146,11 +146,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 34201,
+    "promptTokens30d": 60913,
     "completionTokens30d": 0,
-    "promptTokens7d": 25638,
-    "promptTokens1d": 25638,
-    "estimatedCost30d": 0.34,
+    "promptTokens7d": 52350,
+    "promptTokens1d": 52350,
+    "estimatedCost30d": 0.60,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-09",
-    "tokens": 34531730,
-    "cost": 345.31
+    "tokens": 35823544,
+    "cost": 358.23
   }
 ],
   "alerts": {
