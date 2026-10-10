@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-10T18:20:12Z",
+  "timestamp": "2026-10-10T22:20:07Z",
   "date": "2026-10-10",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,32 +9,32 @@
     "daysRemaining": -163
   },
   "costs": {
-    "openAi30d": 24087.331,
-    "otherServices30d": 361.80,
-    "totalMonthly": 24449.131,
-    "projectedTillApril": -132758.781,
+    "openAi30d": 24095.664,
+    "otherServices30d": 381.80,
+    "totalMonthly": 24477.464,
+    "projectedTillApril": -132912.629,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 6236965366,
+    "totalTokens30d": 6239719440,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
     "storageAccounts": 9,
     "postgresServers": 6,
-    "containerApps": 3
+    "containerApps": 4
   },
   "openAiUsage": [
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5468900365,
+    "promptTokens30d": 5471644755,
     "completionTokens30d": 0,
-    "promptTokens7d": 310437428,
-    "promptTokens1d": 5309524,
-    "estimatedCost30d": 16406.701,
+    "promptTokens7d": 294937892,
+    "promptTokens1d": 6848928,
+    "estimatedCost30d": 16414.934,
     "deployments": [
       {
         "model": "o4-mini",
@@ -92,7 +92,7 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 762143540,
     "completionTokens30d": 0,
-    "promptTokens7d": 272218302,
+    "promptTokens7d": 259361421,
     "promptTokens1d": 855281,
     "estimatedCost30d": 7621.43,
     "deployments": [
@@ -146,11 +146,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 68983,
+    "promptTokens30d": 78667,
     "completionTokens30d": 0,
-    "promptTokens7d": 60420,
-    "promptTokens1d": 34782,
-    "estimatedCost30d": 0.68,
+    "promptTokens7d": 70104,
+    "promptTokens1d": 15064,
+    "estimatedCost30d": 0.78,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -178,15 +178,15 @@
     "count": 34
   },
   {
+    "type": "Microsoft.Insights/scheduledqueryrules",
+    "count": 13
+  },
+  {
     "type": "Microsoft.Network/publicIPAddresses",
     "count": 12
   },
   {
     "type": "Microsoft.KeyVault/vaults",
-    "count": 12
-  },
-  {
-    "type": "Microsoft.Insights/scheduledqueryrules",
     "count": 12
   },
   {
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-10",
-    "tokens": 4902868,
-    "cost": 49.02
+    "tokens": 7670999,
+    "cost": 76.70
   }
 ],
   "alerts": {
