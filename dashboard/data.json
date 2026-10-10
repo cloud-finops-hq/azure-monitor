@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-10T13:25:47Z",
+  "timestamp": "2026-10-10T18:20:12Z",
   "date": "2026-10-10",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -163
   },
   "costs": {
-    "openAi30d": 24116.347,
+    "openAi30d": 24087.331,
     "otherServices30d": 361.80,
-    "totalMonthly": 24478.147,
-    "projectedTillApril": -132916.338,
+    "totalMonthly": 24449.131,
+    "projectedTillApril": -132758.781,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 6243664332,
+    "totalTokens30d": 6236965366,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5474325686,
+    "promptTokens30d": 5468900365,
     "completionTokens30d": 0,
-    "promptTokens7d": 371555475,
-    "promptTokens1d": 3658042,
-    "estimatedCost30d": 16422.977,
+    "promptTokens7d": 310437428,
+    "promptTokens1d": 5309524,
+    "estimatedCost30d": 16406.701,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 763417185,
+    "promptTokens30d": 762143540,
     "completionTokens30d": 0,
-    "promptTokens7d": 334638908,
-    "promptTokens1d": 2303662,
-    "estimatedCost30d": 7634.17,
+    "promptTokens7d": 272218302,
+    "promptTokens1d": 855281,
+    "estimatedCost30d": 7621.43,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -175,7 +175,7 @@
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-    "count": 33
+    "count": 34
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-10",
-    "tokens": 3194789,
-    "cost": 31.94
+    "tokens": 4902868,
+    "cost": 49.02
   }
 ],
   "alerts": {
