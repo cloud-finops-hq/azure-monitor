@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-11T08:31:27Z",
+  "timestamp": "2026-10-11T15:27:50Z",
   "date": "2026-10-11",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -164
   },
   "costs": {
-    "openAi30d": 24097.336,
+    "openAi30d": 24332.723,
     "otherServices30d": 381.80,
-    "totalMonthly": 24479.136,
-    "projectedTillApril": -133656.082,
+    "totalMonthly": 24714.523,
+    "projectedTillApril": -134941.295,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 6240754514,
+    "totalTokens30d": 6291513561,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 5472885568,
+    "promptTokens30d": 5511771211,
     "completionTokens30d": 0,
-    "promptTokens7d": 275593504,
-    "promptTokens1d": 8050463,
-    "estimatedCost30d": 16418.656,
+    "promptTokens7d": 220600458,
+    "promptTokens1d": 44694494,
+    "estimatedCost30d": 16535.313,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 762143540,
+    "promptTokens30d": 774014792,
     "completionTokens30d": 0,
-    "promptTokens7d": 257551629,
-    "promptTokens1d": 855281,
-    "estimatedCost30d": 7621.43,
+    "promptTokens7d": 242666808,
+    "promptTokens1d": 13326642,
+    "estimatedCost30d": 7740.14,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -146,11 +146,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 99111,
+    "promptTokens30d": 101263,
     "completionTokens30d": 0,
-    "promptTokens7d": 90548,
-    "promptTokens1d": 33356,
-    "estimatedCost30d": 0.99,
+    "promptTokens7d": 92700,
+    "promptTokens1d": 32280,
+    "estimatedCost30d": 1.01,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -179,7 +179,7 @@
   },
   {
     "type": "Microsoft.Insights/scheduledqueryrules",
-    "count": 13
+    "count": 14
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -196,6 +196,10 @@
   {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
     "count": 11
+  },
+  {
+    "type": "Microsoft.App/jobs",
+    "count": 10
   },
   {
     "type": "Microsoft.Storage/storageAccounts",
@@ -219,10 +223,6 @@
   },
   {
     "type": "Microsoft.ContainerRegistry/registries",
-    "count": 8
-  },
-  {
-    "type": "Microsoft.App/jobs",
     "count": 8
   },
   {
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-11",
-    "tokens": 295498,
-    "cost": 2.95
+    "tokens": 52533740,
+    "cost": 525.33
   }
 ],
   "alerts": {
