@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T07:09:34Z",
+  "timestamp": "2026-10-15T13:12:11Z",
   "date": "2026-10-15",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -168
   },
   "costs": {
-    "openAi30d": 28943.081,
+    "openAi30d": 29450.963,
     "otherServices30d": 431.80,
-    "totalMonthly": 29374.881,
-    "projectedTillApril": -164499.333,
+    "totalMonthly": 29882.763,
+    "projectedTillApril": -167343.472,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 7838510274,
+    "totalTokens30d": 8008382379,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 7063143739,
+    "promptTokens30d": 7233264604,
     "completionTokens30d": 0,
-    "promptTokens7d": 1622748662,
-    "promptTokens1d": 359828096,
-    "estimatedCost30d": 21189.431,
+    "promptTokens7d": 1791472352,
+    "promptTokens1d": 368820150,
+    "estimatedCost30d": 21699.793,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 770408799,
+    "promptTokens30d": 770386447,
     "completionTokens30d": 0,
-    "promptTokens7d": 160754342,
-    "promptTokens1d": 35550217,
-    "estimatedCost30d": 7704.08,
+    "promptTokens7d": 132214928,
+    "promptTokens1d": 20047473,
+    "estimatedCost30d": 7703.86,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 4784421,
+    "promptTokens30d": 4558013,
     "completionTokens30d": 0,
     "promptTokens7d": 11188,
     "promptTokens1d": 0,
-    "estimatedCost30d": 47.84,
+    "estimatedCost30d": 45.58,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-15",
-    "tokens": 74419,
-    "cost": 0.74
+    "tokens": 172454937,
+    "cost": 1724.54
   }
 ],
   "alerts": {
