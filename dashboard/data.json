@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-16T11:01:35Z",
+  "timestamp": "2026-10-16T15:18:56Z",
   "date": "2026-10-16",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -169
   },
   "costs": {
-    "openAi30d": 30132.264,
+    "openAi30d": 30200.282,
     "otherServices30d": 381.80,
-    "totalMonthly": 30514.064,
-    "projectedTillApril": -171794.180,
+    "totalMonthly": 30582.082,
+    "projectedTillApril": -172177.121,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 8188664934,
+    "totalTokens30d": 8195454694,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 7393481354,
+    "promptTokens30d": 7393464310,
     "completionTokens30d": 0,
-    "promptTokens7d": 1947798157,
-    "promptTokens1d": 218451381,
-    "estimatedCost30d": 22180.444,
+    "promptTokens7d": 1946897674,
+    "promptTokens1d": 115102846,
+    "estimatedCost30d": 22180.392,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 790725328,
+    "promptTokens30d": 797532132,
     "completionTokens30d": 0,
-    "promptTokens7d": 102350599,
-    "promptTokens1d": 22504277,
-    "estimatedCost30d": 7907.25,
+    "promptTokens7d": 102547013,
+    "promptTokens1d": 21324656,
+    "estimatedCost30d": 7975.32,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -148,7 +148,7 @@
     "primaryModel": "gpt-image-2",
     "promptTokens30d": 123878,
     "completionTokens30d": 0,
-    "promptTokens7d": 91219,
+    "promptTokens7d": 89677,
     "promptTokens1d": 720,
     "estimatedCost30d": 1.23,
     "deployments": [
@@ -226,8 +226,8 @@
     "count": 8
   },
   {
-    "type": "Microsoft.Network/loadBalancers",
-    "count": 7
+    "type": "Microsoft.App/managedEnvironments/managedCertificates",
+    "count": 8
   }
 ],
   "dailyMetrics": [
@@ -253,7 +253,7 @@
   },
   {
     "date": "2026-10-14",
-    "tokens": 395307579,
+    "tokens": 395307653,
     "cost": 3953.07
   },
   {
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-16",
-    "tokens": 39392287,
-    "cost": 393.92
+    "tokens": 49758670,
+    "cost": 497.58
   }
 ],
   "alerts": {
