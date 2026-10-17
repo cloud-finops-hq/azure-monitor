@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T18:17:52Z",
+  "timestamp": "2026-10-17T21:20:25Z",
   "date": "2026-10-17",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -170
   },
   "costs": {
-    "openAi30d": 30357.183,
+    "openAi30d": 30331.473,
     "otherServices30d": 381.80,
-    "totalMonthly": 30738.983,
-    "projectedTillApril": -173982.643,
+    "totalMonthly": 30713.273,
+    "projectedTillApril": -173837.125,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 8255255034,
+    "totalTokens30d": 8252684055,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,10 +30,10 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 7456477853,
+    "promptTokens30d": 7456477946,
     "completionTokens30d": 0,
-    "promptTokens7d": 2004931932,
-    "promptTokens1d": 42422582,
+    "promptTokens7d": 2002692029,
+    "promptTokens1d": 8454002,
     "estimatedCost30d": 22369.433,
     "deployments": [
       {
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 794533245,
+    "promptTokens30d": 791962173,
     "completionTokens30d": 0,
     "promptTokens7d": 143070697,
     "promptTokens1d": 41378965,
-    "estimatedCost30d": 7945.33,
+    "estimatedCost30d": 7919.62,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -148,7 +148,7 @@
     "primaryModel": "gpt-image-2",
     "promptTokens30d": 123878,
     "completionTokens30d": 0,
-    "promptTokens7d": 54895,
+    "promptTokens7d": 47363,
     "promptTokens1d": 0,
     "estimatedCost30d": 1.23,
     "deployments": [
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-17",
-    "tokens": 48812482,
-    "cost": 488.12
+    "tokens": 50308599,
+    "cost": 503.08
   }
 ],
   "alerts": {
