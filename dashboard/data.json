@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20T14:50:10Z",
+  "timestamp": "2026-10-20T19:03:41Z",
   "date": "2026-10-20",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,19 +9,19 @@
     "daysRemaining": -173
   },
   "costs": {
-    "openAi30d": 30667.059,
-    "otherServices30d": 381.80,
-    "totalMonthly": 31048.859,
-    "projectedTillApril": -178841.427,
+    "openAi30d": 30454.901,
+    "otherServices30d": 382.00,
+    "totalMonthly": 30836.901,
+    "projectedTillApril": -177620.549,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 8379831728,
+    "totalTokens30d": 8304774873,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 9,
+    "storageAccounts": 10,
     "postgresServers": 6,
     "containerApps": 4
   },
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 7590176605,
+    "promptTokens30d": 7513260639,
     "completionTokens30d": 0,
-    "promptTokens7d": 1313908634,
-    "promptTokens1d": 13534094,
-    "estimatedCost30d": 22770.529,
+    "promptTokens7d": 1091723161,
+    "promptTokens1d": 2263602,
+    "estimatedCost30d": 22539.781,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 785858311,
+    "promptTokens30d": 787717422,
     "completionTokens30d": 0,
-    "promptTokens7d": 113865823,
-    "promptTokens1d": 1878368,
-    "estimatedCost30d": 7858.58,
+    "promptTokens7d": 115724934,
+    "promptTokens1d": 3737479,
+    "estimatedCost30d": 7877.17,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -148,7 +148,7 @@
     "primaryModel": "gpt-image-2",
     "promptTokens30d": 123878,
     "completionTokens30d": 0,
-    "promptTokens7d": 3948,
+    "promptTokens7d": 720,
     "promptTokens1d": 0,
     "estimatedCost30d": 1.23,
     "deployments": [
@@ -198,12 +198,12 @@
     "count": 11
   },
   {
-    "type": "Microsoft.App/jobs",
+    "type": "Microsoft.Storage/storageAccounts",
     "count": 10
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
-    "count": 9
+    "type": "Microsoft.App/jobs",
+    "count": 10
   },
   {
     "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
@@ -243,12 +243,12 @@
   },
   {
     "date": "2026-10-16",
-    "tokens": 105718948,
-    "cost": 1057.18
+    "tokens": 105719003,
+    "cost": 1057.19
   },
   {
     "date": "2026-10-17",
-    "tokens": 65497472,
+    "tokens": 65497491,
     "cost": 654.97
   },
   {
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-20",
-    "tokens": 1978002,
-    "cost": 19.78
+    "tokens": 4962164,
+    "cost": 49.62
   }
 ],
   "alerts": {
