@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20T04:10:49Z",
+  "timestamp": "2026-10-20T09:52:47Z",
   "date": "2026-10-20",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -173
   },
   "costs": {
-    "openAi30d": 30742.395,
+    "openAi30d": 30741.431,
     "otherServices30d": 381.80,
-    "totalMonthly": 31124.195,
-    "projectedTillApril": -179275.363,
+    "totalMonthly": 31123.231,
+    "projectedTillApril": -179269.810,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 8397049918,
+    "totalTokens30d": 8396844874,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 7604011940,
+    "promptTokens30d": 7603857009,
     "completionTokens30d": 0,
-    "promptTokens7d": 1542575836,
-    "promptTokens1d": 82765840,
-    "estimatedCost30d": 22812.035,
+    "promptTokens7d": 1483954041,
+    "promptTokens1d": 81034657,
+    "estimatedCost30d": 22811.571,
     "deployments": [
       {
         "model": "o4-mini",
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 3672890,
+    "promptTokens30d": 3622777,
     "completionTokens30d": 0,
     "promptTokens7d": 11188,
-    "promptTokens1d": 11188,
-    "estimatedCost30d": 36.72,
+    "promptTokens1d": 0,
+    "estimatedCost30d": 36.22,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -148,7 +148,7 @@
     "primaryModel": "gpt-image-2",
     "promptTokens30d": 123878,
     "completionTokens30d": 0,
-    "promptTokens7d": 11317,
+    "promptTokens7d": 9165,
     "promptTokens1d": 0,
     "estimatedCost30d": 1.23,
     "deployments": [
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-20",
-    "tokens": 31407,
-    "cost": 0.31
+    "tokens": 82512,
+    "cost": 0.82
   }
 ],
   "alerts": {
