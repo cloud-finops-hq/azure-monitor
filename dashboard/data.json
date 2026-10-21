@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-21T13:35:32Z",
+  "timestamp": "2026-10-21T18:29:55Z",
   "date": "2026-10-21",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -174
   },
   "costs": {
-    "openAi30d": 29937.604,
+    "openAi30d": 29672.303,
     "otherServices30d": 382.00,
-    "totalMonthly": 30319.604,
-    "projectedTillApril": -175853.703,
+    "totalMonthly": 30054.303,
+    "projectedTillApril": -174314.957,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 8108640659,
+    "totalTokens30d": 8020207017,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 7306968068,
+    "promptTokens30d": 7218534426,
     "completionTokens30d": 0,
-    "promptTokens7d": 734916100,
-    "promptTokens1d": 2179098,
-    "estimatedCost30d": 21920.904,
+    "promptTokens7d": 643915273,
+    "promptTokens1d": 21654005,
+    "estimatedCost30d": 21655.603,
     "deployments": [
       {
         "model": "o4-mini",
@@ -92,8 +92,8 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 797964916,
     "completionTokens30d": 0,
-    "promptTokens7d": 110278115,
-    "promptTokens1d": 12106605,
+    "promptTokens7d": 90422211,
+    "promptTokens1d": 10247494,
     "estimatedCost30d": 7979.64,
     "deployments": [
       {
@@ -178,8 +178,12 @@
     "count": 34
   },
   {
+    "type": "Microsoft.Insights/metricalerts",
+    "count": 19
+  },
+  {
     "type": "Microsoft.Insights/scheduledqueryrules",
-    "count": 14
+    "count": 17
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
@@ -187,10 +191,6 @@
   },
   {
     "type": "Microsoft.KeyVault/vaults",
-    "count": 12
-  },
-  {
-    "type": "Microsoft.Insights/metricalerts",
     "count": 12
   },
   {
@@ -222,11 +222,11 @@
     "count": 8
   },
   {
-    "type": "Microsoft.ContainerRegistry/registries",
+    "type": "Microsoft.Insights/activityLogAlerts",
     "count": 8
   },
   {
-    "type": "Microsoft.App/managedEnvironments/managedCertificates",
+    "type": "Microsoft.ContainerRegistry/registries",
     "count": 8
   }
 ],
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-21",
-    "tokens": 9563621,
-    "cost": 95.63
+    "tokens": 31058751,
+    "cost": 310.58
   }
 ],
   "alerts": {
