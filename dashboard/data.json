@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-23T07:12:32Z",
+  "timestamp": "2026-10-23T13:13:10Z",
   "date": "2026-10-23",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,20 +9,20 @@
     "daysRemaining": -176
   },
   "costs": {
-    "openAi30d": 33483.551,
-    "otherServices30d": 382.00,
-    "totalMonthly": 33865.551,
-    "projectedTillApril": -198452.128,
+    "openAi30d": 33948.997,
+    "otherServices30d": 432.20,
+    "totalMonthly": 34381.197,
+    "projectedTillApril": -201473.814,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 9254149481,
+    "totalTokens30d": 9408671022,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
-    "storageAccounts": 10,
-    "postgresServers": 6,
+    "storageAccounts": 11,
+    "postgresServers": 7,
     "containerApps": 4
   },
   "openAiUsage": [
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 8436847166,
+    "promptTokens30d": 8591099228,
     "completionTokens30d": 0,
-    "promptTokens7d": 1759949362,
-    "promptTokens1d": 1049756453,
-    "estimatedCost30d": 25310.541,
+    "promptTokens7d": 1947708476,
+    "promptTokens1d": 838247410,
+    "estimatedCost30d": 25773.297,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 813774255,
+    "promptTokens30d": 814228577,
     "completionTokens30d": 0,
-    "promptTokens7d": 92834395,
-    "promptTokens1d": 15573100,
-    "estimatedCost30d": 8137.74,
+    "promptTokens7d": 84891954,
+    "promptTokens1d": 1455755,
+    "estimatedCost30d": 8142.28,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 3354025,
+    "promptTokens30d": 3169182,
     "completionTokens30d": 0,
     "promptTokens7d": 11188,
     "promptTokens1d": 0,
-    "estimatedCost30d": 33.54,
+    "estimatedCost30d": 31.69,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -171,7 +171,7 @@
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
-    "count": 35
+    "count": 36
   },
   {
     "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
@@ -187,23 +187,31 @@
   },
   {
     "type": "Microsoft.Network/publicIPAddresses",
-    "count": 12
+    "count": 13
   },
   {
     "type": "Microsoft.KeyVault/vaults",
     "count": 12
   },
   {
+    "type": "Microsoft.Storage/storageAccounts",
+    "count": 11
+  },
+  {
     "type": "Microsoft.Compute/virtualMachineScaleSets",
     "count": 11
   },
   {
-    "type": "Microsoft.Storage/storageAccounts",
+    "type": "Microsoft.Network/networkSecurityGroups",
     "count": 10
   },
   {
     "type": "Microsoft.App/jobs",
     "count": 10
+  },
+  {
+    "type": "Microsoft.Network/virtualNetworks",
+    "count": 9
   },
   {
     "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
@@ -212,14 +220,6 @@
   {
     "type": "Microsoft.Network/privateDnsZones",
     "count": 9
-  },
-  {
-    "type": "Microsoft.Network/networkSecurityGroups",
-    "count": 9
-  },
-  {
-    "type": "Microsoft.Network/virtualNetworks",
-    "count": 8
   },
   {
     "type": "Microsoft.Insights/activityLogAlerts",
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-23",
-    "tokens": 124630127,
-    "cost": 1246.30
+    "tokens": 308299654,
+    "cost": 3082.99
   }
 ],
   "alerts": {
