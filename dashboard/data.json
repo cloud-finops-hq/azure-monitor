@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26T09:57:25Z",
+  "timestamp": "2026-10-26T16:39:47Z",
   "date": "2026-10-26",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -179
   },
   "costs": {
-    "openAi30d": 35414.695,
+    "openAi30d": 35332.671,
     "otherServices30d": 332.20,
-    "totalMonthly": 35746.895,
-    "projectedTillApril": -213051.494,
+    "totalMonthly": 35664.871,
+    "projectedTillApril": -212562.631,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 9654410086,
+    "totalTokens30d": 9582548976,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 8732768479,
+    "promptTokens30d": 8641827268,
     "completionTokens30d": 0,
-    "promptTokens7d": 2285741993,
-    "promptTokens1d": 20536091,
-    "estimatedCost30d": 26198.305,
+    "promptTokens7d": 2205860432,
+    "promptTokens1d": 131017,
+    "estimatedCost30d": 25925.481,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 919446831,
+    "promptTokens30d": 938526932,
     "completionTokens30d": 0,
-    "promptTokens7d": 144125481,
-    "promptTokens1d": 54596178,
-    "estimatedCost30d": 9194.46,
+    "promptTokens7d": 170384031,
+    "promptTokens1d": 51728750,
+    "estimatedCost30d": 9385.26,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -253,7 +253,7 @@
   },
   {
     "date": "2026-10-24",
-    "tokens": 233192188,
+    "tokens": 233192333,
     "cost": 2331.92
   },
   {
@@ -263,8 +263,8 @@
   },
   {
     "date": "2026-10-26",
-    "tokens": 19524778,
-    "cost": 195.24
+    "tokens": 45806531,
+    "cost": 458.06
   }
 ],
   "alerts": {
