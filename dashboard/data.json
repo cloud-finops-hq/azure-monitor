@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-11-07T23:31:15Z",
-  "date": "2026-11-07",
+  "timestamp": "2026-11-08T05:18:28Z",
+  "date": "2026-11-08",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -191
+    "daysRemaining": -192
   },
   "costs": {
-    "openAi30d": 18453.141,
+    "openAi30d": 18453.665,
     "otherServices30d": 332.20,
-    "totalMonthly": 18785.341,
-    "projectedTillApril": -119474.768,
+    "totalMonthly": 18785.865,
+    "projectedTillApril": -120229.536,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4904935778,
+    "totalTokens30d": 4905124591,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4370887003,
+    "promptTokens30d": 4371081819,
     "completionTokens30d": 0,
-    "promptTokens7d": 3410794,
-    "promptTokens1d": 131110,
-    "estimatedCost30d": 13112.661,
+    "promptTokens7d": 3398030,
+    "promptTokens1d": 325892,
+    "estimatedCost30d": 13113.245,
     "deployments": [
       {
         "model": "o4-mini",
@@ -146,11 +146,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 114112,
+    "promptTokens30d": 108109,
     "completionTokens30d": 0,
     "promptTokens7d": 0,
     "promptTokens1d": 0,
-    "estimatedCost30d": 1.14,
+    "estimatedCost30d": 1.08,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -232,11 +232,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-11-01",
-    "tokens": 87074141,
-    "cost": 870.74
-  },
-  {
     "date": "2026-11-02",
     "tokens": 20922594,
     "cost": 209.22
@@ -263,8 +258,13 @@
   },
   {
     "date": "2026-11-07",
-    "tokens": 129575,
-    "cost": 1.29
+    "tokens": 131024,
+    "cost": 1.31
+  },
+  {
+    "date": "2026-11-08",
+    "tokens": 230132,
+    "cost": 2.30
   }
 ],
   "alerts": {
