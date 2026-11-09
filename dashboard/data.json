@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-11-08T22:42:48Z",
-  "date": "2026-11-08",
+  "timestamp": "2026-11-09T02:29:43Z",
+  "date": "2026-11-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -192
+    "daysRemaining": -193
   },
   "costs": {
-    "openAi30d": 18113.985,
+    "openAi30d": 18113.975,
     "otherServices30d": 332.20,
-    "totalMonthly": 18446.185,
-    "projectedTillApril": -118055.584,
+    "totalMonthly": 18446.175,
+    "projectedTillApril": -118608.905,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4869597984,
+    "totalTokens30d": 4869596891,
     "openAiAccounts": 5,
     "aiServicesAccounts": 0,
     "saasSubscriptions": 0,
@@ -30,10 +30,10 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4368855214,
+    "promptTokens30d": 4368855197,
     "completionTokens30d": 0,
-    "promptTokens7d": 3398578,
-    "promptTokens1d": 325977,
+    "promptTokens7d": 3398531,
+    "promptTokens1d": 326006,
     "estimatedCost30d": 13106.565,
     "deployments": [
       {
@@ -92,7 +92,7 @@
     "primaryModel": "gpt-5.6-terra",
     "promptTokens30d": 500661195,
     "completionTokens30d": 0,
-    "promptTokens7d": 31314284,
+    "promptTokens7d": 22381647,
     "promptTokens1d": 220185,
     "estimatedCost30d": 5006.61,
     "deployments": [
@@ -146,11 +146,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 59199,
+    "promptTokens30d": 58123,
     "completionTokens30d": 0,
     "promptTokens7d": 0,
     "promptTokens1d": 0,
-    "estimatedCost30d": 0.59,
+    "estimatedCost30d": 0.58,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -232,11 +232,6 @@
 ],
   "dailyMetrics": [
   {
-    "date": "2026-11-02",
-    "tokens": 20922594,
-    "cost": 209.22
-  },
-  {
     "date": "2026-11-03",
     "tokens": 2415386,
     "cost": 24.15
@@ -263,8 +258,13 @@
   },
   {
     "date": "2026-11-08",
-    "tokens": 541994,
-    "cost": 5.41
+    "tokens": 546080,
+    "cost": 5.46
+  },
+  {
+    "date": "2026-11-09",
+    "tokens": 8957,
+    "cost": 0.08
   }
 ],
   "alerts": {
