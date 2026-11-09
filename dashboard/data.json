@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-09T11:07:31Z",
+  "timestamp": "2026-11-09T22:06:20Z",
   "date": "2026-11-09",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,17 +9,17 @@
     "daysRemaining": -193
   },
   "costs": {
-    "openAi30d": 18098.648,
+    "openAi30d": 18122.825,
     "otherServices30d": 332.20,
-    "totalMonthly": 18430.848,
-    "projectedTillApril": -118510.352,
+    "totalMonthly": 18455.025,
+    "projectedTillApril": -118665.810,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4866495956,
+    "totalTokens30d": 4868856326,
     "openAiAccounts": 5,
-    "aiServicesAccounts": 0,
+    "aiServicesAccounts": 1,
     "saasSubscriptions": 0,
     "storageAccounts": 11,
     "postgresServers": 5,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4366612771,
+    "promptTokens30d": 4366531908,
     "completionTokens30d": 0,
-    "promptTokens7d": 3396625,
-    "promptTokens1d": 130268,
-    "estimatedCost30d": 13099.838,
+    "promptTokens7d": 7751430,
+    "promptTokens1d": 4485101,
+    "estimatedCost30d": 13099.595,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 499805914,
+    "promptTokens30d": 502255755,
     "completionTokens30d": 0,
-    "promptTokens7d": 20521312,
-    "promptTokens1d": 220185,
-    "estimatedCost30d": 4998.05,
+    "promptTokens7d": 4222191,
+    "promptTokens1d": 2449841,
+    "estimatedCost30d": 5022.55,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -146,11 +146,11 @@
     "account": "visionmagic-stg-creative-eval",
     "resourceGroup": "rg-visionmagic-staging-uksouth",
     "primaryModel": "gpt-image-2",
-    "promptTokens30d": 54895,
+    "promptTokens30d": 46287,
     "completionTokens30d": 0,
     "promptTokens7d": 0,
     "promptTokens1d": 0,
-    "estimatedCost30d": 0.54,
+    "estimatedCost30d": 0.46,
     "deployments": [
       {
         "model": "gpt-image-2",
@@ -167,7 +167,13 @@
     ]
   }
 ],
-  "aiServices": [],
+  "aiServices": [
+  {
+    "endpoint": "https://kiransuryad-8284-resource.cognitiveservices.azure.com/",
+    "name": "kiransuryad-8284-resource",
+    "resourceGroup": "affordpath-platform"
+  }
+],
   "resourcesByType": [
   {
     "type": "Microsoft.Compute/disks",
@@ -238,17 +244,17 @@
   },
   {
     "date": "2026-11-04",
-    "tokens": 1683935,
-    "cost": 16.83
+    "tokens": 1684082,
+    "cost": 16.84
   },
   {
     "date": "2026-11-05",
-    "tokens": 131155,
+    "tokens": 131227,
     "cost": 1.31
   },
   {
     "date": "2026-11-06",
-    "tokens": 130677,
+    "tokens": 130749,
     "cost": 1.30
   },
   {
@@ -263,13 +269,13 @@
   },
   {
     "date": "2026-11-09",
-    "tokens": 86068,
-    "cost": 0.86
+    "tokens": 6928759,
+    "cost": 69.28
   }
 ],
   "alerts": {
     "hasSaasSubscriptions": false,
-    "hasAiServices": false
+    "hasAiServices": true
   },
   "pricing": {
     "note": "Estimated based on Azure OpenAI public pricing",
