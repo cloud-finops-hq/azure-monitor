@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T01:06:50Z",
+  "timestamp": "2026-11-11T09:01:29Z",
   "date": "2026-11-11",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
@@ -9,15 +9,15 @@
     "daysRemaining": -195
   },
   "costs": {
-    "openAi30d": 18102.700,
+    "openAi30d": 18036.699,
     "otherServices30d": 332.20,
-    "totalMonthly": 18434.900,
-    "projectedTillApril": -119826.850,
+    "totalMonthly": 18368.899,
+    "projectedTillApril": -119397.843,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 4786902240,
+    "totalTokens30d": 4764927498,
     "openAiAccounts": 5,
     "aiServicesAccounts": 1,
     "saasSubscriptions": 0,
@@ -30,11 +30,11 @@
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 4252330205,
+    "promptTokens30d": 4230366651,
     "completionTokens30d": 0,
-    "promptTokens7d": 5467067,
-    "promptTokens1d": 130915,
-    "estimatedCost30d": 12756.990,
+    "promptTokens7d": 5530167,
+    "promptTokens1d": 195108,
+    "estimatedCost30d": 12691.099,
     "deployments": [
       {
         "model": "o4-mini",
@@ -93,7 +93,7 @@
     "promptTokens30d": 534527044,
     "completionTokens30d": 0,
     "promptTokens7d": 49820122,
-    "promptTokens1d": 30619737,
+    "promptTokens1d": 23865610,
     "estimatedCost30d": 5345.27,
     "deployments": [
       {
@@ -110,11 +110,11 @@
     "account": "qlp-jobsearch-aoai",
     "resourceGroup": "qlp-jobsearch-rg",
     "primaryModel": "gpt-5.4",
-    "promptTokens30d": 22376,
+    "promptTokens30d": 11188,
     "completionTokens30d": 0,
     "promptTokens7d": 0,
     "promptTokens1d": 0,
-    "estimatedCost30d": 0.22,
+    "estimatedCost30d": 0.11,
     "deployments": [
       {
         "model": "gpt-5.4",
@@ -269,8 +269,8 @@
   },
   {
     "date": "2026-11-11",
-    "tokens": 4061,
-    "cost": 0.04
+    "tokens": 170526,
+    "cost": 1.70
   }
 ],
   "alerts": {
