@@ -1,40 +1,40 @@
 {
-  "timestamp": "2026-11-24T15:37:56Z",
-  "date": "2026-11-24",
+  "timestamp": "2026-11-25T00:27:36Z",
+  "date": "2026-11-25",
   "subscription": {
     "name": "Microsoft Azure Sponsorship",
     "id": "c6be500c-48e8-4975-b2f3-7af12c9b751d",
     "type": "Microsoft Azure Sponsorship",
     "sponsorshipEnds": "2026-04-30",
-    "daysRemaining": -208
+    "daysRemaining": -209
   },
   "costs": {
-    "openAi30d": 3587.368,
-    "otherServices30d": 382.60,
-    "totalMonthly": 3969.968,
-    "projectedTillApril": -27511.878,
+    "openAi30d": 3527.106,
+    "otherServices30d": 442.60,
+    "totalMonthly": 3969.706,
+    "projectedTillApril": -27629.153,
     "coveredBySponsorship": true,
     "note": "These costs are currently offset by Microsoft Azure Sponsorship until April 2026"
   },
   "summary": {
-    "totalTokens30d": 377705133,
+    "totalTokens30d": 371682835,
     "openAiAccounts": 5,
     "aiServicesAccounts": 1,
     "saasSubscriptions": 0,
     "storageAccounts": 13,
     "postgresServers": 6,
-    "containerApps": 4
+    "containerApps": 7
   },
   "openAiUsage": [
   {
     "account": "myazurellm",
     "resourceGroup": "azurellm",
     "primaryModel": "o4-mini",
-    "promptTokens30d": 27096258,
+    "promptTokens30d": 27102129,
     "completionTokens30d": 0,
-    "promptTokens7d": 1317653,
-    "promptTokens1d": 131136,
-    "estimatedCost30d": 81.288,
+    "promptTokens7d": 1323257,
+    "promptTokens1d": 136547,
+    "estimatedCost30d": 81.306,
     "deployments": [
       {
         "model": "o4-mini",
@@ -90,11 +90,11 @@
     "account": "kiran-ai-model-gateway",
     "resourceGroup": "ai-model-gateway-rg",
     "primaryModel": "gpt-5.6-terra",
-    "promptTokens30d": 350608875,
+    "promptTokens30d": 344580706,
     "completionTokens30d": 0,
     "promptTokens7d": 51021897,
     "promptTokens1d": 0,
-    "estimatedCost30d": 3506.08,
+    "estimatedCost30d": 3445.80,
     "deployments": [
       {
         "model": "gpt-5.6-terra",
@@ -232,24 +232,19 @@
     "count": 9
   },
   {
-    "type": "Microsoft.OperationalInsights/workspaces",
-    "count": 8
+    "type": "Microsoft.App/managedEnvironments/managedCertificates",
+    "count": 9
   }
 ],
   "dailyMetrics": [
   {
-    "date": "2026-11-18",
-    "tokens": 35665294,
-    "cost": 356.65
-  },
-  {
     "date": "2026-11-19",
-    "tokens": 15361908,
+    "tokens": 15361927,
     "cost": 153.61
   },
   {
     "date": "2026-11-20",
-    "tokens": 131328,
+    "tokens": 131563,
     "cost": 1.31
   },
   {
@@ -269,8 +264,13 @@
   },
   {
     "date": "2026-11-24",
-    "tokens": 102415,
-    "cost": 1.02
+    "tokens": 136467,
+    "cost": 1.36
+  },
+  {
+    "date": "2026-11-25",
+    "tokens": 1806,
+    "cost": 0.01
   }
 ],
   "alerts": {
